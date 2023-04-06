@@ -1,0 +1,226 @@
+Name:         nginx-deployment-57b4987665-gg67z
+Namespace:    default
+Priority:     0
+Node:         three-worker-cluster-worker2/172.18.0.6
+Start Time:   Wed, 22 Mar 2023 19:56:22 -0500
+Labels:       pod-template-hash=57b4987665
+              run=nginx
+Annotations:  <none>
+Status:       Running
+IP:           10.244.1.130
+IPs:
+  IP:           10.244.1.130
+Controlled By:  ReplicaSet/nginx-deployment-57b4987665
+Containers:
+  nginx:
+    Container ID:   containerd://a15b41280e98d46beb03040759de0038d1c6c2937f094b17da6ee1be59be64f6
+    Image:          nginx:1.14.2
+    Image ID:       docker.io/library/nginx@sha256:f7988fb6c02e0ce69257d9bd9cf37ae20a60f1df7563c3a2a6abe24160306b8d
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 22 Mar 2023 19:56:24 -0500
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:  500m
+    Requests:
+      cpu:        200m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-f7wn4 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-f7wn4:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  67s   default-scheduler  Successfully assigned default/nginx-deployment-57b4987665-gg67z to three-worker-cluster-worker2
+  Normal  Pulled     65s   kubelet            Container image "nginx:1.14.2" already present on machine
+  Normal  Created    65s   kubelet            Created container nginx
+  Normal  Started    65s   kubelet            Started container nginx
+
+
+Name:         nginx-deployment-57b4987665-kk699
+Namespace:    default
+Priority:     0
+Node:         three-worker-cluster-worker/172.18.0.5
+Start Time:   Wed, 22 Mar 2023 19:56:25 -0500
+Labels:       pod-template-hash=57b4987665
+              run=nginx
+Annotations:  <none>
+Status:       Running
+IP:           10.244.3.8
+IPs:
+  IP:           10.244.3.8
+Controlled By:  ReplicaSet/nginx-deployment-57b4987665
+Containers:
+  nginx:
+    Container ID:   containerd://7138f6a0414107dd96c9bfbfc86ff4713be05fb01b6a0708e757adffc2814555
+    Image:          nginx:1.14.2
+    Image ID:       docker.io/library/nginx@sha256:f7988fb6c02e0ce69257d9bd9cf37ae20a60f1df7563c3a2a6abe24160306b8d
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 22 Mar 2023 19:56:28 -0500
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:  500m
+    Requests:
+      cpu:        200m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-nknmk (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-nknmk:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  64s   default-scheduler  Successfully assigned default/nginx-deployment-57b4987665-kk699 to three-worker-cluster-worker
+  Normal  Pulled     62s   kubelet            Container image "nginx:1.14.2" already present on machine
+  Normal  Created    61s   kubelet            Created container nginx
+  Normal  Started    61s   kubelet            Started container nginx
+
+
+Name:         nginx-deployment-57b4987665-w2xqb
+Namespace:    default
+Priority:     0
+Node:         three-worker-cluster-worker/172.18.0.5
+Start Time:   Wed, 22 Mar 2023 19:56:21 -0500
+Labels:       pod-template-hash=57b4987665
+              run=nginx
+Annotations:  <none>
+Status:       Running
+IP:           10.244.3.7
+IPs:
+  IP:           10.244.3.7
+Controlled By:  ReplicaSet/nginx-deployment-57b4987665
+Containers:
+  nginx:
+    Container ID:   containerd://b3890483ba38b45a5fdc293dd166fdbfb3ea8270a596420a474503ad962f0edd
+    Image:          nginx:1.14.2
+    Image ID:       docker.io/library/nginx@sha256:f7988fb6c02e0ce69257d9bd9cf37ae20a60f1df7563c3a2a6abe24160306b8d
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 22 Mar 2023 19:56:24 -0500
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:  500m
+    Requests:
+      cpu:        200m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7kbng (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-7kbng:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  68s   default-scheduler  Successfully assigned default/nginx-deployment-57b4987665-w2xqb to three-worker-cluster-worker
+  Normal  Pulled     66s   kubelet            Container image "nginx:1.14.2" already present on machine
+  Normal  Created    65s   kubelet            Created container nginx
+  Normal  Started    65s   kubelet            Started container nginx
+
+
+Name:         nginx-deployment-57b4987665-wfbnv
+Namespace:    default
+Priority:     0
+Node:         three-worker-cluster-worker2/172.18.0.6
+Start Time:   Wed, 22 Mar 2023 19:56:26 -0500
+Labels:       pod-template-hash=57b4987665
+              run=nginx
+Annotations:  <none>
+Status:       Running
+IP:           10.244.1.131
+IPs:
+  IP:           10.244.1.131
+Controlled By:  ReplicaSet/nginx-deployment-57b4987665
+Containers:
+  nginx:
+    Container ID:   containerd://1f3efbe43b51dd89bfc94f7cd5e2d1dc11d66f76d8a2a6e44600af7034f19f96
+    Image:          nginx:1.14.2
+    Image ID:       docker.io/library/nginx@sha256:f7988fb6c02e0ce69257d9bd9cf37ae20a60f1df7563c3a2a6abe24160306b8d
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Wed, 22 Mar 2023 19:56:29 -0500
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:  500m
+    Requests:
+      cpu:        200m
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-94htt (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-api-access-94htt:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  63s   default-scheduler  Successfully assigned default/nginx-deployment-57b4987665-wfbnv to three-worker-cluster-worker2
+  Normal  Pulled     61s   kubelet            Container image "nginx:1.14.2" already present on machine
+  Normal  Created    60s   kubelet            Created container nginx
+  Normal  Started    60s   kubelet            Started container nginx

@@ -1,0 +1,495 @@
+I0406 19:40:41.468454       1 named_certificates.go:53] "Loaded SNI cert" index=0 certName="self-signed loopback" certDetail="\"apiserver-loopback-client@1680810041\" [serving] validServingFor=[apiserver-loopback-client] issuer=\"apiserver-loopback-client-ca@1680810041\" (2023-04-06 18:40:40 +0000 UTC to 2024-04-05 18:40:40 +0000 UTC (now=2023-04-06 19:40:41.46832645 +0000 UTC))"
+I0406 19:40:41.468633       1 secure_serving.go:210] Serving securely on [::]:10258
+I0406 19:40:41.468811       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I0406 19:40:41.496337       1 reflector.go:221] Starting reflector *v1.PriorityClass (0s) from k8s.io/client-go/informers/factory.go:134
+I0406 19:40:41.496375       1 reflector.go:257] Listing and watching *v1.PriorityClass from k8s.io/client-go/informers/factory.go:134
+I0406 19:40:41.496615       1 reflector.go:221] Starting reflector *v1.Namespace (0s) from k8s.io/client-go/informers/factory.go:134
+I0406 19:40:41.496677       1 reflector.go:257] Listing and watching *v1.Namespace from k8s.io/client-go/informers/factory.go:134
+I0406 19:40:41.496619       1 reflector.go:221] Starting reflector *v1.Pod (0s) from k8s.io/client-go/informers/factory.go:134
+I0406 19:40:41.496789       1 reflector.go:257] Listing and watching *v1.Pod from k8s.io/client-go/informers/factory.go:134
+I0406 19:40:41.598210       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 19:40:41.638672       1 descheduler.go:343] Building a pod evictor
+I0406 19:40:41.638765       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 19:40:41.638912       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 19:40:41.639397       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 19:40:41.639459       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 19:40:41.639505       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 19:40:41.639602       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 19:40:41.640191       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 19:40:41.640231       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 19:40:41.640447       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 19:40:41.640524       1 nodeutilization.go:202] "Node is appropriately utilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:45] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:40.90909090909091]
+I0406 19:40:41.640571       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 19:40:41.640631       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 19:40:41.640679       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 19:40:41.640715       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=3
+I0406 19:40:41.640764       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 19:40:41.640800       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 19:40:41.640830       1 lownodeutilization.go:168] "All nodes are under target utilization, nothing to do here"
+I0406 19:40:41.640902       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 19:45:41.599444       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 19:45:41.615905       1 descheduler.go:343] Building a pod evictor
+I0406 19:45:41.616288       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 19:45:41.616922       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 19:45:41.617043       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 19:45:41.617236       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 19:45:41.617670       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 19:45:41.618081       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 19:45:41.618180       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 19:45:41.618394       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 19:45:41.619168       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 19:45:41.619314       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 19:45:41.619404       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 19:45:41.619442       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 19:45:41.619617       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 19:45:41.619693       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 19:45:41.619733       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 19:45:41.619817       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 19:45:41.619930       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 19:45:41.620055       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 19:50:41.600467       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 19:50:41.616603       1 descheduler.go:343] Building a pod evictor
+I0406 19:50:41.618246       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 19:50:41.618319       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 19:50:41.618365       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 19:50:41.618411       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 19:50:41.618438       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 19:50:41.618506       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 19:50:41.618563       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 19:50:41.618588       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 19:50:41.618769       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 19:50:41.618862       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 19:50:41.619196       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 19:50:41.619265       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 19:50:41.619318       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 19:50:41.619442       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 19:50:41.619572       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 19:50:41.619604       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 19:50:41.619624       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 19:50:41.619660       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 19:55:41.601317       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 19:55:41.624983       1 descheduler.go:343] Building a pod evictor
+I0406 19:55:41.625701       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 19:55:41.625818       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 19:55:41.625851       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 19:55:41.625881       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 19:55:41.625926       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 19:55:41.626107       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 19:55:41.626160       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 19:55:41.626434       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 19:55:41.626500       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 19:55:41.626607       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 19:55:41.627026       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 19:55:41.627174       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 19:55:41.627382       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 19:55:41.627720       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 19:55:41.627865       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 19:55:41.628048       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 19:55:41.628115       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 19:55:41.628293       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:00:41.602077       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:00:41.617320       1 descheduler.go:343] Building a pod evictor
+I0406 20:00:41.617899       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:00:41.617965       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:00:41.618209       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:00:41.618265       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:00:41.618467       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:00:41.618519       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:00:41.618562       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:00:41.618582       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:00:41.618614       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:00:41.618716       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:00:41.619129       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:00:41.619178       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:00:41.619357       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:00:41.619622       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:00:41.619692       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:00:41.619822       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:00:41.619888       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:00:41.619916       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:05:41.602574       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:05:41.613075       1 descheduler.go:343] Building a pod evictor
+I0406 20:05:41.613276       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:05:41.613487       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:05:41.613602       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:05:41.613640       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:05:41.614058       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:05:41.614158       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:05:41.614194       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:05:41.614223       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:05:41.614271       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:05:41.614418       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:05:41.614463       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:05:41.614586       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:05:41.614624       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:05:41.614817       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:05:41.615205       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:05:41.615414       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:05:41.615590       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:05:41.615749       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:10:41.603294       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:10:41.630112       1 descheduler.go:343] Building a pod evictor
+I0406 20:10:41.630326       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:10:41.630668       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:10:41.630739       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:10:41.630791       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:10:41.631449       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:10:41.631545       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:10:41.631611       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:10:41.631656       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:10:41.631704       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:10:41.631738       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:10:41.631977       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:10:41.632037       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:10:41.632084       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:10:41.632160       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:10:41.632591       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:10:41.632689       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:10:41.632765       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:10:41.632824       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:15:41.603311       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:15:41.614867       1 descheduler.go:343] Building a pod evictor
+I0406 20:15:41.615497       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:15:41.615613       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:15:41.615696       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:15:41.615781       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:15:41.615931       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:15:41.616011       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:15:41.616077       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:15:41.616136       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:15:41.616186       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:15:41.616270       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:15:41.616542       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:15:41.616640       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:15:41.616742       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:15:41.616862       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:15:41.616971       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:15:41.617036       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:15:41.617094       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:15:41.617169       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:20:41.603574       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:20:41.623801       1 descheduler.go:343] Building a pod evictor
+I0406 20:20:41.624486       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:20:41.624556       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:20:41.624616       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:20:41.624756       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:20:41.625060       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:20:41.625100       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:20:41.625146       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:20:41.625186       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:20:41.625233       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:20:41.625336       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:20:41.625651       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:20:41.625722       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:20:41.625801       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:20:41.625911       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:20:41.626030       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:20:41.626077       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:20:41.626112       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:20:41.626152       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:25:41.604400       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:25:41.627224       1 descheduler.go:343] Building a pod evictor
+I0406 20:25:41.628102       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:25:41.628219       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:25:41.628337       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:25:41.628436       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:25:41.628492       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:25:41.628536       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:25:41.628603       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:25:41.628650       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:25:41.628703       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:25:41.628813       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:25:41.629139       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:25:41.629213       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:25:41.629349       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:25:41.629517       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:25:41.629656       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:25:41.629693       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:25:41.629734       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:25:41.629811       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:30:41.605022       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:30:41.616633       1 descheduler.go:343] Building a pod evictor
+I0406 20:30:41.616800       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:30:41.617013       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:30:41.617053       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:30:41.617084       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:30:41.617371       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:30:41.617428       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:30:41.617474       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:30:41.617508       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:30:41.617550       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:30:41.617584       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:30:41.617614       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:30:41.617642       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:30:41.617668       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:30:41.617728       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:30:41.617968       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:30:41.618030       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:30:41.618077       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:30:41.618119       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:35:41.605986       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:35:41.627039       1 descheduler.go:343] Building a pod evictor
+I0406 20:35:41.627313       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:35:41.627551       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:35:41.627620       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:35:41.627670       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:35:41.628375       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:35:41.628465       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:35:41.628539       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:35:41.628598       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:35:41.628664       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:35:41.628736       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:35:41.628780       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:35:41.628809       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:35:41.628836       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:35:41.628917       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:35:41.629464       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:35:41.629578       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:35:41.629680       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:35:41.629781       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:40:41.606598       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:40:41.622999       1 descheduler.go:343] Building a pod evictor
+I0406 20:40:41.623998       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:40:41.624084       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:40:41.624140       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:40:41.624284       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:40:41.624414       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:40:41.624541       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:40:41.624652       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:40:41.624728       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:40:41.624784       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:40:41.625005       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:40:41.625458       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:40:41.625542       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:40:41.625626       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:40:41.625823       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:40:41.626026       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:40:41.626113       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:40:41.626194       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:40:41.626240       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:45:41.606993       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:45:41.620803       1 descheduler.go:343] Building a pod evictor
+I0406 20:45:41.621498       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:45:41.621574       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:45:41.621618       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:45:41.621652       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:45:41.621736       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:45:41.621810       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:45:41.621875       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:45:41.621913       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:45:41.621965       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:45:41.622083       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:45:41.622527       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:45:41.622625       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:45:41.622673       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:45:41.622799       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:45:41.622960       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:45:41.623020       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:45:41.623060       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:45:41.623154       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:50:41.608104       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:50:41.620367       1 descheduler.go:343] Building a pod evictor
+I0406 20:50:41.620815       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:50:41.620876       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:50:41.620923       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:50:41.620954       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:50:41.620978       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:50:41.621006       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:50:41.621077       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:50:41.621098       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:50:41.621123       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:50:41.621183       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:50:41.621420       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:50:41.621491       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:50:41.621550       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:50:41.621633       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:50:41.621721       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:50:41.621745       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:50:41.621764       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:50:41.621790       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 20:55:41.608662       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 20:55:41.621051       1 descheduler.go:343] Building a pod evictor
+I0406 20:55:41.621464       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 20:55:41.621705       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:55:41.621925       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 20:55:41.622174       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 20:55:41.622390       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 20:55:41.622527       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 20:55:41.622644       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 20:55:41.622819       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 20:55:41.623014       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 20:55:41.623248       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 20:55:41.623608       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 20:55:41.623769       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 20:55:41.623974       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 20:55:41.624191       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 20:55:41.624352       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 20:55:41.624509       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 20:55:41.624625       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 20:55:41.624781       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 21:00:41.609474       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 21:00:41.629337       1 descheduler.go:343] Building a pod evictor
+I0406 21:00:41.629995       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 21:00:41.630130       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:00:41.630330       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 21:00:41.630502       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:00:41.630651       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 21:00:41.630761       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 21:00:41.630934       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 21:00:41.631059       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 21:00:41.631275       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 21:00:41.631530       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 21:00:41.632042       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 21:00:41.632305       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 21:00:41.632605       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 21:00:41.632970       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 21:00:41.633271       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 21:00:41.633521       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 21:00:41.633773       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 21:00:41.634008       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 21:05:41.610424       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 21:05:41.646108       1 descheduler.go:343] Building a pod evictor
+I0406 21:05:41.646915       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 21:05:41.647009       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:05:41.647066       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 21:05:41.647180       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:05:41.647262       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 21:05:41.647327       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 21:05:41.647400       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 21:05:41.647444       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 21:05:41.647529       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 21:05:41.647651       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 21:05:41.648136       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 21:05:41.648244       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 21:05:41.648379       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 21:05:41.648501       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 21:05:41.648696       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 21:05:41.648745       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 21:05:41.648784       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 21:05:41.648838       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 21:10:41.610510       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 21:10:41.629205       1 descheduler.go:343] Building a pod evictor
+I0406 21:10:41.629842       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 21:10:41.629940       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:10:41.629984       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 21:10:41.630060       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:10:41.630116       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 21:10:41.630152       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 21:10:41.630274       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 21:10:41.630314       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 21:10:41.630433       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 21:10:41.630521       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 21:10:41.631005       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 21:10:41.631158       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 21:10:41.631253       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 21:10:41.631376       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 21:10:41.631808       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 21:10:41.631875       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 21:10:41.632099       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 21:10:41.632183       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 21:15:41.610574       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 21:15:41.648025       1 descheduler.go:343] Building a pod evictor
+I0406 21:15:41.648259       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 21:15:41.648735       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 21:15:41.648855       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 21:15:41.648956       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 21:15:41.649116       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 21:15:41.649334       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 21:15:41.649375       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 21:15:41.649405       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 21:15:41.649986       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 21:15:41.650094       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:15:41.650129       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 21:15:41.650173       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:15:41.650216       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 21:15:41.650247       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 21:15:41.650278       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 21:15:41.650299       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 21:15:41.650323       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 21:15:41.650348       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 21:20:41.611225       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 21:20:41.638324       1 descheduler.go:343] Building a pod evictor
+I0406 21:20:41.639063       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 21:20:41.639466       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:20:41.639590       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 21:20:41.639735       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:20:41.639836       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 21:20:41.639997       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 21:20:41.640112       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 21:20:41.640224       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 21:20:41.640313       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 21:20:41.640448       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 21:20:41.640856       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 21:20:41.641080       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 21:20:41.641263       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 21:20:41.641444       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 21:20:41.641603       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 21:20:41.641679       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 21:20:41.641736       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 21:20:41.641841       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 21:25:41.612149       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 21:25:41.633247       1 descheduler.go:343] Building a pod evictor
+I0406 21:25:41.633507       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 21:25:41.633980       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 21:25:41.634091       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 21:25:41.634186       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 21:25:41.634333       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 21:25:41.634520       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 21:25:41.634621       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 21:25:41.634682       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 21:25:41.635311       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 21:25:41.635427       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:25:41.635489       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 21:25:41.635575       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:25:41.635744       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 21:25:41.635864       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 21:25:41.635928       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 21:25:41.635979       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 21:25:41.636035       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 21:25:41.636101       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 21:30:41.612560       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 21:30:41.631483       1 descheduler.go:343] Building a pod evictor
+I0406 21:30:41.631878       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 21:30:41.632234       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 21:30:41.632403       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 21:30:41.632604       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 21:30:41.633029       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 21:30:41.633102       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:30:41.633136       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:600m memory:306Mi pods:3] usagePercentage=map[cpu:7.5 memory:3.836821456734372 pods:2.727272727272727]
+I0406 21:30:41.633178       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:100m memory:50Mi pods:2] usagePercentage=map[cpu:1.25 memory:0.6269316105775118 pods:1.8181818181818181]
+I0406 21:30:41.633226       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 21:30:41.633256       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 21:30:41.633285       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 21:30:41.633348       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 21:30:41.633410       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 21:30:41.633575       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 21:30:41.634049       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 21:30:41.634122       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 21:30:41.634178       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+I0406 21:30:41.634383       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0
+I0406 21:35:41.612921       1 node.go:49] "Node lister returned empty list, now fetch directly"
+I0406 21:35:41.625466       1 descheduler.go:343] Building a pod evictor
+I0406 21:35:41.626262       1 nodeutilization.go:196] "Node is underutilized" node="kind-control-plane" usage=map[cpu:950m memory:290Mi pods:9] usagePercentage=map[cpu:11.875 memory:3.6362033413495682 pods:8.181818181818182]
+I0406 21:35:41.626445       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker" usage=map[cpu:500m memory:50Mi pods:4] usagePercentage=map[cpu:6.25 memory:0.6269316105775118 pods:3.6363636363636362]
+I0406 21:35:41.626496       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker2" usage=map[cpu:800m memory:306Mi pods:4] usagePercentage=map[cpu:10 memory:3.836821456734372 pods:3.6363636363636362]
+I0406 21:35:41.626557       1 nodeutilization.go:196] "Node is underutilized" node="kind-worker3" usage=map[cpu:500m memory:50Mi pods:4] usagePercentage=map[cpu:6.25 memory:0.6269316105775118 pods:3.6363636363636362]
+I0406 21:35:41.626621       1 lownodeutilization.go:135] "Criteria for a node under utilization" CPU=20 Mem=20 Pods=20
+I0406 21:35:41.626673       1 lownodeutilization.go:136] "Number of underutilized nodes" totalNumber=4
+I0406 21:35:41.626717       1 lownodeutilization.go:149] "Criteria for a node above target utilization" CPU=50 Mem=50 Pods=50
+I0406 21:35:41.626754       1 lownodeutilization.go:150] "Number of overutilized nodes" totalNumber=0
+I0406 21:35:41.626790       1 lownodeutilization.go:163] "All nodes are underutilized, nothing to do here"
+I0406 21:35:41.626889       1 removeduplicates.go:103] "Processing node" node="kind-control-plane"
+I0406 21:35:41.627394       1 removeduplicates.go:103] "Processing node" node="kind-worker"
+I0406 21:35:41.627548       1 removeduplicates.go:103] "Processing node" node="kind-worker2"
+I0406 21:35:41.627630       1 removeduplicates.go:103] "Processing node" node="kind-worker3"
+######################################################################################################
+I0406 21:35:41.627787       1 removeduplicates.go:162] "Duplicate found" pod="default/php-apache-7654df5976-qhn6q"
+I0406 21:35:41.628018       1 removeduplicates.go:194] "Adjusting feasible nodes" owner={namespace:default kind:ReplicaSet name:php-apache-7654df5976 imagesHash:registry.k8s.io/hpa-example} from=4 to=3
+######################################################################################################
+I0406 21:35:41.628086       1 removeduplicates.go:203] "Average occurrence per node" node="kind-worker" ownerKey={namespace:default kind:ReplicaSet name:php-apache-7654df5976 imagesHash:registry.k8s.io/hpa-example} avg=2
+I0406 21:35:41.628324       1 removeduplicates.go:203] "Average occurrence per node" node="kind-worker3" ownerKey={namespace:default kind:ReplicaSet name:php-apache-7654df5976 imagesHash:registry.k8s.io/hpa-example} avg=2
+I0406 21:35:41.628613       1 pod_antiaffinity.go:84] "Processing node" node="kind-control-plane"
+I0406 21:35:41.629059       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker"
+I0406 21:35:41.629119       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker2"
+I0406 21:35:41.629346       1 pod_antiaffinity.go:84] "Processing node" node="kind-worker3"
+I0406 21:35:41.629587       1 descheduler.go:426] "Number of evicted pods" totalEvicted=0

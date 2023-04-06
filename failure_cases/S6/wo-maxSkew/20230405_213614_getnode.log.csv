@@ -1,0 +1,738 @@
+========== DELIMETER: 0 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 1 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 2 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 3 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 4 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 5 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 6 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 7 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 8 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 9 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 10 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 11 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 12 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 13 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h28m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h28m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 14 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h28m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 15 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 16 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 17 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 18 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 19 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 20 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 21 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 22 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 23 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 24 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 25 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 26 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 27 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 28 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 29 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 30 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 31 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 32 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 33 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 34 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 35 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 36 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h29m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 37 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 38 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 39 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 40 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 41 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 42 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 43 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 44 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 45 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 46 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 47 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 48 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 49 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 50 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 51 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 52 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 53 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 54 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 55 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 56 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 57 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 58 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 59 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 60 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 61 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 62 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 63 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 64 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 65 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 66 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 67 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 68 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 69 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 70 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 71 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 72 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 73 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h29m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h29m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 74 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h29m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 75 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 76 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 77 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 78 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 79 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 80 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 81 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 82 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 83 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 84 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 85 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 86 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 87 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 88 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 89 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 90 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 91 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 92 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 93 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 94 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 95 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h30m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 96 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 97 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 98 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 99 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 100 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 101 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 102 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 103 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 104 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 105 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 106 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,SchedulingDisabled,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 107 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 108 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 109 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 110 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 111 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 112 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 113 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 114 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 115 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 116 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 117 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 118 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 119 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 120 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 121 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+========== DELIMETER: 122 ==========
+NAME,STATUS,ROLES,AGE,VERSION,INTERNAL-IP,EXTERNAL-IP,OS-IMAGE,KERNEL-VERSION,CONTAINER-RUNTIME
+kind-control-plane,Ready,control-plane,3h31m,v1.24.7,172.18.0.2,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker,Ready,<none>,3h30m,v1.24.7,172.18.0.4,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker2,Ready,<none>,3h30m,v1.24.7,172.18.0.5,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9
+kind-worker3,Ready,<none>,3h30m,v1.24.7,172.18.0.3,<none>,Ubuntu,22.04.1,LTS,4.15.0-156-generic,containerd://1.6.9

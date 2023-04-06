@@ -1,0 +1,1623 @@
+========== DELIMETER: 0 ==========
+========== DELIMETER: 1 ==========
+========== DELIMETER: 2 ==========
+========== DELIMETER: 3 ==========
+========== DELIMETER: 4 ==========
+========== DELIMETER: 5 ==========
+========== DELIMETER: 6 ==========
+========== DELIMETER: 7 ==========
+========== DELIMETER: 8 ==========
+========== DELIMETER: 9 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,0/1,Pending,0,0s,<none>,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,0/1,Pending,0,0s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,0/1,Pending,0,0s,<none>,<none>,<none>,<none>
+========== DELIMETER: 10 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,0/1,ContainerCreating,0,1s,<none>,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,0/1,ContainerCreating,0,1s,<none>,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,0/1,ContainerCreating,0,1s,<none>,kind-worker2,<none>,<none>
+========== DELIMETER: 11 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,0/1,ContainerCreating,0,2s,<none>,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,0/1,ContainerCreating,0,2s,<none>,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,0/1,ContainerCreating,0,2s,<none>,kind-worker2,<none>,<none>
+========== DELIMETER: 12 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,0/1,ContainerCreating,0,3s,<none>,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,0/1,ContainerCreating,0,3s,<none>,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,0/1,ContainerCreating,0,3s,<none>,kind-worker2,<none>,<none>
+========== DELIMETER: 13 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,4s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,0/1,ContainerCreating,0,4s,<none>,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,0/1,ContainerCreating,0,4s,<none>,kind-worker2,<none>,<none>
+========== DELIMETER: 14 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,5s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,5s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,5s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 15 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,6s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,6s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,6s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 16 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,7s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,7s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,7s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 17 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,8s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,8s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,8s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 18 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,9s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,9s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,9s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 19 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,10s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,10s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,10s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 20 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,11s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,11s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,11s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 21 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,12s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,12s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,12s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 22 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,13s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,13s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,13s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 23 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,14s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,14s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,14s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 24 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,15s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,15s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,15s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 25 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,16s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,16s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,16s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 26 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,17s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,17s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,17s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 27 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,18s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,18s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,18s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 28 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,19s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,19s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,19s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 29 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,20s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,20s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,20s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 30 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Running,0,21s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,21s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,21s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 31 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-5tg2k,1/1,Terminating,0,22s,10.244.2.14,kind-worker3,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,22s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,0s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,22s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 32 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,23s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,1s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,23s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 33 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,24s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,2s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,24s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 34 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,25s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,3s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,25s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 35 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,26s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,4s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,26s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 36 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,27s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,5s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,27s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 37 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,28s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,6s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,28s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 38 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,29s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,7s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,29s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 39 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,30s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,8s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,30s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 40 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,31s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,9s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,31s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 41 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,32s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,10s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,32s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 42 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,33s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,11s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,33s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 43 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,34s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,12s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,34s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 44 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,35s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,13s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,35s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 45 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,36s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,14s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,36s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 46 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,37s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,15s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,37s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 47 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,38s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,16s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,38s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 48 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,39s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,17s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,39s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 49 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,40s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,18s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,40s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 50 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,41s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,19s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,41s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 51 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,42s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,20s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,42s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 52 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,43s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,21s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,43s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 53 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,44s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,22s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,44s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 54 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,45s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,23s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,45s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 55 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,46s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,24s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,46s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 56 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,47s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,25s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,47s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 57 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,48s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,26s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,48s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 58 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,49s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,27s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,49s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 59 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,50s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,28s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,50s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 60 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,51s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,29s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,51s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 61 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,52s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,30s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,52s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 62 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,53s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,31s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,53s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 63 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,54s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,32s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,54s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 64 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,55s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,33s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,55s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 65 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,56s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,34s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,56s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 66 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,57s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,35s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,57s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 67 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,58s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,36s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,58s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 68 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,59s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,37s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,59s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 69 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,60s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,38s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,60s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 70 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,61s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,39s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,61s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 71 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,62s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,40s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,62s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 72 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,63s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,41s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,63s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 73 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,64s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,42s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,64s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 74 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,65s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,43s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,65s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 75 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,66s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,44s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,66s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 76 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,67s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,45s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,67s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 77 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,69s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,47s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,69s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 78 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,70s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,48s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,70s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 79 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,71s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,49s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,71s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 80 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,72s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,50s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,72s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 81 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,73s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,51s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,73s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 82 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,74s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,52s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,74s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 83 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,75s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,53s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,75s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 84 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,76s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,54s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,76s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 85 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,77s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,55s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,77s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 86 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,78s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,56s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,78s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 87 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,79s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,57s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,79s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 88 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,80s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,58s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,80s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 89 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,81s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,59s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,81s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 90 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,82s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,60s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,82s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 91 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,83s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,61s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,83s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 92 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,84s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,62s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,84s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 93 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,85s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,63s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,85s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 94 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-79c8455955-g95fj,1/1,Running,0,86s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,64s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,86s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 95 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-qcfpv,0/1,ContainerCreating,0,1s,<none>,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,87s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,65s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,87s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 96 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-qcfpv,0/1,ContainerCreating,0,2s,<none>,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,88s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,66s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,88s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 97 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-qcfpv,0/1,ContainerCreating,0,3s,<none>,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,89s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-jkcc7,0/1,Pending,0,67s,<none>,<none>,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,89s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 98 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,0/1,ContainerCreating,0,1s,<none>,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,4s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,90s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,90s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 99 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,0/1,ContainerCreating,0,2s,<none>,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,5s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,91s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,91s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 100 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,0/1,ContainerCreating,0,3s,<none>,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,6s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,92s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,92s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 101 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,0/1,ContainerCreating,0,4s,<none>,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,7s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,93s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Running,0,93s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 102 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,5s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,0/1,ContainerCreating,0,1s,<none>,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,8s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,94s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Terminating,0,94s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 103 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,6s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,0/1,ContainerCreating,0,2s,<none>,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,9s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,95s,10.244.3.17,kind-worker,<none>,<none>
+php-apache-79c8455955-xfgrs,1/1,Terminating,0,95s,10.244.1.15,kind-worker2,<none>,<none>
+========== DELIMETER: 104 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,7s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,0/1,ContainerCreating,0,3s,<none>,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,10s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,96s,10.244.3.17,kind-worker,<none>,<none>
+========== DELIMETER: 105 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,8s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,0/1,ContainerCreating,0,4s,<none>,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,11s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Running,0,97s,10.244.3.17,kind-worker,<none>,<none>
+========== DELIMETER: 106 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,9s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,5s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,12s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Terminating,0,98s,10.244.3.17,kind-worker,<none>,<none>
+========== DELIMETER: 107 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,10s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,6s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,13s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-g95fj,1/1,Terminating,0,99s,10.244.3.17,kind-worker,<none>,<none>
+========== DELIMETER: 108 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,11s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,7s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,14s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 109 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,12s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,8s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,15s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 110 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,13s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,9s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,16s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 111 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,14s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,10s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,17s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 112 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,15s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,11s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,18s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 113 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,16s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,12s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,19s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 114 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,17s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,13s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,20s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 115 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,18s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,14s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,21s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 116 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,19s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,15s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,22s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 117 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,20s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,16s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,23s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 118 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,21s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,17s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,24s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 119 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,22s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,18s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,25s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 120 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,23s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,19s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,26s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 121 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,24s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,20s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,27s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 122 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,25s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,21s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,28s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 123 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,26s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,22s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,29s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 124 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,27s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,23s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,30s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 125 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,28s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,24s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,31s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 126 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,29s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,25s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,32s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 127 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,30s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,26s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,33s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 128 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,31s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,27s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,34s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 129 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,32s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,28s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,35s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 130 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,33s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,29s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,36s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 131 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,34s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,30s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,37s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 132 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,35s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,31s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,38s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 133 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,36s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,32s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,39s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 134 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,37s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,33s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,40s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 135 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,38s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,34s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,41s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 136 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,39s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,35s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,42s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 137 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,40s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,36s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,43s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 138 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,41s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,37s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,44s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 139 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,42s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,38s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,45s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 140 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,43s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,39s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,46s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 141 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,44s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,40s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,47s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 142 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,45s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,41s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,48s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 143 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,46s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,42s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,49s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 144 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,47s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,43s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,50s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 145 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,48s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,44s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,51s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 146 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,49s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,45s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,52s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 147 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Running,0,50s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Running,0,46s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,53s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 148 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-76jjt,1/1,Terminating,0,52s,10.244.1.16,kind-worker2,<none>,<none>
+php-apache-57f7b9444-b868s,1/1,Terminating,0,48s,10.244.1.17,kind-worker2,<none>,<none>
+php-apache-57f7b9444-j6sxd,0/1,ContainerCreating,0,1s,<none>,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,0/1,ContainerCreating,0,1s,<none>,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,55s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 149 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,0/1,ContainerCreating,0,2s,<none>,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,0/1,ContainerCreating,0,2s,<none>,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,56s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 150 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,0/1,ContainerCreating,0,3s,<none>,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,0/1,ContainerCreating,0,3s,<none>,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,57s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 151 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,0/1,ContainerCreating,0,4s,<none>,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,0/1,ContainerCreating,0,4s,<none>,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,58s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 152 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,0/1,ContainerCreating,0,5s,<none>,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,5s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,59s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 153 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,6s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,6s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,60s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 154 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,7s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,7s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,61s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 155 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,8s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,8s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,62s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 156 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,9s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,9s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,63s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 157 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,10s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,10s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,64s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 158 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,11s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,11s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,65s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 159 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,12s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,12s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,66s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 160 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,13s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,13s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,67s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 161 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,14s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,14s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,68s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 162 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,15s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,15s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,69s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 163 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,16s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,16s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,70s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 164 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,17s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,17s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,71s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 165 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,18s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,18s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,72s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 166 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,19s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,19s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,73s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 167 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,20s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,20s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,74s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 168 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,21s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,21s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,75s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 169 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,22s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,22s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,76s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 170 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,23s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,23s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,77s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 171 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,24s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,24s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,78s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 172 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,25s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,25s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,79s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 173 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,26s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,26s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,80s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 174 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,27s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,27s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,81s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 175 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,28s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,28s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,82s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 176 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,29s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,29s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,83s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 177 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,30s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,30s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,84s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 178 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,31s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,31s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,85s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 179 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,32s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,32s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,86s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 180 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,33s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,33s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,87s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 181 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,34s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,34s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,88s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 182 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,35s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,35s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,89s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 183 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,36s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,36s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,90s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 184 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,37s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,37s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,91s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 185 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,38s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,38s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,92s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 186 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,39s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,39s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,93s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 187 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,40s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,40s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,94s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,0s,<none>,<none>,<none>,<none>
+========== DELIMETER: 188 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,41s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,41s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,95s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,1s,<none>,<none>,<none>,<none>
+========== DELIMETER: 189 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,42s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,42s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,96s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,2s,<none>,<none>,<none>,<none>
+========== DELIMETER: 190 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,43s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,43s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,97s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,3s,<none>,<none>,<none>,<none>
+========== DELIMETER: 191 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,44s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,44s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,98s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,4s,<none>,<none>,<none>,<none>
+========== DELIMETER: 192 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,45s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,45s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,99s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,5s,<none>,<none>,<none>,<none>
+========== DELIMETER: 193 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,46s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,46s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,100s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,6s,<none>,<none>,<none>,<none>
+========== DELIMETER: 194 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,47s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,47s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,101s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,7s,<none>,<none>,<none>,<none>
+========== DELIMETER: 195 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,48s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,48s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,102s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,8s,<none>,<none>,<none>,<none>
+========== DELIMETER: 196 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,49s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,49s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,103s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,9s,<none>,<none>,<none>,<none>
+========== DELIMETER: 197 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,50s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,50s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,104s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,10s,<none>,<none>,<none>,<none>
+========== DELIMETER: 198 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,51s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,51s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,105s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,11s,<none>,<none>,<none>,<none>
+========== DELIMETER: 199 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,52s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,52s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,106s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,12s,<none>,<none>,<none>,<none>
+========== DELIMETER: 200 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,53s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,53s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,107s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,13s,<none>,<none>,<none>,<none>
+========== DELIMETER: 201 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,54s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,54s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,108s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,14s,<none>,<none>,<none>,<none>
+========== DELIMETER: 202 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,55s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,55s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,109s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,15s,<none>,<none>,<none>,<none>
+========== DELIMETER: 203 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,56s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,56s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,110s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,16s,<none>,<none>,<none>,<none>
+========== DELIMETER: 204 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,57s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,57s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,111s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,17s,<none>,<none>,<none>,<none>
+========== DELIMETER: 205 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,58s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,58s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,112s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,18s,<none>,<none>,<none>,<none>
+========== DELIMETER: 206 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,59s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,59s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,113s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,19s,<none>,<none>,<none>,<none>
+========== DELIMETER: 207 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,60s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,60s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,114s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,20s,<none>,<none>,<none>,<none>
+========== DELIMETER: 208 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,61s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,61s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,115s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,21s,<none>,<none>,<none>,<none>
+========== DELIMETER: 209 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,62s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,62s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,116s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,22s,<none>,<none>,<none>,<none>
+========== DELIMETER: 210 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,63s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,63s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,117s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,23s,<none>,<none>,<none>,<none>
+========== DELIMETER: 211 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,64s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,64s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,118s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,24s,<none>,<none>,<none>,<none>
+========== DELIMETER: 212 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,65s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,65s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,119s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,25s,<none>,<none>,<none>,<none>
+========== DELIMETER: 213 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,66s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,66s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,26s,<none>,<none>,<none>,<none>
+========== DELIMETER: 214 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,67s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,67s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m1s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,27s,<none>,<none>,<none>,<none>
+========== DELIMETER: 215 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,68s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,68s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m2s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,28s,<none>,<none>,<none>,<none>
+========== DELIMETER: 216 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,69s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,69s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m3s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,29s,<none>,<none>,<none>,<none>
+========== DELIMETER: 217 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,70s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,70s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m4s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,30s,<none>,<none>,<none>,<none>
+========== DELIMETER: 218 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,71s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,71s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m5s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,31s,<none>,<none>,<none>,<none>
+========== DELIMETER: 219 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,72s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,72s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m6s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,32s,<none>,<none>,<none>,<none>
+========== DELIMETER: 220 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,73s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,73s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m7s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,33s,<none>,<none>,<none>,<none>
+========== DELIMETER: 221 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,74s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,74s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m8s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,34s,<none>,<none>,<none>,<none>
+========== DELIMETER: 222 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,75s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,75s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m9s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,35s,<none>,<none>,<none>,<none>
+========== DELIMETER: 223 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,76s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,76s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m10s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,36s,<none>,<none>,<none>,<none>
+========== DELIMETER: 224 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,77s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,77s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m11s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,37s,<none>,<none>,<none>,<none>
+========== DELIMETER: 225 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,79s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,79s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m13s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,39s,<none>,<none>,<none>,<none>
+========== DELIMETER: 226 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,80s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,80s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m14s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,40s,<none>,<none>,<none>,<none>
+========== DELIMETER: 227 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,81s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,81s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m15s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,41s,<none>,<none>,<none>,<none>
+========== DELIMETER: 228 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,82s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,82s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m16s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,42s,<none>,<none>,<none>,<none>
+========== DELIMETER: 229 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,83s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,83s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m17s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,43s,<none>,<none>,<none>,<none>
+========== DELIMETER: 230 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,84s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,84s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m18s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,44s,<none>,<none>,<none>,<none>
+========== DELIMETER: 231 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,85s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,85s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m19s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,45s,<none>,<none>,<none>,<none>
+========== DELIMETER: 232 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,86s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,86s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m20s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,46s,<none>,<none>,<none>,<none>
+========== DELIMETER: 233 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,87s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,87s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m21s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,47s,<none>,<none>,<none>,<none>
+========== DELIMETER: 234 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,88s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,88s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m22s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,48s,<none>,<none>,<none>,<none>
+========== DELIMETER: 235 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,89s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,89s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m23s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,49s,<none>,<none>,<none>,<none>
+========== DELIMETER: 236 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,90s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,90s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m24s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,50s,<none>,<none>,<none>,<none>
+========== DELIMETER: 237 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,91s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,91s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m25s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,51s,<none>,<none>,<none>,<none>
+========== DELIMETER: 238 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,92s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,92s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m26s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,52s,<none>,<none>,<none>,<none>
+========== DELIMETER: 239 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,93s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,93s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m27s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,53s,<none>,<none>,<none>,<none>
+========== DELIMETER: 240 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,94s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,94s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m28s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,54s,<none>,<none>,<none>,<none>
+========== DELIMETER: 241 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,95s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,95s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m29s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,55s,<none>,<none>,<none>,<none>
+========== DELIMETER: 242 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,96s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,96s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m30s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,56s,<none>,<none>,<none>,<none>
+========== DELIMETER: 243 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,97s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,97s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m31s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,57s,<none>,<none>,<none>,<none>
+========== DELIMETER: 244 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,98s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,98s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m32s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,58s,<none>,<none>,<none>,<none>
+========== DELIMETER: 245 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,99s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,99s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m33s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,59s,<none>,<none>,<none>,<none>
+========== DELIMETER: 246 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,100s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,100s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m34s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,60s,<none>,<none>,<none>,<none>
+========== DELIMETER: 247 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,101s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,101s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m35s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,61s,<none>,<none>,<none>,<none>
+========== DELIMETER: 248 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,102s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,102s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m36s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,62s,<none>,<none>,<none>,<none>
+========== DELIMETER: 249 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,103s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,103s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m37s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,63s,<none>,<none>,<none>,<none>
+========== DELIMETER: 250 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,104s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,104s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m38s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,64s,<none>,<none>,<none>,<none>
+========== DELIMETER: 251 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,105s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,105s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m39s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,65s,<none>,<none>,<none>,<none>
+========== DELIMETER: 252 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,106s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,106s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m40s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,66s,<none>,<none>,<none>,<none>
+========== DELIMETER: 253 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,107s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,107s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m41s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,67s,<none>,<none>,<none>,<none>
+========== DELIMETER: 254 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,108s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,108s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m42s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,68s,<none>,<none>,<none>,<none>
+========== DELIMETER: 255 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,109s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,109s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m43s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,69s,<none>,<none>,<none>,<none>
+========== DELIMETER: 256 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,110s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,110s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m44s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,70s,<none>,<none>,<none>,<none>
+========== DELIMETER: 257 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,111s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,111s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m45s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,71s,<none>,<none>,<none>,<none>
+========== DELIMETER: 258 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,112s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,112s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m46s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,72s,<none>,<none>,<none>,<none>
+========== DELIMETER: 259 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,113s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,113s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m47s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,73s,<none>,<none>,<none>,<none>
+========== DELIMETER: 260 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,114s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,114s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m48s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,74s,<none>,<none>,<none>,<none>
+========== DELIMETER: 261 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,115s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,115s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m49s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,75s,<none>,<none>,<none>,<none>
+========== DELIMETER: 262 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,116s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,116s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m50s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,76s,<none>,<none>,<none>,<none>
+========== DELIMETER: 263 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,117s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,117s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m51s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,77s,<none>,<none>,<none>,<none>
+========== DELIMETER: 264 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,118s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,118s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m52s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,78s,<none>,<none>,<none>,<none>
+========== DELIMETER: 265 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,119s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,119s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m53s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,79s,<none>,<none>,<none>,<none>
+========== DELIMETER: 266 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m54s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,80s,<none>,<none>,<none>,<none>
+========== DELIMETER: 267 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m1s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m1s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m55s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,81s,<none>,<none>,<none>,<none>
+========== DELIMETER: 268 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m2s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m2s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m56s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-m8t4j,0/1,Pending,0,82s,<none>,<none>,<none>,<none>
+========== DELIMETER: 269 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m3s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m3s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m57s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 270 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m4s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m4s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m58s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 271 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m5s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m5s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,2m59s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 272 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m6s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m6s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 273 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m7s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m7s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m1s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 274 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m8s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m8s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m2s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 275 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m9s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m9s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m3s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 276 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m10s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m10s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m4s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 277 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m11s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m11s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m5s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 278 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m12s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m12s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m6s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 279 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m13s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m13s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m7s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 280 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m14s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m14s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m8s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 281 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m15s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m15s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m9s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 282 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m16s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m16s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m10s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 283 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m17s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m17s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m11s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 284 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m18s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m18s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m12s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 285 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m19s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m19s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m13s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 286 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m20s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m20s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m14s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 287 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m21s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m21s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m15s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 288 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m22s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m22s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m16s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 289 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m23s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m23s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m17s,10.244.3.18,kind-worker,<none>,<none>
+========== DELIMETER: 290 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m24s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m24s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m18s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,1s,<none>,<none>,<none>,<none>
+========== DELIMETER: 291 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m25s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m25s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m19s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,2s,<none>,<none>,<none>,<none>
+========== DELIMETER: 292 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m26s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m26s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m20s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,3s,<none>,<none>,<none>,<none>
+========== DELIMETER: 293 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m27s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m27s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m21s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,4s,<none>,<none>,<none>,<none>
+========== DELIMETER: 294 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m28s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m28s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m22s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,5s,<none>,<none>,<none>,<none>
+========== DELIMETER: 295 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m29s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m29s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m23s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,6s,<none>,<none>,<none>,<none>
+========== DELIMETER: 296 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m30s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m30s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m24s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,7s,<none>,<none>,<none>,<none>
+========== DELIMETER: 297 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m31s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m31s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m25s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,8s,<none>,<none>,<none>,<none>
+========== DELIMETER: 298 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m32s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m32s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m26s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,9s,<none>,<none>,<none>,<none>
+========== DELIMETER: 299 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m33s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m33s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m27s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,10s,<none>,<none>,<none>,<none>
+========== DELIMETER: 300 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m35s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m35s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m29s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,12s,<none>,<none>,<none>,<none>
+========== DELIMETER: 301 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m36s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m36s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m30s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,13s,<none>,<none>,<none>,<none>
+========== DELIMETER: 302 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m37s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m37s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m31s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,14s,<none>,<none>,<none>,<none>
+========== DELIMETER: 303 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m38s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m38s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m32s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,15s,<none>,<none>,<none>,<none>
+========== DELIMETER: 304 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m39s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m39s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m33s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,16s,<none>,<none>,<none>,<none>
+========== DELIMETER: 305 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m40s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m40s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m34s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,17s,<none>,<none>,<none>,<none>
+========== DELIMETER: 306 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m41s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m41s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m35s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,18s,<none>,<none>,<none>,<none>
+========== DELIMETER: 307 ==========
+NAME,READY,STATUS,RESTARTS,AGE,IP,NODE,NOMINATED,NODE,READINESS,GATES
+php-apache-57f7b9444-j6sxd,1/1,Running,0,2m42s,10.244.2.16,kind-worker3,<none>,<none>
+php-apache-57f7b9444-jxd4h,1/1,Running,0,2m42s,10.244.2.15,kind-worker3,<none>,<none>
+php-apache-57f7b9444-qcfpv,1/1,Running,0,3m36s,10.244.3.18,kind-worker,<none>,<none>
+php-apache-79c8455955-96458,0/1,Pending,0,19s,<none>,<none>,<none>,<none>
+========== DELIMETER: 308 ==========
