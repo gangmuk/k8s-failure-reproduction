@@ -741,8 +741,18 @@ log file is subject to the verbosity level set in kube-scheduler config. However
 ---
 
 ## Apply linux tc to a pod.
-To use tc command inside pod. You have to add `NET_ADMIN` capability. `securityContext` should be under `spec.template.spec.container`.
-This is deployment yaml file.
+**Goal: Make the metrics-server cannot reach a specific pod so it calculates the wrong average CPU utilization.**
+TL;DR
+**`tc` command cannot stop metrics-server from getting the CPU utilization telemetry from that pod.**
+
+If the pod does not have `NET_ADMIN` capability, you are not able to run `tc` command. You will see the error.
+```shell
+RTNETLINK answers: Operation not permitted
+```
+
+To use `tc` command inside pod. You have to add `NET_ADMIN` capability. `securityContext` should be under `spec.template.spec.container`.
+This is **deployment** yaml file. Again it is not pod yaml config.
+
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -767,4 +777,394 @@ spec:
                 - NET_ADMIN
 ```
 
-Now pods belonging to this deployment can run tc command inside.
+Now pods belonging to this deployment can run `tc` command.
+
+#### How to get the name and the ip of a specific pod.
+
+To specify a pod, you need to know the label of the target pod.
+
+We have two php-apache pod.
+```shell
+kubectl get pods -o wide
+NAME                          READY   STATUS    RESTARTS   AGE   IP             NODE                           NOMINATED NODE   READINESS GATES
+php-apache-55d8b696c9-fj7q2   1/1     Running   0          22s   10.244.3.52    three-worker-cluster-worker    <none>           <none>
+php-apache-55d8b696c9-zmwtt   1/1     Running   0          22s   10.244.1.159   three-worker-cluster-worker2   <none>           <none>
+```
+
+As an example, let's check the yaml config file of the first php-apache pod. To see the current config, run the following command.
+```shell
+kubectl edit pod php-apache-55d8b696c9-fj7q2
+```
+
+You can find the `labels` under `metadata.labels`.
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2023-04-03T17:22:17Z"
+  generateName: php-apache-55d8b696c9-
+  labels:
+    pod-template-hash: 55d8b696c9
+    run: php-apache
+  name: php-apache-55d8b696c9-fj7q2
+  namespace: default
+  ...
+spec:
+  containers:
+  - image: registry.k8s.io/hpa-example
+    ...
+    securityContext:
+      capabilities:
+        add:
+        - NET_ADMIN
+    ...
+status:
+  ...
+  hostIP: 172.18.0.5
+  phase: Running
+  podIP: 10.244.3.52
+  ...
+```
+
+
+php-apache pod has two key-value pairs for this pod. Different pods have different number of pairs of key-value label. Now we are ready to select this pod specifically.
+`-l=....` part finds the pod with that label.
+In this case, I don't include the first label which is `pod-template-hash: 55d8b696c9` but you can by simply giving two labels. `-l=run=php-apache,pod-template-hash=55d8b696c9`.
+```shell
+php_pod_ip=$(kubectl get pod $(kubectl get pods -l=run=php-apache -o jsonpath='{.items[0].metadata.name}') -o jsonpath='{.status.podIP}')
+```
+
+The most inner part.
+```shell
+kubectl get pods -l=run=php-apache -o jsonpath='{.items[0].metadata.name}'
+php-apache-55d8b696c9-fj7q2
+```
+You can get the second pod name by changing the index of items[*].
+```shell
+kubectl get pods -l=run=php-apache -o jsonpath='{.items[1].metadata.name}'
+php-apache-55d8b696c9-zmwtt
+```
+
+The outer part.
+```shell
+kubectl get pod $(kubectl get pods -l=run=php-apache -o jsonpath='{.items[0].metadata.name}') -o jsonpath='{.status.podIP}'
+```
+is equal to 
+```shell
+kubectl get pod php-apache-55d8b696c9-fj7q2 -o jsonpath='{.status.podIP}'
+10.244.3.52
+```
+The pod ip is under `status.podIP`.
+
+It returns the pod ip which is what we want!
+
+#### linux tc command
+
+```shell
+# delete existing qdisc rules
+kubectl exec --stdin --tty pod/${php_pod_name} -- tc qdisc del dev eth0 root;
+
+# add 50ms network delay outgoing from the specific php_pod to metrics_server_pod_ip
+kubectl exec --stdin --tty pod/${php_pod_name} -- tc qdisc add dev eth0 root handle 1: prio;
+kubectl exec --stdin --tty pod/${php_pod_name} -- tc filter add dev eth0 parent 1:0 protocol ip prio 1 u32 match ip dst ${metrics_server_pod_ip} flowid 2:1;
+kubectl exec --stdin --tty pod/${php_pod_name} -- tc qdisc add dev eth0 parent 1:1 handle 2: netem delay 50ms;
+
+# 100% packet loss outgoing from the specific php_pod.
+# kubectl exec --stdin --tty pod/${php_pod_name} -- tc qdisc add dev eth0 parent 1:1 handle 2: netem loss 100%;
+```
+
+You can run command inside a specific pod by running `kubectl exec --stdin --tty -- [command]`.
+
+**However, at the end of the day `tc` command fails to stop metrics-server from getting the CPU utilization telemetry from that pod.**
+
+---
+
+### How to delete the network interface of a docker container
+
+Check network interface.
+`ip address`
+Remember node in kind-cluster is docker container.
+
+This is an example of network interface of kind worker node.
+
+```shell
+$ docker exec three-worker-cluster-worker2 ip address
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+15: eth0@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default
+    link/ether 02:42:ac:12:00:06 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 172.18.0.6/16 brd 172.18.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fc00:f853:ccd:e793::6/64 scope global nodad
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:acff:fe12:6/64 scope link
+       valid_lft forever preferred_lft forever
+24: veth7237c85f@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default
+    link/ether 9a:4d:cd:3b:d4:0e brd ff:ff:ff:ff:ff:ff link-netns cni-75bcde94-0355-a9bb-6a23-5a9e65926046
+    inet 10.244.1.1/32 scope global veth7237c85f
+       valid_lft forever preferred_lft forever
+160: vetha08b96db@if2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default
+    link/ether 3a:2d:cc:77:da:54 brd ff:ff:ff:ff:ff:ff link-netns cni-0aac6dd9-0348-baa6-476e-bad55d4f1b61
+    inet 10.244.1.1/32 scope global vetha08b96db
+       valid_lft forever preferred_lft forever
+```
+We have four network interfaces, `lo`, `eth0`, `veth7237c85f`, `vetha08b96db`.
+
+To make the node unreachable, we deleted the specific ip address, 172.18.0.5/16 from the `eth0` interface in the node.
+```shell
+docker exec three-worker-cluster-worker ip address del 172.18.0.5/16 dev eth0
+```
+However, the node was still reachable. Meaning, we can find the node `Ready` when we run `kubectl get nodes` command.
+
+As a second trial, I deleted the `eth0` interface,
+```shell
+docker exec three-worker-cluster-worker ip link delete eth0
+```
+
+However, the node was still reachable. Meaning, we can find the node `Ready` when we run `kubectl get nodes` command.
+
+
+As a third trial, I deleted the next interface, `veth7238c85f`. 
+```shell
+docker exec three-worker-cluster-worker ip link delete veth9f6df54a
+```
+
+Then the status of this node become `NotReady`.
+```shell
+kubectl get nodes
+NAME                                 STATUS     ROLES           AGE   VERSION
+three-worker-cluster-control-plane   Ready      control-plane   22d   v1.25.3
+three-worker-cluster-worker          NotReady   <none>          22d   v1.25.3
+three-worker-cluster-worker2         Ready      <none>          22d   v1.25.3
+three-worker-cluster-worker3         Ready      <none>          22d   v1.25.3
+```
+
+We found an interesting thing. The new pod was created and scheduled in another healthy node but the pod running in that this node falls in the infinite `Terminating` status.
+
+```shell
+$ kubectl get pods -o wide
+
+NAME                          READY   STATUS        RESTARTS   AGE    IP             NODE                           NOMINATED NODE   READINESS GATES
+php-apache-55d8b696c9-9x2lt   1/1     Running       0          23h    10.244.2.237   three-worker-cluster-worker3   <none>           <none>
+php-apache-55d8b696c9-fj7q2   1/1     Terminating   0          2d4h   10.244.3.52    three-worker-cluster-worker    <none>           <none>
+php-apache-55d8b696c9-zmwtt   1/1     Running       0          2d4h   10.244.1.159   three-worker-cluster-worker2   <none>           <none>
+```
+
+And kube-system namespace pods running in that nodes are still running and not terminated for some reason.
+```shell
+$ kubectl get pods -n kube-system -o wide
+
+NAME                                                         READY   STATUS    RESTARTS      AGE   IP            NODE                                 NOMINATED NODE   READINESS GATES
+coredns-565d847f94-jjqv8                                     1/1     Running   0             22d   10.244.0.3    three-worker-cluster-control-plane   <none>           <none>
+kindnet-77bh2                                                1/1     Running   2 (23h ago)   22d   172.18.0.5    three-worker-cluster-worker          <none>           <none>
+kube-proxy-4zpsm                                             1/1     Running   0             22d   172.18.0.5    three-worker-cluster-worker          <none>           <none>
+...
+```
+
+I tried to restart the `NotReady` node.
+```shell
+$ kubectl drain three-worker-cluster-worker --ignore-daemonsets
+
+node/three-worker-cluster-worker cordoned
+WARNING: ignoring DaemonSet-managed Pods: kube-system/kindnet-77bh2, kube-system/kube-proxy-4zpsm
+evicting pod default/php-apache-55d8b696c9-fj7q2
+$ (hanging here)
+```
+If you look at the log, it says "cordoned" which is different from shutdown. (There is uncordon command that brings the node back.)
+
+Btw, you cannot drain the node without `-ignore-daemonsets` flag because kube-system pods are running in the node. To force the drain, you need that flag.
+```shell
+$ kubectl drain three-worker-cluster-worker
+
+node/three-worker-cluster-worker already cordoned
+error: unable to drain node "three-worker-cluster-worker" due to error:cannot delete DaemonSet-managed Pods (use --ignore-daemonsets to ignore): kube-system/kindnet-77bh2, kube-system/kube-proxy-4zpsm, continuing command...
+There are pending nodes to be drained:
+ three-worker-cluster-worker
+cannot delete DaemonSet-managed Pods (use --ignore-daemonsets to ignore): kube-system/kindnet-77bh2, kube-system/kube-proxy-4zpsm
+```
+
+Options for drain command.
+```shell
+--force[=false]: Continue even if there are pods not managed by a ReplicationController, Job, or DaemonSet.
+--grace-period=-1: Period of time in seconds given to each pod to terminate gracefully. If negative, the default value specified in the pod will be used.
+--ignore-daemonsets[=false]: Ignore DaemonSet-managed pods.
+```
+
+
+It never completed the drain command and hang there.
+
+I opened another terminal and checked the node stutus and it becomes `NotReady` and `SchedulingDisabled`.
+```shell
+kubectl get nodes
+
+NAME                                 STATUS                        ROLES           AGE   VERSION
+three-worker-cluster-control-plane   Ready                         control-plane   22d   v1.25.3
+three-worker-cluster-worker          NotReady,SchedulingDisabled   <none>          22d   v1.25.3
+three-worker-cluster-worker2         Ready                         <none>          22d   v1.25.3
+three-worker-cluster-worker3         Ready                         <none>          22d   v1.25.3
+```
+
+However the pod in the node (php-apache-55d8b696c9-fj7q2) was never deleted and still `Terminating.
+```shell
+kubectl get pods -o wide
+
+NAME                          READY   STATUS        RESTARTS   AGE    IP             NODE                           NOMINATED NODE   READINESS GATES
+php-apache-55d8b696c9-9x2lt   1/1     Running       0          23h    10.244.2.237   three-worker-cluster-worker3   <none>           <none>
+php-apache-55d8b696c9-fj7q2   1/1     Terminating   0          2d4h   10.244.3.52    three-worker-cluster-worker    <none>           <none>
+php-apache-55d8b696c9-zmwtt   1/1     Running       0          2d4h   10.244.1.159   three-worker-cluster-worker2   <none>           <none>
+```
+
+And the kube-system in the node is `Running` which does not make sense at all. It should have been terminated and rescheduled in another node.
+```shell
+$ kubectl get pods -n kube-system -o wide
+
+NAME                                                         READY   STATUS    RESTARTS      AGE   IP            NODE                                 NOMINATED NODE   READINESS GATES
+...
+kindnet-77bh2                                                1/1     Running   2 (23h ago)   22d   172.18.0.5    three-worker-cluster-worker          <none>           <none>
+kube-proxy-4zpsm                                             1/1     Running   0             22d   172.18.0.5    three-worker-cluster-worker          <none>           <none>
+...
+```
+
+You can bring the node back by executing `uncordon` command.
+```shell
+$ kubectl uncordon three-worker-cluster-worker
+
+node/three-worker-cluster-worker uncordoned
+```
+
+You can see the node is no long Unschedulable, meaning schedulable.
+But anyway this is not what I want. I want to shutdown the NotReady node and create a new one which will replace the shutdown node.
+```shell
+$ kubectl get nodes
+
+NAME                                 STATUS     ROLES           AGE   VERSION
+three-worker-cluster-control-plane   Ready      control-plane   22d   v1.25.3
+three-worker-cluster-worker          NotReady   <none>          22d   v1.25.3
+three-worker-cluster-worker2         Ready      <none>          22d   v1.25.3
+three-worker-cluster-worker3         Ready      <none>          22d   v1.25.3
+```
+
+#### drain, cordon, uncordon
+1. Drain node
+   - This will mark the node as unschedulable and also evict pods on the node.
+2. cordon node
+   - Mark node as unschedulable.
+3. uncordon node
+   - Mark node as schedulable again.
+
+Actually drain is not deletion.
+
+So I deleted the node
+```shell
+$ kubectl delete node three-worker-cluster-worker
+
+node "three-worker-cluster-worker" deleted
+```
+
+Now we don't see the `three-worker-cluster-worker` node anymore.
+```shell
+$ kubectl get nodes
+
+NAME                                 STATUS   ROLES           AGE   VERSION
+three-worker-cluster-control-plane   Ready    control-plane   22d   v1.25.3
+three-worker-cluster-worker2         Ready    <none>          22d   v1.25.3
+three-worker-cluster-worker3         Ready    <none>          22d   v1.25.3
+```
+
+The pod `php-apache-55d8b696c9-fj7q2` is also terminated.
+```shell
+$ kubectl get pods -o wide
+
+NAME                          READY   STATUS    RESTARTS   AGE    IP             NODE                           NOMINATED NODE   READINESS GATES
+php-apache-55d8b696c9-9x2lt   1/1     Running   0          24h    10.244.2.237   three-worker-cluster-worker3   <none>           <none>
+php-apache-55d8b696c9-zmwtt   1/1     Running   0          2d4h   10.244.1.159   three-worker-cluster-worker2   <none>           <none>
+```
+
+Now I want to add a new node to this cluster. However, it is not supported by the KinD.
+
+---
+
+### Creating pod latency
+
+##### When the image was pulled.
+It actually takes very long time when the images need to be pulled.
+```shell
+$ kubectl get pods
+
+NAME                          READY   STATUS              RESTARTS   AGE
+php-apache-7654df5976-85crd   0/1     ContainerCreating   0          58s
+php-apache-7654df5976-h6gd9   0/1     ContainerCreating   0          58s
+php-apache-7654df5976-tpvzd   0/1     ContainerCreating   0          58s
+
+$ kubectl get pods
+
+NAME                          READY   STATUS    RESTARTS   AGE
+php-apache-7654df5976-85crd   1/1     Running   0          81s
+php-apache-7654df5976-h6gd9   1/1     Running   0          81s
+php-apache-7654df5976-tpvzd   1/1     Running   0          81s
+```
+
+##### When the image is present locally.
+`registry.k8s.io/hpa-example` container takes ~5s to become `Running` status.
+```shell
+$ kubectl get pods -o wide
+NAME                          READY   STATUS              RESTARTS   AGE   IP           NODE           NOMINATED NODE   READINESS GATES
+php-apache-79c8455955-6xw8v   1/1     Running             0          5s    10.244.1.7   kind-worker2   <none>           <none>
+php-apache-79c8455955-8c6ll   0/1     ContainerCreating   0          5s    <none>       kind-worker3   <none>           <none>
+php-apache-79c8455955-97jdw   0/1     ContainerCreating   0          5s    <none>       kind-worker    <none>           <none>
+php-apache-79c8455955-lvvl6   0/1     ContainerCreating   0          5s    <none>       kind-worker    <none>           <none>
+```
+
+
+---
+
+### Make the node unreachable by stopping kubelet
+
+```shell
+kubectl drain kind-worker3 --ignore-daemonsets
+docker exec -it kind-worker3 /bin/bas
+systemctl stop kubelet
+```
+
+---
+
+### I deleted the kindnet-xxx pod and it is never created again.
+
+```shell
+
+kubectl get pods -n kube-system -o wide
+
+NAME                                         READY   STATUS              RESTARTS      AGE     IP           NODE                 NOMINATED NODE   READINESS GATES
+...
+kindnet-648zh                                1/1     Running             0             7h9m    172.18.0.4   kind-worker          <none>           <none>
+kindnet-ctl8s                                0/1     ContainerCreating   0             4m47s   172.18.0.5   kind-worker2         <none>           <none>
+kindnet-f547w                                1/1     Running             0             7h9m    172.18.0.3   kind-worker3         <none>           <none>
+kindnet-grx2w                                1/1     Running             1 (81m ago)   7h10m   172.18.0.2   kind-control-plane   <none>           <none>
+...
+```
+
+Because there is no kindnet pod running in kind-worker2 node, any pod fails to be scheduled to this node.
+```shell
+$ kubectl get pods -o wide
+NAME                          READY   STATUS              RESTARTS   AGE   IP            NODE           NOMINATED NODE   READINESS GATES
+php-apache-79c8455955-48bkf   1/1     Running             0          11m   10.244.3.23   kind-worker    <none>           <none>
+php-apache-79c8455955-976rd   1/1     Running             0          11m   10.244.2.20   kind-worker3   <none>           <none>
+php-apache-79c8455955-kq4xk   0/1     ContainerCreating   0          11m   <none>        kind-worker2   <none>           <none>
+```
+
+##### Solution
+Go into that node and restart the kubelet.
+
+```shell
+docker exec -it kind-worker2 /bin/bash
+# systemctl restart systemd-logind
+# systemctl restart dbus
+systemctl restart kubelet # You only need to restart the kubelet.
+# systemctl restart dnsmasq NetworkManager
+# systemctl restart atomic-openshift-node.service
+```
