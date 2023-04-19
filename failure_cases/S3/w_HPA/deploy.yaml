@@ -21,7 +21,6 @@ spec:
             cpu: 500m
           requests:
             cpu: 200m
-
       topologySpreadConstraints:
       - maxSkew: 1
         topologyKey: zone
@@ -35,16 +34,15 @@ spec:
         labelSelector:
           matchLabels:
             run: php-apache
-
-#---
-#apiVersion: v1
-#kind: Service
-#metadata:
-#  name: php-apache
-#  labels:
-#    run: php-apache
-#spec:
-#  ports:
-#  - port: 80
-#  selector:
-#    run: php-apache
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: php-apache
+  labels:
+    run: php-apache
+spec:
+  ports:
+  - port: 80
+  selector:
+    run: php-apache
