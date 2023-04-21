@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ubuntu-wget
+  labels:
+    app: ubuntu-wget
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ubuntu-wget
+  template:
+    metadata:
+      labels:
+        app: ubuntu-wget
+    spec:
+      containers:
+      - name: ubuntu-wget
+        image: gangmuk/ubuntu-wget:v2
+        imagePullPolicy: IfNotPresent
+        command: ['bash', '-c', 'sleep 14400']
+        securityContext:
+            capabilities:
+              add:
+                - NET_ADMIN
+      tolerations:
+      - key: "key1"
+        operator: "Equal"
+        value: "value1"
+        effect: "NoSchedule"
+      nodeName: kind-worker

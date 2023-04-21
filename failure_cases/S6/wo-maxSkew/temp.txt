@@ -1,0 +1,1093 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T18:10:35Z",
+            "involvedObject": {
+                "kind": "Node",
+                "name": "kind-worker",
+                "uid": "kind-worker"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:41:35Z",
+            "message": "Node kind-worker status is now: NodeNotSchedulable",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:41:35Z",
+                "name": "kind-worker.1758059da30caa4f",
+                "namespace": "default",
+                "resourceVersion": "1014111",
+                "uid": "04b39c58-7ff4-4f06-83de-8efa23ebfd4e"
+            },
+            "reason": "NodeNotSchedulable",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 3,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T18:11:18Z",
+            "involvedObject": {
+                "kind": "Node",
+                "name": "kind-worker3",
+                "uid": "kind-worker3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:55:54Z",
+            "message": "Node kind-worker3 status is now: NodeNotSchedulable",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:26Z",
+                "name": "kind-worker3.175805a79b839097",
+                "namespace": "default",
+                "resourceVersion": "1015426",
+                "uid": "76168700-b13f-4aa4-bf7f-75286b3fd150"
+            },
+            "reason": "NodeNotSchedulable",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T18:11:49Z",
+            "involvedObject": {
+                "kind": "Node",
+                "name": "kind-worker3",
+                "uid": "kind-worker3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:41:28Z",
+            "message": "Node kind-worker3 status is now: NodeSchedulable",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:41:28Z",
+                "name": "kind-worker3.175805aecb1edc1a",
+                "namespace": "default",
+                "resourceVersion": "1014068",
+                "uid": "1baab3ab-6c90-46a2-a970-ccca6e62afac"
+            },
+            "reason": "NodeSchedulable",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-04-21T19:40:07.408918Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-gbhbw",
+                "namespace": "default",
+                "resourceVersion": "1013898",
+                "uid": "c6569b1a-c6d5-44ce-b0e9-8fc86a39ad1c"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/php-apache-698db99f59-gbhbw to kind-worker3",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:07Z",
+                "name": "php-apache-698db99f59-gbhbw.17580a8066293f58",
+                "namespace": "default",
+                "resourceVersion": "1013904",
+                "uid": "20b364c3-c239-4c7f-bea7-6a5cb4ab7c84"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:08Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-gbhbw",
+                "namespace": "default",
+                "resourceVersion": "1013901",
+                "uid": "c6569b1a-c6d5-44ce-b0e9-8fc86a39ad1c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:08Z",
+            "message": "Pulling image \"registry.k8s.io/hpa-example\"",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:08Z",
+                "name": "php-apache-698db99f59-gbhbw.17580a80b128b579",
+                "namespace": "default",
+                "resourceVersion": "1013909",
+                "uid": "99b48ce1-b1e4-4188-975e-d4c73fef4db1"
+            },
+            "reason": "Pulling",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-gbhbw",
+                "namespace": "default",
+                "resourceVersion": "1013901",
+                "uid": "c6569b1a-c6d5-44ce-b0e9-8fc86a39ad1c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:09Z",
+            "message": "Successfully pulled image \"registry.k8s.io/hpa-example\" in 829.277239ms",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:09Z",
+                "name": "php-apache-698db99f59-gbhbw.17580a80e29714f1",
+                "namespace": "default",
+                "resourceVersion": "1013911",
+                "uid": "20b9b685-cdcc-4772-aa63-1925c0a6c0e5"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-gbhbw",
+                "namespace": "default",
+                "resourceVersion": "1013901",
+                "uid": "c6569b1a-c6d5-44ce-b0e9-8fc86a39ad1c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:09Z",
+            "message": "Created container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:09Z",
+                "name": "php-apache-698db99f59-gbhbw.17580a80f47a07aa",
+                "namespace": "default",
+                "resourceVersion": "1013912",
+                "uid": "8c4b0067-8e37-49fe-9945-f464da298f13"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-gbhbw",
+                "namespace": "default",
+                "resourceVersion": "1013901",
+                "uid": "c6569b1a-c6d5-44ce-b0e9-8fc86a39ad1c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:10Z",
+            "message": "Started container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:10Z",
+                "name": "php-apache-698db99f59-gbhbw.17580a810d10a3a4",
+                "namespace": "default",
+                "resourceVersion": "1013914",
+                "uid": "8a36daa6-91d5-4acd-876f-9151d1d7ffe8"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-gbhbw",
+                "namespace": "default",
+                "resourceVersion": "1013901",
+                "uid": "c6569b1a-c6d5-44ce-b0e9-8fc86a39ad1c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:23Z",
+            "message": "Stopping container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:23Z",
+                "name": "php-apache-698db99f59-gbhbw.17580a842c896d82",
+                "namespace": "default",
+                "resourceVersion": "1013946",
+                "uid": "1ae76796-2b84-424b-86b6-db08c22769d9"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-04-21T19:40:23.778435Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-ljdc4",
+                "namespace": "default",
+                "resourceVersion": "1013943",
+                "uid": "113e2499-18f1-4e38-97bd-b019d03ce791"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/php-apache-698db99f59-ljdc4 to kind-worker",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:23Z",
+                "name": "php-apache-698db99f59-ljdc4.17580a8435dbe3ae",
+                "namespace": "default",
+                "resourceVersion": "1013950",
+                "uid": "3793c10d-aff3-4025-82a5-ef9d8b06e512"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-ljdc4",
+                "namespace": "default",
+                "resourceVersion": "1013949",
+                "uid": "113e2499-18f1-4e38-97bd-b019d03ce791"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:25Z",
+            "message": "Pulling image \"registry.k8s.io/hpa-example\"",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:25Z",
+                "name": "php-apache-698db99f59-ljdc4.17580a849cc01119",
+                "namespace": "default",
+                "resourceVersion": "1013958",
+                "uid": "a8b16688-4d6d-4815-8f75-ac7a20e3e8bc"
+            },
+            "reason": "Pulling",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:26Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-ljdc4",
+                "namespace": "default",
+                "resourceVersion": "1013949",
+                "uid": "113e2499-18f1-4e38-97bd-b019d03ce791"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:26Z",
+            "message": "Successfully pulled image \"registry.k8s.io/hpa-example\" in 782.017258ms",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:26Z",
+                "name": "php-apache-698db99f59-ljdc4.17580a84cb5da6a3",
+                "namespace": "default",
+                "resourceVersion": "1013964",
+                "uid": "8c745d1b-1fcb-4c52-b802-f241d0a52072"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:26Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-ljdc4",
+                "namespace": "default",
+                "resourceVersion": "1013949",
+                "uid": "113e2499-18f1-4e38-97bd-b019d03ce791"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:26Z",
+            "message": "Created container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:26Z",
+                "name": "php-apache-698db99f59-ljdc4.17580a84e571f467",
+                "namespace": "default",
+                "resourceVersion": "1013965",
+                "uid": "32de1adf-1e41-4dd9-9dc6-ceaad28b50b7"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:27Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-ljdc4",
+                "namespace": "default",
+                "resourceVersion": "1013949",
+                "uid": "113e2499-18f1-4e38-97bd-b019d03ce791"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:27Z",
+            "message": "Started container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:27Z",
+                "name": "php-apache-698db99f59-ljdc4.17580a84f96d5ec0",
+                "namespace": "default",
+                "resourceVersion": "1013969",
+                "uid": "e5328329-d5a8-437c-a66b-5319ade0154d"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:41:29Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-ljdc4",
+                "namespace": "default",
+                "resourceVersion": "1013949",
+                "uid": "113e2499-18f1-4e38-97bd-b019d03ce791"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:41:31Z",
+            "message": "Stopping container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:41:29Z",
+                "name": "php-apache-698db99f59-ljdc4.17580a938d521092",
+                "namespace": "default",
+                "resourceVersion": "1014093",
+                "uid": "481b7f52-0a49-434d-a870-5affeea052b3"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-04-21T19:41:29.802494Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-nhtm5",
+                "namespace": "default",
+                "resourceVersion": "1014077",
+                "uid": "682acf83-2061-4b5d-ab2e-b1934c42d1ff"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/php-apache-698db99f59-nhtm5 to kind-worker3",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:41:29Z",
+                "name": "php-apache-698db99f59-nhtm5.17580a9395335fa7",
+                "namespace": "default",
+                "resourceVersion": "1014082",
+                "uid": "9a0ec91e-6cae-482a-b831-6e1d3c45f732"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:41:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-nhtm5",
+                "namespace": "default",
+                "resourceVersion": "1014080",
+                "uid": "682acf83-2061-4b5d-ab2e-b1934c42d1ff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:41:31Z",
+            "message": "Pulling image \"registry.k8s.io/hpa-example\"",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:41:31Z",
+                "name": "php-apache-698db99f59-nhtm5.17580a93f72c40d1",
+                "namespace": "default",
+                "resourceVersion": "1014092",
+                "uid": "0e634382-c2f8-4c96-a1a3-b69be1a3105e"
+            },
+            "reason": "Pulling",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:41:32Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-nhtm5",
+                "namespace": "default",
+                "resourceVersion": "1014080",
+                "uid": "682acf83-2061-4b5d-ab2e-b1934c42d1ff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:41:32Z",
+            "message": "Successfully pulled image \"registry.k8s.io/hpa-example\" in 781.93192ms",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:41:32Z",
+                "name": "php-apache-698db99f59-nhtm5.17580a9425c84484",
+                "namespace": "default",
+                "resourceVersion": "1014096",
+                "uid": "be909e82-ec3d-48ae-80f2-c53379e0178d"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:41:32Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-nhtm5",
+                "namespace": "default",
+                "resourceVersion": "1014080",
+                "uid": "682acf83-2061-4b5d-ab2e-b1934c42d1ff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:41:32Z",
+            "message": "Created container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:41:32Z",
+                "name": "php-apache-698db99f59-nhtm5.17580a943f36ef2e",
+                "namespace": "default",
+                "resourceVersion": "1014098",
+                "uid": "f6211409-b073-46c1-a87b-90b43e74f0fa"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:41:33Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-nhtm5",
+                "namespace": "default",
+                "resourceVersion": "1014080",
+                "uid": "682acf83-2061-4b5d-ab2e-b1934c42d1ff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:41:33Z",
+            "message": "Started container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:41:33Z",
+                "name": "php-apache-698db99f59-nhtm5.17580a945622ce30",
+                "namespace": "default",
+                "resourceVersion": "1014100",
+                "uid": "a6169dc0-3372-4cb2-8b35-d812a2e89efd"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:55:48Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-nhtm5",
+                "namespace": "default",
+                "resourceVersion": "1014080",
+                "uid": "682acf83-2061-4b5d-ab2e-b1934c42d1ff"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:55:48Z",
+            "message": "Stopping container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:55:48Z",
+                "name": "php-apache-698db99f59-nhtm5.17580b5b89ab93b2",
+                "namespace": "default",
+                "resourceVersion": "1015394",
+                "uid": "03781b4b-9860-4ab9-9fa8-9eef8d81fa0f"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-04-21T19:55:48.742138Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-x7zxn",
+                "namespace": "default",
+                "resourceVersion": "1015395",
+                "uid": "96ea60ec-f29c-4421-855e-a958b476b836"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/php-apache-698db99f59-x7zxn to kind-worker2",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:55:48Z",
+                "name": "php-apache-698db99f59-x7zxn.17580b5b91ffa37b",
+                "namespace": "default",
+                "resourceVersion": "1015399",
+                "uid": "dbd41bb4-544b-4d4e-812f-f6c0bd0507be"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:55:50Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-x7zxn",
+                "namespace": "default",
+                "resourceVersion": "1015397",
+                "uid": "96ea60ec-f29c-4421-855e-a958b476b836"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:55:50Z",
+            "message": "Pulling image \"registry.k8s.io/hpa-example\"",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:55:50Z",
+                "name": "php-apache-698db99f59-x7zxn.17580b5bdee26b59",
+                "namespace": "default",
+                "resourceVersion": "1015405",
+                "uid": "1f3da309-c102-4489-be38-a8bf848a0495"
+            },
+            "reason": "Pulling",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:55:50Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-x7zxn",
+                "namespace": "default",
+                "resourceVersion": "1015397",
+                "uid": "96ea60ec-f29c-4421-855e-a958b476b836"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:55:50Z",
+            "message": "Successfully pulled image \"registry.k8s.io/hpa-example\" in 938.955767ms",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:55:50Z",
+                "name": "php-apache-698db99f59-x7zxn.17580b5c16da7144",
+                "namespace": "default",
+                "resourceVersion": "1015412",
+                "uid": "bb5e8417-926a-4547-8cbf-12bce39d1bc0"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:55:51Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-x7zxn",
+                "namespace": "default",
+                "resourceVersion": "1015397",
+                "uid": "96ea60ec-f29c-4421-855e-a958b476b836"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:55:51Z",
+            "message": "Created container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:55:51Z",
+                "name": "php-apache-698db99f59-x7zxn.17580b5c28b6d88e",
+                "namespace": "default",
+                "resourceVersion": "1015413",
+                "uid": "a3032962-9924-4c19-9c47-88c4ee45cbba"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:55:51Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-698db99f59-x7zxn",
+                "namespace": "default",
+                "resourceVersion": "1015397",
+                "uid": "96ea60ec-f29c-4421-855e-a958b476b836"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:55:51Z",
+            "message": "Started container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:55:51Z",
+                "name": "php-apache-698db99f59-x7zxn.17580b5c3e901d0b",
+                "namespace": "default",
+                "resourceVersion": "1015415",
+                "uid": "84df7223-a455-44de-bb64-913b4954d899"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "php-apache-698db99f59",
+                "namespace": "default",
+                "resourceVersion": "1013895",
+                "uid": "22dc8287-a305-4255-b15e-82e6240155f5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:07Z",
+            "message": "Created pod: php-apache-698db99f59-gbhbw",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:07Z",
+                "name": "php-apache-698db99f59.17580a80648a4c35",
+                "namespace": "default",
+                "resourceVersion": "1013902",
+                "uid": "0879ddca-791b-4c4c-833c-388dfde85037"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:23Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "php-apache-698db99f59",
+                "namespace": "default",
+                "resourceVersion": "1013919",
+                "uid": "22dc8287-a305-4255-b15e-82e6240155f5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:23Z",
+            "message": "Created pod: php-apache-698db99f59-ljdc4",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:23Z",
+                "name": "php-apache-698db99f59.17580a842e7dc7ce",
+                "namespace": "default",
+                "resourceVersion": "1013947",
+                "uid": "b4d584b3-6456-4ba7-99ca-b1b97d57a2af"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:41:29Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "php-apache-698db99f59",
+                "namespace": "default",
+                "resourceVersion": "1013973",
+                "uid": "22dc8287-a305-4255-b15e-82e6240155f5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:41:29Z",
+            "message": "Created pod: php-apache-698db99f59-nhtm5",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:41:29Z",
+                "name": "php-apache-698db99f59.17580a939357ba72",
+                "namespace": "default",
+                "resourceVersion": "1014078",
+                "uid": "a3013d0d-4889-4bd7-b283-3c437dc88386"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:55:48Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "php-apache-698db99f59",
+                "namespace": "default",
+                "resourceVersion": "1014106",
+                "uid": "22dc8287-a305-4255-b15e-82e6240155f5"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:55:48Z",
+            "message": "Created pod: php-apache-698db99f59-x7zxn",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:55:48Z",
+                "name": "php-apache-698db99f59.17580b5b907bd18b",
+                "namespace": "default",
+                "resourceVersion": "1015396",
+                "uid": "8d593611-10ed-425c-90ea-8d1658e1aea3"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:34:15Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-7654df5976-2x2w8",
+                "namespace": "default",
+                "resourceVersion": "1006696",
+                "uid": "5a5ce533-813f-47bc-9ba4-21305fb8352c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:34:17Z",
+            "message": "Stopping container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:34:15Z",
+                "name": "php-apache-7654df5976-2x2w8.17580a2e7510f176",
+                "namespace": "default",
+                "resourceVersion": "1013367",
+                "uid": "f143a22a-dd5d-4f23-ba3c-85c21632f2f9"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:34:15Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-7654df5976-69ws7",
+                "namespace": "default",
+                "resourceVersion": "1006688",
+                "uid": "a5b86bd6-2a52-4a2b-889e-8bce968c54fc"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:34:17Z",
+            "message": "Stopping container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:34:15Z",
+                "name": "php-apache-7654df5976-69ws7.17580a2e753c1958",
+                "namespace": "default",
+                "resourceVersion": "1013369",
+                "uid": "d45b9207-c7b2-4933-9ac3-edc20292782b"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:34:15Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{php-apache}",
+                "kind": "Pod",
+                "name": "php-apache-7654df5976-sjj5n",
+                "namespace": "default",
+                "resourceVersion": "1006608",
+                "uid": "508cafa8-b0f6-4fd3-858f-1266be067e23"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:34:17Z",
+            "message": "Stopping container php-apache",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:34:15Z",
+                "name": "php-apache-7654df5976-sjj5n.17580a2e730b23db",
+                "namespace": "default",
+                "resourceVersion": "1013370",
+                "uid": "57e2908d-3834-4afd-a9f7-9e644b10ac0e"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-04-21T19:40:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "php-apache",
+                "namespace": "default",
+                "resourceVersion": "1013893",
+                "uid": "f8096a57-1b82-491b-9529-32a0d54289eb"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-04-21T19:40:07Z",
+            "message": "Scaled up replica set php-apache-698db99f59 to 1",
+            "metadata": {
+                "creationTimestamp": "2023-04-21T19:40:07Z",
+                "name": "php-apache.17580a805b59ee6c",
+                "namespace": "default",
+                "resourceVersion": "1013897",
+                "uid": "54deeabb-b5cb-4734-be06-0994c652cd29"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

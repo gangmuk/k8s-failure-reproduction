@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: load-generator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: load-gen
+  template:
+    metadata:
+      labels:
+        app: load-gen
+    spec:
+      containers:
+      - name: busybox
+        image: busybox:1.28
+        command:
+            - /bin/sh
+#        ports:
+#        - containerPort: 80
+#        resources:
+#          limits:
+#            cpu: 500m
+#          requests:
+#            cpu: 200m
