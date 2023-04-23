@@ -18,7 +18,7 @@ def handler(signum, frame):
     p3 = subprocess.Popen("exec " + record_end_time, stdout=subprocess.PIPE, shell=True)
 
     print("Wait for it!")
-    time.sleep(1)
+    time.sleep(10)
 
     for p in log_kubelet_process:
         os.kill(p.pid, signal.SIGTERM)
