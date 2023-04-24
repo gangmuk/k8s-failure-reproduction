@@ -10,5 +10,6 @@ then
     exit
 fi
 
+
 fn=${CDT}-kubelet-${node_name}.log.txt
-docker exec -it ${node_name} journalctl -u kubelet > ${fn}
+docker exec -it ${node_name} journalctl -u kubelet --since "${UTC_J_10min_ago}" > ${fn}
