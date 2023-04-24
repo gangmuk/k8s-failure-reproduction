@@ -1,0 +1,4 @@
+Apr 24 04:09:18 kind-worker2 kubelet[297]: I0424 04:09:18.377675     297 topology_manager.go:200] "Topology Admit Handler"
+Apr 24 04:09:18 kind-worker2 kubelet[297]: E0424 04:09:18.377830     297 cpu_manager.go:394] "RemoveStaleState: removing container" podUID="93db7ffe-c150-4a6b-8f97-f536b53f0ec1" containerName="php-apache"
+Apr 24 04:09:18 kind-worker2 kubelet[297]: I0424 04:09:18.377894     297 memory_manager.go:345] "RemoveStaleState removing state" podUID="93db7ffe-c150-4a6b-8f97-f536b53f0ec1" containerName="php-apache"
+Apr 24 04:09:18 kind-worker2 kubelet[297]: I0424 04:09:18.453127     297 reconciler.go:342] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-qg5lt\" (UniqueName: \"kubernetes.io/projected/41881806-8164-4466-8450-6afb7eda60cf-kube-api-access-qg5lt\") pod \"php-apache-694bb77b6d-jzt6c\" (UID: \"41881806-8164-4466-8450-6afb7eda60cf\") " pod="default/php-apache-694bb77b6d-jzt6c"
