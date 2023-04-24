@@ -1,24 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: php-apache
   labels:
-    app: nginx
+    run: php-apache
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      run: php-apache
 
   template:
     metadata:
       labels:
-        app: nginx
+        run: php-apache
     spec:
-      # nodeName: three-worker-cluster-worker # The particular node is selected to schedule the replica.
       nodeName: kind-worker # The particular node is selected to schedule the replica.
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: php-apache
+        image: registry.k8s.io/hpa-example
         ports:
         - containerPort: 80
