@@ -20,21 +20,21 @@ def handler(signum, frame):
     p4 = subprocess.Popen("exec " + record_end_time, stdout=subprocess.PIPE, shell=True)
 
     print("Wait for it!")
-    time.sleep(10)
+    time.sleep(5)
 
-    for p in log_kubelet_process:
-        os.kill(p.pid, signal.SIGTERM)
-        print("kill process ", p.pid)
-    os.kill(p2.pid, signal.SIGTERM)
-    os.kill(p3.pid, signal.SIGTERM)
-    os.kill(p4.pid, signal.SIGTERM)
-    print("kill process ", p2.pid)
-    print("kill process ", p3.pid)
-    print("kill process ", p4.pid)
-    
-    for p in process_list:
-        print("kill process ", p.pid)
-        os.kill(p.pid, signal.SIGTERM)
+#    for p in log_kubelet_process:
+#        os.kill(p.pid, signal.SIGTERM)
+#        print("kill process ", p.pid)
+#    os.kill(p2.pid, signal.SIGTERM)
+#    os.kill(p3.pid, signal.SIGTERM)
+#    os.kill(p4.pid, signal.SIGTERM)
+#    print("kill process ", p2.pid)
+#    print("kill process ", p3.pid)
+#    print("kill process ", p4.pid)
+#    
+#    for p in process_list:
+#        print("kill process ", p.pid)
+#        os.kill(p.pid, signal.SIGTERM)
     exit(1)
  
 signal.signal(signal.SIGINT, handler)
