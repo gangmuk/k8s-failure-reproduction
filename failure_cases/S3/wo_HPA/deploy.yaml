@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: php-apache
   labels:
     foo: bar
 spec:
@@ -9,16 +9,19 @@ spec:
   selector:
     matchLabels:
       foo: bar
-
   template:
     metadata:
       labels:
         foo: bar
     spec:
       containers:
-      - image: nginx:1.14.2
+      - image: registry.k8s.io/hpa-example
         imagePullPolicy: IfNotPresent
-        name: nginx
+        name: php-apache
+        securityContext:
+            capabilities:
+              add:
+                - NET_ADMIN
         ports:
         - containerPort: 80
           protocol: TCP
