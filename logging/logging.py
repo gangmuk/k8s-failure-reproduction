@@ -13,9 +13,11 @@ def handler(signum, frame):
         log_kubelet_process.append(p) 
 
     log_getevent = "./bin/log_get_event.sh"
+    log_scheduler = "./bin/log_scheduler.sh"
     record_end_time = "./bin/record_end_time.sh"
     p2 = subprocess.Popen("exec " + log_getevent, stdout=subprocess.PIPE, shell=True)
-    p3 = subprocess.Popen("exec " + record_end_time, stdout=subprocess.PIPE, shell=True)
+    p3 = subprocess.Popen("exec " + log_scheduler, stdout=subprocess.PIPE, shell=True)
+    p4 = subprocess.Popen("exec " + record_end_time, stdout=subprocess.PIPE, shell=True)
 
     print("Wait for it!")
     time.sleep(10)
@@ -25,8 +27,10 @@ def handler(signum, frame):
         print("kill process ", p.pid)
     os.kill(p2.pid, signal.SIGTERM)
     os.kill(p3.pid, signal.SIGTERM)
+    os.kill(p4.pid, signal.SIGTERM)
     print("kill process ", p2.pid)
     print("kill process ", p3.pid)
+    print("kill process ", p4.pid)
     
     for p in process_list:
         print("kill process ", p.pid)
