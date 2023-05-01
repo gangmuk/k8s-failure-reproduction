@@ -5,8 +5,9 @@
 4. Make one php-pod (e.g., php-pod-1) unreachable from the node having load-generator pod.
     - There could be various way to make the pod or node unreachable. In this particular failure reproduction, we will use pakcet loss in linux tc command. All packets outbounding from the **node** having load generator to the **php-pod-1**. 
 5. Generate load.
-
-**BUT here is the problem. Since wget http request is close loop, it will be blocked by the response from php-pod-1.**
+    - Problem: **BUT here is the problem. Since wget http request is close loop, it will be blocked by the response from php-pod-1.**
+    - Solution: Run wget command with `&`. `&` linux command lets you run command in background. `php-pod-1` will not respond because we configure 100% packet loss. CPU utilization of `php-pod-1` will not change (0%). CPU utilization of `php-pod-2` will increase (e.g., 40%) since `php-pod-2` processes incoming requests. Solution is always so simple.
+    Then, the average CPU utilization calculated by HPA will be (40% + 0%)/2 = 20%. However, our expectation is 40% because we don't want to count `php-pod-1` as a part of active pod. Potentially controversial but this is our interpretation of this scenario. 
 
 6. See how HPA calculates the average CPU utilization.
     - Does HPA include pod-1 in the average CPU utilization calculation or not?

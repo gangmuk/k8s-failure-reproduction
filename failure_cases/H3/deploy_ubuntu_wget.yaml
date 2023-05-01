@@ -27,5 +27,5 @@ spec:
       - key: "key1"
         operator: "Equal"
         value: "value1"
-        effect: "NoSchedule"
-      nodeName: kind-worker
+        effect: "NoExecute"
+      #nodeName: kind-worker
