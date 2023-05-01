@@ -1,0 +1,54 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  creationTimestamp: "2023-05-01T06:33:48Z"
+  name: nginx-deployment
+  namespace: default
+  resourceVersion: "2259520"
+  uid: f6f1f338-fc84-43b0-868a-6dbf1f6242b7
+spec:
+  maxReplicas: 12
+  metrics:
+  - resource:
+      name: cpu
+      target:
+        averageUtilization: 50
+        type: Utilization
+    type: Resource
+  minReplicas: 3
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: nginx-deployment
+status:
+  conditions:
+  - lastTransitionTime: "2023-05-01T06:43:05Z"
+    message: recommended size matches current size
+    reason: ReadyForNewScale
+    status: "True"
+        type: AbleToScale
+  - lastTransitionTime: "2023-05-01T06:43:36Z"
+    message: the HPA was able to successfully calculate a replica count from cpu resource
+      utilization (percentage of request)
+    reason: ValidMetricFound
+    status: "True"
+    type: ScalingActive
+  - lastTransitionTime: "2023-05-01T06:48:52Z"
+    message: the desired replica count is less than the minimum replica count
+    reason: TooFewReplicas
+    status: "True"
+    type: ScalingLimited
+  currentMetrics:
+  - resource:
+      current:
+        averageUtilization: 0
+        averageValue: "0"
+      name: cpu
+    type: Resource
+  currentReplicas: 3
+  desiredReplicas: 3
+  lastScaleTime: "2023-05-01T06:48:52Z"
