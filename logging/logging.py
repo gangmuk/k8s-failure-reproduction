@@ -59,5 +59,5 @@ if __name__ == "__main__":
     for p in process_list:
         print("pid: ", p.pid)
 
-    time.sleep(300) # max experiment duration: 5 min
+    time.sleep(1000) # max experiment duration: 5 min
 
