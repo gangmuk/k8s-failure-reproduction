@@ -15,6 +15,10 @@ spec:
       containers:
       - name: php-apache
         image: registry.k8s.io/hpa-example
+        securityContext:
+            capabilities:
+                add:
+                    - NET_ADMIN
         ports:
         - containerPort: 80
         resources:
@@ -26,7 +30,8 @@ spec:
       topologySpreadConstraints:
       - maxSkew: 1
         topologyKey: node
-        whenUnsatisfiable: DoNotSchedule
+        #whenUnsatisfiable: DoNotSchedule
+        whenUnsatisfiable: ScheduleAnyway
         labelSelector:
           matchLabels:
             run: php-apache
