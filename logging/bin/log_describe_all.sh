@@ -10,6 +10,8 @@ idx=0
 while [ 0 -le 1 ] # infinite loop
 do
     start_time=$(date +%s.%3N)
+    utc_time
+    cdt_time
     echo "idx,${idx},LOG_TIME,${UTC},${CDT}" >> $fn
     kubectl describe all --all-namespaces >> $fn
     end_time=$(date +%s.%3N)
