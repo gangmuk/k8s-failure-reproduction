@@ -1,0 +1,5 @@
+command,keyword,start_cdt,start_utc,end_cdt,end_utc
+kubectl taint nodes kind-worker key1=value1:NoExecute,taint node,2023-05-11T14:12:44,2023-05-11T19:12:44,2023-05-11T14:12:44,2023-05-11T19:12:44
+kubectl apply -f deploy.yaml,apply deployment,2023-05-11T14:12:49,2023-05-11T19:12:49,2023-05-11T14:12:50,2023-05-11T19:12:50
+kubectl delete deploy/php-apache,2023-05-11T14:13:00,2023-05-11T19:13:00,2023-05-11T14:13:00,2023-05-11T19:13:00
+kubectl taint nodes kind-worker key1=value1:NoExecute-,remove taint node,2023-05-11T14:13:03,2023-05-11T19:13:03,2023-05-11T14:13:03,2023-05-11T19:13:03
