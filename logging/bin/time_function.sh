@@ -6,6 +6,7 @@ function utc_time() { # k8s time format
     sudo timedatectl set-timezone UTC
     UTC=`date +"%Y-%m-%dT%H:%M:%S"`
     sudo timedatectl set-timezone America/Chicago
+    #echo $UTC
 }
 
 

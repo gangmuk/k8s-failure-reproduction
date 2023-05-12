@@ -1,0 +1,8 @@
+#!/bin/bash
+
+kubectl get node -A -o custom-columns=NAME:.metadata.name,STATUS:status.conditions[3].type,INTERNAL-IP:status.addresses[0].address,LABELS:.metadata.labels
+
+
+#kubectl get pods -A -o custom-columns=NAMESPACE:.metadata.namespace,NAME:.metadata.name,NODE:.spec.nodeName,HOSTIP:.status.hostIP,PHASE:.status.phase,START_TIME:.metadata.creationTimestamp --sort-by=.metadata.creationTimestamp
+
+#kubectl get nodes -o custom-columns="STATUS:status.conditions[?(@.status=='True')].type"
