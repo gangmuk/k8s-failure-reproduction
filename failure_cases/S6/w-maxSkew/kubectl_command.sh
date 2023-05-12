@@ -3,7 +3,7 @@
 source /home/gangmuk2/project/k8s-failure-reproduction/logging/bin/time_function.sh
 
 cdt_time
-fn=kubectl_command-${UTC}.log.txt
+fn=kubectl_command-S6-${UTC}.log.txt
 
 echo "command,start_cdt,start_utc,end_cdt,end_utc" >> ${fn}
 
