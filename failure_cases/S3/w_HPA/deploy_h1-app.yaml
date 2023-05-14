@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: h1-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: h1-app
+  template:
+    metadata:
+      labels:
+        run: h1-app
+    spec:
+      containers:
+      - name: h1-app
+        image: gangmuk/h1-app:latest
+        imagePullPolicy: IfNotPresent
+        command: ['bash', '-c', 'sleep 14400']
+        command: ['bash', 'run.sh']
+        securityContext:
+            capabilities:
+              add:
+                - NET_ADMIN
+        resources:
+          limits:
+            cpu: 100m
+          requests:
+            cpu: 100m
+      topologySpreadConstraints:
+      - maxSkew: 1
+        topologyKey: zone
+        whenUnsatisfiable: DoNotSchedule
+        labelSelector:
+          matchLabels:
+            run: h1-app
+      - maxSkew: 1
+        topologyKey: node
+        whenUnsatisfiable: DoNotSchedule
+        labelSelector:
+          matchLabels:
+            run: h1-app
