@@ -1,0 +1,22 @@
+command,keyword,start_cdt,start_utc,end_cdt,end_utc
+kubectl label nodes kind-worker zone=A,label node,2023-05-13T21:57:39,2023-05-14T02:57:39,-,-
+kubectl label nodes kind-worker2 zone=A,label node,2023-05-13T21:57:39,2023-05-14T02:57:39,-,-
+kubectl label nodes kind-worker3 zone=B,label node,2023-05-13T21:57:39,2023-05-14T02:57:39,-,-
+kubectl label nodes kind-worker node=1,label node,2023-05-13T21:57:39,2023-05-14T02:57:39,-,-
+kubectl label nodes kind-worker2 node=2,label node,2023-05-13T21:57:39,2023-05-14T02:57:39,-,-
+kubectl label nodes kind-worker3 node=3,label node,2023-05-13T21:57:39,2023-05-14T02:57:39,2023-05-13T21:57:40,2023-05-14T02:57:40
+kubectl apply -f deploy.yaml,apply php-apache deployment,2023-05-13T21:57:45,2023-05-14T02:57:45,2023-05-13T21:57:45,2023-05-14T02:57:45
+kubectl autoscale deployment php-apache --cpu-percent=50 --min=1 --max=6,deploy autoscaler,2023-05-13T21:57:56,2023-05-14T02:57:56,2023-05-13T21:57:56,2023-05-14T02:57:56
+kubectl run -i load-generator --rm --image=busybox:1.28 --restart=Never -- /bin/sh -c "while sleep 0.001; do wget -q -O- http://php-apache; done",start to generate load,2023-05-13T21:58:26,2023-05-14T02:58:26,2023-05-13T21:58:26,2023-05-14T02:58:26
+python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py,start logging,2023-05-13T21:58:27,2023-05-14T02:58:27,2023-05-13T21:58:27,2023-05-14T02:58:27
+pkill -f "python3 logging_start.py",stop logging_start.py,2023-05-13T21:59:27,2023-05-14T02:59:27,2023-05-13T21:59:27,2023-05-14T02:59:27
+python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_end.py,end logging,2023-05-13T21:59:32,2023-05-14T02:59:32,2023-05-13T21:59:42,2023-05-14T02:59:42
+kubectl delete pod/load-generator,delete load-generator pod,2023-05-13T21:59:52,2023-05-14T02:59:52,2023-05-13T22:00:24,2023-05-14T03:00:24
+kubectl delete deploy/php-apache,delete php-apache deployment,2023-05-13T22:00:34,2023-05-14T03:00:34,2023-05-13T22:00:34,2023-05-14T03:00:34
+kubectl delete hpa/php-apache,delete hpa,2023-05-13T22:00:44,2023-05-14T03:00:44,2023-05-13T22:00:44,2023-05-14T03:00:44
+kubectl label --overwrite nodes kind-worker zone-,remove node label,2023-05-13T22:00:49,2023-05-14T03:00:49,-,-
+kubectl label --overwrite nodes kind-worker2 zone-,remove node label,2023-05-13T22:00:49,2023-05-14T03:00:49,-,-
+kubectl label --overwrite nodes kind-worker3 zone-,remove node label,2023-05-13T22:00:49,2023-05-14T03:00:49,-,-
+kubectl label --overwrite nodes kind-worker node-,remove node label,2023-05-13T22:00:49,2023-05-14T03:00:49,-,-
+kubectl label --overwrite nodes kind-worker2 node-,remove node label,2023-05-13T22:00:49,2023-05-14T03:00:49,-,-
+kubectl label --overwrite nodes kind-worker3 node-,remove node label,2023-05-13T22:00:49,2023-05-14T03:00:49,2023-05-13T22:00:50,2023-05-14T03:00:50

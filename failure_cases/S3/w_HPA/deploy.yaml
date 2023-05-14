@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: php-apache
 spec:
+  #replicas: 6
   selector:
     matchLabels:
       run: php-apache
