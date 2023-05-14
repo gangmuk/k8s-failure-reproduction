@@ -7,7 +7,7 @@ if __name__ == "__main__":
     mat_b = np.random.random((m, m))
     ts = time.time()
     last_ts = 0
-    while time.time() - ts < 60:
+    while time.time() - ts < 120:
         temp = np.matmul(mat_a, mat_b)
 #        cur_time = time.time()
 #        if  cur_time - last_ts > 1 or last_ts == 0:

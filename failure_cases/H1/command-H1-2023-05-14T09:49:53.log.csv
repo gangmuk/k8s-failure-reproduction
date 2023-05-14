@@ -1,0 +1,8 @@
+command,keyword,start_cdt,start_utc,end_cdt,end_utc
+kubectl apply -f deploy_h1-app.yaml,apply custom h1 app deployment,2023-05-14T09:49:53,2023-05-14T14:49:53,2023-05-14T09:49:53,2023-05-14T14:49:53
+kubectl autoscale deployment h1-app --cpu-percent=50 --min=1 --max=10,deploy autoscaler,2023-05-14T09:49:54,2023-05-14T14:49:54,2023-05-14T09:49:54,2023-05-14T14:49:54
+python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py,start logging,2023-05-14T09:49:55,2023-05-14T14:49:55,2023-05-14T09:49:55,2023-05-14T14:49:55
+pkill -f "python3 logging_start.py",stop logging_start.py,2023-05-14T09:51:25,2023-05-14T14:51:26,2023-05-14T09:51:26,2023-05-14T14:51:26
+python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_end.py,end logging,2023-05-14T09:51:27,2023-05-14T14:51:27,2023-05-14T09:51:37,2023-05-14T14:51:37
+kubectl delete deploy/h1-app,delete h1-app deployment,2023-05-14T09:51:42,2023-05-14T14:51:42,2023-05-14T09:51:45,2023-05-14T14:51:45
+kubectl delete hpa/h1-app,delete hpa,2023-05-14T09:51:46,2023-05-14T14:51:47,2023-05-14T09:51:50,2023-05-14T14:51:50

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: h1-app
-        image: gangmuk/h1-app:v25
+        image: gangmuk/h1-app:latest
         imagePullPolicy: IfNotPresent
         command: ['bash', '-c', 'sleep 14400']
         command: ['bash', 'run.sh']

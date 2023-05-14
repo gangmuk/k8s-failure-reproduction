@@ -1,0 +1,6 @@
+May 14 14:51:10 kind-worker2 kubelet[292]: I0514 14:51:10.757927     292 topology_manager.go:200] "Topology Admit Handler"
+May 14 14:51:10 kind-worker2 kubelet[292]: E0514 14:51:10.758014     292 cpu_manager.go:394] "RemoveStaleState: removing container" podUID="29976ffc-bc65-40c7-8462-d3af2285b8ea" containerName="php-apache"
+May 14 14:51:10 kind-worker2 kubelet[292]: E0514 14:51:10.758048     292 cpu_manager.go:394] "RemoveStaleState: removing container" podUID="26eeef68-7689-427e-9cc3-fa4af6ca5877" containerName="php-apache"
+May 14 14:51:10 kind-worker2 kubelet[292]: I0514 14:51:10.758086     292 memory_manager.go:345] "RemoveStaleState removing state" podUID="26eeef68-7689-427e-9cc3-fa4af6ca5877" containerName="php-apache"
+May 14 14:51:10 kind-worker2 kubelet[292]: I0514 14:51:10.758108     292 memory_manager.go:345] "RemoveStaleState removing state" podUID="29976ffc-bc65-40c7-8462-d3af2285b8ea" containerName="php-apache"
+May 14 14:51:10 kind-worker2 kubelet[292]: I0514 14:51:10.831731     292 reconciler.go:342] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-vg2xj\" (UniqueName: \"kubernetes.io/projected/489e2264-adf1-41c6-aec6-186b60697e33-kube-api-access-vg2xj\") pod \"h1-app-77f798d99c-jxccl\" (UID: \"489e2264-adf1-41c6-aec6-186b60697e33\") " pod="default/h1-app-77f798d99c-jxccl"
