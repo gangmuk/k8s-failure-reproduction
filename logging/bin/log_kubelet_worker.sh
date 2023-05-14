@@ -12,4 +12,5 @@ fi
 
 
 fn=${CDT}-kubelet-${node_name}.log.txt
-docker exec -it ${node_name} journalctl -u kubelet --since "${UTC_J_20min_ago}" > ${fn}
+docker exec ${node_name} journalctl -u kubelet --since "${UTC_J_20min_ago}" > ${fn}
+#docker exec -it ${node_name} journalctl -u kubelet > ${fn}

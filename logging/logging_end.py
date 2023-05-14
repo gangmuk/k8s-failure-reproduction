@@ -16,9 +16,9 @@ if __name__ == "__main__":
     log_getevent = log_dir + "/bin/log_get_event.sh"
     log_scheduler = log_dir + "/bin/log_scheduler.sh"
     record_end_time = log_dir + "/bin/record_end_time.sh"
-    p2 = subprocess.Popen("exec " + log_getevent, stdout=subprocess.PIPE, shell=True)
-    p3 = subprocess.Popen("exec " + log_scheduler, stdout=subprocess.PIPE, shell=True)
-    p4 = subprocess.Popen("exec " + record_end_time, stdout=subprocess.PIPE, shell=True)
+    p2 = subprocess.Popen("exec " + log_getevent, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    p3 = subprocess.Popen("exec " + log_scheduler, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    p4 = subprocess.Popen("exec " + record_end_time, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
 
     print("Wait for it!")
     time.sleep(10)
