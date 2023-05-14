@@ -18,6 +18,11 @@ do
     elapsed=$(echo "scale=3; $end_time - $start_time" | bc)
     let idx++
     sleep_time=$(echo "scale=3; 1.000 - $elapsed" | bc)
+    if [ "$sleep_time" -lt 0 ]
+        echo "sleep_time is less than 0. (${sleep_time})"
+    then
+    else
+        sleep $sleep_time
+    fi
     echo "$idx second passed. (press ctrl-c if you want to stop) sleep_time: $sleep_time"
-    sleep $sleep_time
 done

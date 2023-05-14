@@ -14,9 +14,9 @@ function utc_journalctl_format() {
     sudo timedatectl set-timezone UTC
     # 2015-01-10 17:15:00
     #UTC_J=`date +"%Y-%m-%d %H:%M:%S"`
-    UTC_J_10min_ago=`date +"%Y-%m-%d %H:%M:%S" --date="10 minutes ago"`
+    UTC_J_20min_ago=`date +"%Y-%m-%d %H:%M:%S" --date="20 minutes ago"`
     #echo $UTC_J
-    #echo $UTC_J_10min_ago
+    #echo $UTC_J_20min_ago
     sudo timedatectl set-timezone America/Chicago
 }
 
