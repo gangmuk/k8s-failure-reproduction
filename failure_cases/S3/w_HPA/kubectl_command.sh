@@ -3,7 +3,7 @@
 source /home/gangmuk2/project/k8s-failure-reproduction/logging/bin/time_function.sh
 
 cdt_time
-fn=command-S3_w_HPA${CDT}.log.txt
+fn=command-S3_w_HPA${CDT}.log.csv
 
 echo "command,keyword,start_cdt,start_utc,end_cdt,end_utc" > ${fn}
 
@@ -48,6 +48,7 @@ cdt_time
 utc_time
 echo -n "kubectl run -i load-generator --rm --image=busybox:1.28 --restart=Never -- /bin/sh -c \"while sleep 0.001; do wget -q -O- http://php-apache; done\",start to generate load,${CDT},${UTC}," >> ${fn}
 /home/gangmuk2/project/k8s-failure-reproduction/failure_cases/S3/w_HPA/load_generator.sh &
+echo "load generation start"
 cdt_time
 utc_time
 echo "${CDT},${UTC}" >> ${fn}
@@ -56,11 +57,12 @@ sleep 1
 cdt_time
 utc_time
 echo -n "python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py,start logging,${CDT},${UTC}," >> ${fn}
+echo "logging start"
 python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py &
 cdt_time
 utc_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 60
+sleep 30
 
 
 cdt_time
@@ -91,7 +93,7 @@ kubectl delete pod/load-generator
 cdt_time
 utc_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 10
+sleep 1
 
 cdt_time
 utc_time
@@ -100,7 +102,7 @@ kubectl delete deploy/php-apache
 cdt_time
 utc_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 10
+sleep 1
 
 cdt_time
 utc_time
@@ -109,7 +111,7 @@ kubectl delete hpa/php-apache
 cdt_time
 utc_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 5
+sleep 1
 
 cdt_time
 utc_time
