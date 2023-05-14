@@ -33,7 +33,7 @@ python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py
 cdt_time
 utc_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 90
+sleep 150
 
 
 cdt_time
@@ -44,7 +44,7 @@ echo "pkill -f \"logging_start.py\""
 cdt_time
 utc_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 1
+sleep 5
 
 cdt_time
 utc_time
