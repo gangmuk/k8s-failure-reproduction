@@ -49,7 +49,7 @@ python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 150
+sleep 120
 
 update_time
 echo -n "pkill -f \"python3 logging_start.py\",stop logging_start.py,${CDT},${UTC}," >> ${fn}
@@ -69,15 +69,6 @@ python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_end.py
 update_time
 echo "${CDT},${UTC}" >> ${fn}
 sleep 10
-
-update_time
-echo -n "kubectl delete pod/load-generator,delete load-generator pod,${CDT},${UTC}," >> ${fn}
-kubectl delete pod/load-generator
-
-update_time
-echo "${CDT},${UTC}" >> ${fn}
-sleep 1
-
 
 update_time
 echo -n "kubectl delete deploy/h1-app,delete h1-app deployment,${CDT},${UTC}," >> ${fn}

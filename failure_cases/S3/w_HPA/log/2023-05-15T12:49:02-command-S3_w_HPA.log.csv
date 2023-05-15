@@ -1,0 +1,20 @@
+command,keyword,start_cdt,start_utc,end_cdt,end_utc
+kubectl label nodes kind-worker zone=A,label node,2023-05-15T12:49:02,2023-05-15T17:49:02,-,-
+kubectl label nodes kind-worker2 zone=A,label node,2023-05-15T12:49:02,2023-05-15T17:49:02,-,-
+kubectl label nodes kind-worker3 zone=B,label node,2023-05-15T12:49:02,2023-05-15T17:49:02,-,-
+kubectl label nodes kind-worker node=1,label node,2023-05-15T12:49:02,2023-05-15T17:49:02,-,-
+kubectl label nodes kind-worker2 node=2,label node,2023-05-15T12:49:02,2023-05-15T17:49:02,-,-
+kubectl label nodes kind-worker3 node=3,label node,2023-05-15T12:49:02,2023-05-15T17:49:02,2023-05-15T12:49:03,2023-05-15T17:49:03
+kubectl apply -f deploy_h1-app.yaml,apply h1-app deployment,2023-05-15T12:49:08,2023-05-15T17:49:08,2023-05-15T12:49:09,2023-05-15T17:49:09
+kubectl autoscale deployment h1-app --cpu-percent=50 --min=1 --max=6,deploy autoscaler,2023-05-15T12:49:14,2023-05-15T17:49:14,2023-05-15T12:49:14,2023-05-15T17:49:14
+python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py,start logging,2023-05-15T12:49:19,2023-05-15T17:49:19,2023-05-15T12:49:19,2023-05-15T17:49:19
+pkill -f "python3 logging_start.py",stop logging_start.py,2023-05-15T12:51:19,2023-05-15T17:51:19,2023-05-15T12:51:19,2023-05-15T17:51:19
+python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_end.py,end logging,2023-05-15T12:51:24,2023-05-15T17:51:24,2023-05-15T12:51:34,2023-05-15T17:51:34
+kubectl delete deploy/h1-app,delete h1-app deployment,2023-05-15T12:51:44,2023-05-15T17:51:44,2023-05-15T12:51:44,2023-05-15T17:51:44
+kubectl delete hpa/h1-app,delete hpa,2023-05-15T12:51:45,2023-05-15T17:51:45,2023-05-15T12:51:46,2023-05-15T17:51:46
+kubectl label --overwrite nodes kind-worker zone-,remove node label,2023-05-15T12:51:47,2023-05-15T17:51:47,-,-
+kubectl label --overwrite nodes kind-worker2 zone-,remove node label,2023-05-15T12:51:47,2023-05-15T17:51:47,-,-
+kubectl label --overwrite nodes kind-worker3 zone-,remove node label,2023-05-15T12:51:47,2023-05-15T17:51:47,-,-
+kubectl label --overwrite nodes kind-worker node-,remove node label,2023-05-15T12:51:47,2023-05-15T17:51:47,-,-
+kubectl label --overwrite nodes kind-worker2 node-,remove node label,2023-05-15T12:51:47,2023-05-15T17:51:47,-,-
+kubectl label --overwrite nodes kind-worker3 node-,remove node label,2023-05-15T12:51:47,2023-05-15T17:51:47,2023-05-15T12:51:48,2023-05-15T17:51:48
