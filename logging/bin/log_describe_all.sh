@@ -2,7 +2,6 @@
 
 source time_function.sh
 
-#CURRENT_TIME=`date +"%Y%m%d_%H%M%S"`
 fn=${CDT}-describe_all.log
 echo fn: $fn
 
@@ -19,7 +18,7 @@ do
     let idx++
     sleep_time=$(echo "scale=3; 1.000 - $elapsed" | bc)
     sleep_time=$(($sleep_time + 0)) # string to integer
-    if [ ${sleep_time} -lt 0 ]
+    if [ $(echo "scale=3 $sleep_time < 0" | bc) ]
     then
         echo "sleep_time is less than 0. (${sleep_time})"
     else
