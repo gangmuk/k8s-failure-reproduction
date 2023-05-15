@@ -21,5 +21,6 @@ function update_time() {
 }
 
 # utc_time
-# utc_journalctl_format
 # cdt_time
+utc_journalctl_format
+update_time
