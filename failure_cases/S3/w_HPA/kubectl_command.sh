@@ -2,8 +2,13 @@
 
 source /home/gangmuk2/project/k8s-failure-reproduction/logging/bin/time_function.sh
 
+sudo timedatectl set-timezone UTC
+function utc_time() {
+    UTC=`date +"%Y-%m-%dT%H:%M:%S"`
+}
+
 cdt_time
-fn=command-S3_w_HPA-${CDT}.log.csv
+fn=command-S3_w_HPA-${UTC}.log.csv
 
 echo "command,keyword,start_cdt,start_utc,end_cdt,end_utc" > ${fn}
 
