@@ -52,7 +52,7 @@ echo "${CDT},${UTC}" >> ${fn}
 sleep 120
 
 update_time
-echo -n "pkill -f \"python3 logging_start.py\",stop logging_start.py,${CDT},${UTC}," >> ${fn}
+echo -n "pkill -f python3 logging_start.py,stop logging_start.py,${CDT},${UTC}," >> ${fn}
 pkill -f "logging_start.py"
 echo "pkill -f \"logging_start.py\""
 echo "pkill -f \"logging_start.py\""

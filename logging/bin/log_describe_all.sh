@@ -2,7 +2,7 @@
 
 source time_function.sh
 
-fn=${CDT}-describe_all.log
+fn=${CDT}-describe_all.log.txt
 echo fn: $fn
 
 idx=0

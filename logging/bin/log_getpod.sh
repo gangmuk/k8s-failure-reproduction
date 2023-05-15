@@ -12,7 +12,7 @@ do
     start_time=$(date +%s.%3N)
     utc_time
     cdt_time
-    echo "idx,${idx},LOG_TIME,${UTC},${CDT}" >> $fn
+    echo "idx,${idx},LOG_TIME,${UTC},${CDT},-,-,-,-,-,-" >> $fn
     kubectl get pod -o wide | tr -s '[:blank:]' ',' >> $fn
     end_time=$(date +%s.%3N)
     elapsed=$(echo "scale=3; $end_time - $start_time" | bc)

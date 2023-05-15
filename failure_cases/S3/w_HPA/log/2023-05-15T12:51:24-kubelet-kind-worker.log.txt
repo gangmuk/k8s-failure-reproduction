@@ -1,6 +1,0 @@
-May 15 17:49:59 kind-worker kubelet[267]: I0515 17:49:59.664025     267 topology_manager.go:200] "Topology Admit Handler"
-May 15 17:49:59 kind-worker kubelet[267]: E0515 17:49:59.666431     267 cpu_manager.go:394] "RemoveStaleState: removing container" podUID="c48c004a-8193-4c1e-9737-51fa40ee45c6" containerName="h1-app"
-May 15 17:49:59 kind-worker kubelet[267]: E0515 17:49:59.666685     267 cpu_manager.go:394] "RemoveStaleState: removing container" podUID="5f42298d-cd88-4dee-ab57-7d36efbab5c7" containerName="h1-app"
-May 15 17:49:59 kind-worker kubelet[267]: I0515 17:49:59.666919     267 memory_manager.go:345] "RemoveStaleState removing state" podUID="c48c004a-8193-4c1e-9737-51fa40ee45c6" containerName="h1-app"
-May 15 17:49:59 kind-worker kubelet[267]: I0515 17:49:59.667130     267 memory_manager.go:345] "RemoveStaleState removing state" podUID="5f42298d-cd88-4dee-ab57-7d36efbab5c7" containerName="h1-app"
-May 15 17:49:59 kind-worker kubelet[267]: I0515 17:49:59.822000     267 reconciler.go:342] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-tpf8h\" (UniqueName: \"kubernetes.io/projected/136abdac-1e67-4822-871d-e3743fb0894f-kube-api-access-tpf8h\") pod \"h1-app-bb599cf94-6pgr6\" (UID: \"136abdac-1e67-4822-871d-e3743fb0894f\") " pod="default/h1-app-bb599cf94-6pgr6"
