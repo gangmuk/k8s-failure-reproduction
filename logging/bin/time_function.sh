@@ -1,25 +1,25 @@
 #!/bin/bash
 
-function utc_time() { # k8s time format
-    sudo timedatectl set-timezone UTC
-    UTC=`date +"%Y-%m-%dT%H:%M:%S"`
-    sudo timedatectl set-timezone America/Chicago
-    #echo $UTC
+function utc_time() {
+    UTC=`TZ=UTC date +"%Y-%m-%dT%H:%M:%S"`
+    # echo $UTC
 }
-
 
 function utc_journalctl_format() {
-    sudo timedatectl set-timezone UTC
-    UTC_J_20min_ago=`date +"%Y-%m-%d %H:%M:%S" --date="20 minutes ago"`
-    #echo $UTC_J_20min_ago
-    sudo timedatectl set-timezone America/Chicago
+    UTC_J_20min_ago=`TZ=UTC date +"%Y-%m-%d %H:%M:%S" --date="20 minutes ago"`
+    # echo $UTC_J_20min_ago
 }
 
-function cdt_time() { # k8s time format
-    sudo timedatectl set-timezone America/Chicago
-    CDT=`date +"%Y-%m-%dT%H:%M:%S"`
+function cdt_time() {
+    CDT=`TZ=America/Chicago date +"%Y-%m-%dT%H:%M:%S"`
+    # echo $CDT
 }
 
-utc_time
-utc_journalctl_format
-cdt_time
+function update_time() {
+    UTC=`TZ=UTC date +"%Y-%m-%dT%H:%M:%S"`
+    CDT=`TZ=America/Chicago date +"%Y-%m-%dT%H:%M:%S"`
+}
+
+# utc_time
+# utc_journalctl_format
+# cdt_time
