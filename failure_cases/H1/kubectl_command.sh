@@ -16,8 +16,11 @@ echo "${CDT},${UTC}" >> ${fn}
 sleep 1
 
 update_time
-echo -n "kubectl autoscale deployment h1-app --cpu-percent=50 --min=1 --max=10,deploy autoscaler,${CDT},${UTC}," >> ${fn}
-kubectl autoscale deployment h1-app --cpu-percent=50 --min=1 --max=10
+#echo -n "kubectl autoscale deployment h1-app --cpu-percent=50 --min=1 --max=10,deploy autoscaler,${CDT},${UTC}," >> ${fn}
+#kubectl autoscale deployment h1-app --cpu-percent=50 --min=1 --max=10
+#kubectl autoscale deployment h1-app --cpu-percent=50 --min=1 --max=10 --horizontal-pod-autoscaler-downscale-stabilization=60
+echo -n "kubectl apply -f autoscaler.yaml,deploy autoscaler,${CDT},${UTC}," >> ${fn}
+kubectl apply -f autoscaler.yaml
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
@@ -30,7 +33,7 @@ python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 150
+sleep 600
 
 
 update_time
