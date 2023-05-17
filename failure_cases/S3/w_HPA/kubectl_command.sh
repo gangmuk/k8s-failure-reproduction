@@ -55,8 +55,6 @@ update_time
 echo -n "pkill -f python3 logging_start.py,stop logging_start.py,${CDT},${UTC}," >> ${fn}
 pkill -f "logging_start.py"
 echo "pkill -f \"logging_start.py\""
-echo "pkill -f \"logging_start.py\""
-echo "pkill -f \"logging_start.py\""
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}

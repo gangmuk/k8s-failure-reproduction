@@ -3,7 +3,7 @@
 source /home/gangmuk2/project/k8s-failure-reproduction/logging/bin/time_function.sh
 
 update_time
-fn=command-H1-${CDT}.log.csv
+fn=${CDT}-command-H1.log.csv
 
 echo "command,keyword,start_cdt,start_utc,end_cdt,end_utc" > ${fn}
 
