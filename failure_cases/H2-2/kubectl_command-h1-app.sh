@@ -30,7 +30,7 @@ kubectl autoscale deployment h1-app --cpu-percent=50 --min=3 --max=6
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 60
+sleep 120
 
 update_time
 echo -n "kubectl apply -f deploy_h1-app-with_replica.yaml,apply deployment h1-app,${CDT},${UTC}," >> ${fn}
@@ -43,7 +43,7 @@ echo "kubectl apply -f deploy_h1-app-with_replica.yaml"
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 30
+sleep 60
 
 update_time
 echo -n "pkill -f \"python3 logging_start.py\",stop logging_start.py,${CDT},${UTC}," >> ${fn}
