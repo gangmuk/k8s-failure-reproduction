@@ -35,6 +35,11 @@ sleep 60
 update_time
 echo -n "kubectl apply -f deploy_h1-app-with_replica.yaml,apply deployment h1-app,${CDT},${UTC}," >> ${fn}
 kubectl apply -f deploy_h1-app-with_replica.yaml
+echo "kubectl apply -f deploy_h1-app-with_replica.yaml"
+echo "kubectl apply -f deploy_h1-app-with_replica.yaml"
+echo "kubectl apply -f deploy_h1-app-with_replica.yaml"
+echo "kubectl apply -f deploy_h1-app-with_replica.yaml"
+echo "kubectl apply -f deploy_h1-app-with_replica.yaml"
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
