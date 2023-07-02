@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /home/gangmuk2/project/k8s-failure-reproduction/logging/bin/time_function.sh
+source /home/gangmuk2/projects/k8s-failure-reproduction/logging/bin/time_function.sh
 
 update_time
 fn=${CDT}-command-S3_w_HPA.log.csv
@@ -43,13 +43,13 @@ echo "${CDT},${UTC}" >> ${fn}
 sleep 5
 
 update_time
-echo -n "python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py,start logging,${CDT},${UTC}," >> ${fn}
+echo -n "python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_start.py,start logging,${CDT},${UTC}," >> ${fn}
 echo "logging start"
-python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py &
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_start.py &
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 120
+sleep 200
 
 update_time
 echo -n "pkill -f python3 logging_start.py,stop logging_start.py,${CDT},${UTC}," >> ${fn}
@@ -61,8 +61,8 @@ echo "${CDT},${UTC}" >> ${fn}
 sleep 5
 
 update_time
-echo -n "python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_end.py,end logging,${CDT},${UTC}," >> ${fn}
-python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_end.py
+echo -n "python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_end.py,end logging,${CDT},${UTC}," >> ${fn}
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_end.py
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
