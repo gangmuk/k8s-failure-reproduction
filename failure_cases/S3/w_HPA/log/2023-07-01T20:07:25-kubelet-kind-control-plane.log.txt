@@ -1,9 +1,0 @@
-Jul 02 00:56:23 kind-control-plane kubelet[902]: I0702 00:56:23.621573     902 log.go:195] http: TLS handshake error from 172.18.0.9:41740: remote error: tls: bad certificate
-Jul 02 00:56:38 kind-control-plane kubelet[902]: I0702 00:56:38.599802     902 log.go:195] http: TLS handshake error from 172.18.0.9:36644: remote error: tls: bad certificate
-Jul 02 00:56:53 kind-control-plane kubelet[902]: I0702 00:56:53.617682     902 log.go:195] http: TLS handshake error from 172.18.0.9:50252: remote error: tls: bad certificate
-Jul 02 00:57:08 kind-control-plane kubelet[902]: I0702 00:57:08.612181     902 log.go:195] http: TLS handshake error from 172.18.0.9:41026: remote error: tls: bad certificate
-Jul 02 00:57:23 kind-control-plane kubelet[902]: I0702 00:57:23.604071     902 log.go:195] http: TLS handshake error from 172.18.0.9:34664: remote error: tls: bad certificate
-Jul 02 00:57:38 kind-control-plane kubelet[902]: I0702 00:57:38.618735     902 log.go:195] http: TLS handshake error from 172.18.0.9:40084: remote error: tls: bad certificate
-Jul 02 00:57:53 kind-control-plane kubelet[902]: I0702 00:57:53.619677     902 log.go:195] http: TLS handshake error from 172.18.0.9:58000: remote error: tls: bad certificate
-Jul 02 00:58:08 kind-control-plane kubelet[902]: I0702 00:58:08.601851     902 log.go:195] http: TLS handshake error from 172.18.0.9:56912: remote error: tls: bad certificate
-Jul 02 00:58:23 kind-control-plane kubelet[902]: I0702 00:58:23.609646     902 log.go:195] http: TLS handshake error from 172.18.0.9:33992: remote error: tls: bad certificate
