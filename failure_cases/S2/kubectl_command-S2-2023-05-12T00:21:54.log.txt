@@ -1,9 +1,0 @@
-command,keyword,start_cdt,start_utc,end_cdt,end_utc
-kubectl label nodes kind-worker*,label node,2023-05-12T00:21:54,2023-05-12T05:21:54,2023-05-12T00:21:54,2023-05-12T05:21:55
-kustomize build 'github.com/kubernetes-sigs/descheduler/kubernetes/deployment?ref=v0.26.0' | kubectl apply -f -,install descheduler deployment,2023-05-12T00:22:00,2023-05-12T05:22:00,2023-05-12T00:22:04,2023-05-12T05:22:04
-kubectl apply -f descheduler-configmap.yaml,update descheduler configmap,2023-05-12T00:22:14,2023-05-12T05:22:14,2023-05-12T00:22:15,2023-05-12T05:22:15
-kubectl apply -f descheduler-deployment.yaml,update descheduler deployment config,2023-05-12T00:22:25,2023-05-12T05:22:25,2023-05-12T00:22:25,2023-05-12T05:22:25
-kubectl apply -f deploy.yaml,apply nginx deployment,2023-05-12T00:22:45,2023-05-12T05:22:46,2023-05-12T00:22:46,2023-05-12T05:22:46
-kubectl delete deploy/nginx-deployment,delete nginx deployment,2023-05-12T00:24:46,2023-05-12T05:24:46,2023-05-12T00:24:46,2023-05-12T05:24:46
-kubectl delete deploy/descheduler -n kube-system,delete descheduler deployment,2023-05-12T00:25:06,2023-05-12T05:25:06,2023-05-12T00:25:07,2023-05-12T05:25:07
-kubectl label --overwrite nodes kind-worker*,remove node label,2023-05-12T00:25:17,2023-05-12T05:25:17,2023-05-12T00:25:17,2023-05-12T05:25:17
