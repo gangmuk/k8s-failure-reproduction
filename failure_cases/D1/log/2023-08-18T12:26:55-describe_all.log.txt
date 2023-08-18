@@ -1,0 +1,2401 @@
+idx,0,LOG_TIME,2023-08-18T17:26:55,2023-08-18T12:26:55
+Name:                      php-apache-7f879b889b-g2zlb
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-rx4cv (ro)
+Volumes:
+  kube-api-access-rx4cv:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  3s    kubelet  Predicate TaintToleration failed
+
+
+Name:                      php-apache-7f879b889b-h4xsm
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7lt6t (ro)
+Volumes:
+  kube-api-access-7lt6t:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  2s    kubelet  Predicate TaintToleration failed
+
+
+Name:                      php-apache-7f879b889b-hxnk4
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-t4tpd (ro)
+Volumes:
+  kube-api-access-t4tpd:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  3s    kubelet  Predicate TaintToleration failed
+
+
+Name:                      php-apache-7f879b889b-m7q4w
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-tdkqp (ro)
+Volumes:
+  kube-api-access-tdkqp:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  2s    kubelet  Predicate TaintToleration failed
+
+
+Name:                      php-apache-7f879b889b-mttq8
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-s85j7 (ro)
+Volumes:
+  kube-api-access-s85j7:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  4s    kubelet  Predicate TaintToleration failed
+
+
+Pod 'php-apache-7f879b889b-pvqdq': error 'pods "php-apache-7f879b889b-pvqdq" not found', but found events.
+Events:
+  Type     Reason                Age   From              Message
+  ----     ------                ----  ----              -------
+  Warning  TaintToleration       4s    kubelet           Predicate TaintToleration failed
+  Normal   TaintManagerEviction  4s    taint-controller  Marking for deletion Pod default/php-apache-7f879b889b-pvqdq
+
+
+Name:                      php-apache-7f879b889b-qfdlv
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-ppdmw (ro)
+Volumes:
+  kube-api-access-ppdmw:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  4s    kubelet  Predicate TaintToleration failed
+
+
+Name:                      php-apache-7f879b889b-qp965
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-68bhv (ro)
+Volumes:
+  kube-api-access-68bhv:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  4s    kubelet  Predicate TaintToleration failed
+
+
+Name:                      php-apache-7f879b889b-qznks
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-9wzwz (ro)
+Volumes:
+  kube-api-access-9wzwz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  3s    kubelet  Predicate TaintToleration failed
+
+
+Name:                      php-apache-7f879b889b-vfcvj
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2k2h4 (ro)
+Volumes:
+  kube-api-access-2k2h4:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  4s    kubelet  Predicate TaintToleration failed
+
+
+Name:                      php-apache-7f879b889b-wb26s
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-rtkjc (ro)
+Volumes:
+  kube-api-access-rtkjc:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  5s    kubelet  Predicate TaintToleration failed
+
+
+Name:                      php-apache-7f879b889b-x2762
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-x2qmq (ro)
+Volumes:
+  kube-api-access-x2qmq:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  4s    kubelet  Predicate TaintToleration failed
+
+
+Name:                      php-apache-7f879b889b-zcx9c
+Namespace:                 default
+Priority:                  0
+Node:                      kind-worker/
+Labels:                    pod-template-hash=7f879b889b
+                           run=php-apache
+Annotations:               <none>
+Status:                    Terminating (lasts <invalid>)
+Termination Grace Period:  30s
+IP:                        
+IPs:                       <none>
+Controlled By:             ReplicaSet/php-apache-7f879b889b
+Containers:
+  php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-kd6jw (ro)
+Volumes:
+  kube-api-access-kd6jw:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason           Age   From     Message
+  ----     ------           ----  ----     -------
+  Warning  TaintToleration  3s    kubelet  Predicate TaintToleration failed
+
+
+Name:                 coredns-6d4b75cb6d-lxl4v
+Namespace:            kube-system
+Priority:             2000000000
+Priority Class Name:  system-cluster-critical
+Node:                 kind-control-plane/172.18.0.5
+Start Time:           Thu, 13 Apr 2023 19:07:46 -0500
+Labels:               k8s-app=kube-dns
+                      pod-template-hash=6d4b75cb6d
+Annotations:          <none>
+Status:               Running
+IP:                   10.244.0.3
+IPs:
+  IP:           10.244.0.3
+Controlled By:  ReplicaSet/coredns-6d4b75cb6d
+Containers:
+  coredns:
+    Container ID:  containerd://38afa834e2449522ca0304a6ff5562706a23671ee78b187511030b848c359770
+    Image:         k8s.gcr.io/coredns/coredns:v1.8.6
+    Image ID:      sha256:a4ca41631cc7ac19ce1be3ebf0314ac5f47af7c711f17066006db82ee3b75b03
+    Ports:         53/UDP, 53/TCP, 9153/TCP
+    Host Ports:    0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:55 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:36 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:14 -0500
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-6flp6 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      coredns
+    Optional:  false
+  kube-api-access-6flp6:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 CriticalAddonsOnly op=Exists
+                             node-role.kubernetes.io/control-plane:NoSchedule
+                             node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>
+
+
+Name:                 coredns-6d4b75cb6d-qd7c5
+Namespace:            kube-system
+Priority:             2000000000
+Priority Class Name:  system-cluster-critical
+Node:                 kind-control-plane/172.18.0.5
+Start Time:           Thu, 13 Apr 2023 19:07:46 -0500
+Labels:               k8s-app=kube-dns
+                      pod-template-hash=6d4b75cb6d
+Annotations:          <none>
+Status:               Running
+IP:                   10.244.0.2
+IPs:
+  IP:           10.244.0.2
+Controlled By:  ReplicaSet/coredns-6d4b75cb6d
+Containers:
+  coredns:
+    Container ID:  containerd://abb931543661db7204e8bac3f241c7e9645677256a2e98d1e8a61540018c2104
+    Image:         k8s.gcr.io/coredns/coredns:v1.8.6
+    Image ID:      sha256:a4ca41631cc7ac19ce1be3ebf0314ac5f47af7c711f17066006db82ee3b75b03
+    Ports:         53/UDP, 53/TCP, 9153/TCP
+    Host Ports:    0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:53 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:34 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:14 -0500
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-nkxvj (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      coredns
+    Optional:  false
+  kube-api-access-nkxvj:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 CriticalAddonsOnly op=Exists
+                             node-role.kubernetes.io/control-plane:NoSchedule
+                             node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>
+
+
+Name:                 etcd-kind-control-plane
+Namespace:            kube-system
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Node:                 kind-control-plane/172.18.0.5
+Start Time:           Sat, 15 Jul 2023 09:56:20 -0500
+Labels:               component=etcd
+                      tier=control-plane
+Annotations:          kubeadm.kubernetes.io/etcd.advertise-client-urls: https://172.18.0.5:2379
+                      kubernetes.io/config.hash: 5d8cf2c6783115bd6149d11d97830083
+                      kubernetes.io/config.mirror: 5d8cf2c6783115bd6149d11d97830083
+                      kubernetes.io/config.seen: 2023-07-15T14:56:18.243765648Z
+                      kubernetes.io/config.source: file
+                      seccomp.security.alpha.kubernetes.io/pod: runtime/default
+Status:               Running
+IP:                   172.18.0.5
+IPs:
+  IP:           172.18.0.5
+Controlled By:  Node/kind-control-plane
+Containers:
+  etcd:
+    Container ID:  containerd://c2e38f0da88902a862bf2a074380420b95f4993a0dea1d1255935f24b9fb163c
+    Image:         k8s.gcr.io/etcd:3.5.3-0
+    Image ID:      sha256:aebe758cef4cd05b9f8cee39758227714d02f42ef3088023c1e3cd454f927a2b
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      etcd
+      --advertise-client-urls=https://172.18.0.5:2379
+      --cert-file=/etc/kubernetes/pki/etcd/server.crt
+      --client-cert-auth=true
+      --data-dir=/var/lib/etcd
+      --experimental-initial-corrupt-check=true
+      --initial-advertise-peer-urls=https://172.18.0.5:2380
+      --initial-cluster=kind-control-plane=https://172.18.0.5:2380
+      --key-file=/etc/kubernetes/pki/etcd/server.key
+      --listen-client-urls=https://127.0.0.1:2379,https://172.18.0.5:2379
+      --listen-metrics-urls=http://127.0.0.1:2381
+      --listen-peer-urls=https://172.18.0.5:2380
+      --name=kind-control-plane
+      --peer-cert-file=/etc/kubernetes/pki/etcd/peer.crt
+      --peer-client-cert-auth=true
+      --peer-key-file=/etc/kubernetes/pki/etcd/peer.key
+      --peer-trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt
+      --snapshot-count=10000
+      --trusted-ca-file=/etc/kubernetes/pki/etcd/ca.crt
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:26 -0500
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+      memory:     100Mi
+    Liveness:     http-get http://127.0.0.1:2381/health delay=10s timeout=15s period=10s #success=1 #failure=8
+    Startup:      http-get http://127.0.0.1:2381/health delay=10s timeout=15s period=10s #success=1 #failure=24
+    Environment:  <none>
+    Mounts:
+      /etc/kubernetes/pki/etcd from etcd-certs (rw)
+      /var/lib/etcd from etcd-data (rw)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  etcd-certs:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/pki/etcd
+    HostPathType:  DirectoryOrCreate
+  etcd-data:
+    Type:          HostPath (bare host directory volume)
+    Path:          /var/lib/etcd
+    HostPathType:  DirectoryOrCreate
+QoS Class:         Burstable
+Node-Selectors:    <none>
+Tolerations:       :NoExecute op=Exists
+Events:            <none>
+
+
+Name:         kindnet-5qsnq
+Namespace:    kube-system
+Priority:     0
+Node:         kind-control-plane/172.18.0.5
+Start Time:   Thu, 13 Apr 2023 19:07:27 -0500
+Labels:       app=kindnet
+              controller-revision-hash=77ddccf744
+              k8s-app=kindnet
+              pod-template-generation=1
+              tier=node
+Annotations:  <none>
+Status:       Running
+IP:           172.18.0.5
+IPs:
+  IP:           172.18.0.5
+Controlled By:  DaemonSet/kindnet
+Containers:
+  kindnet-cni:
+    Container ID:   containerd://5cadad29d29220ac6b215cbf5ffc7bacc97ad1fdb3a8724621a57aba55d750ce
+    Image:          docker.io/kindest/kindnetd:v20221004-44d545d1
+    Image ID:       sha256:d6e3e26021b60c625f0ef5b2dd3f9e22d2d398e05bccc4fdd7d59fbbb6a04d3f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:55 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:30 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:16 -0500
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      cpu:     100m
+      memory:  50Mi
+    Requests:
+      cpu:     100m
+      memory:  50Mi
+    Environment:
+      HOST_IP:                  (v1:status.hostIP)
+      POD_IP:                   (v1:status.podIP)
+      POD_SUBNET:              10.244.0.0/16
+      CONTROL_PLANE_ENDPOINT:  kind-control-plane:6443
+    Mounts:
+      /etc/cni/net.d from cni-cfg (rw)
+      /lib/modules from lib-modules (ro)
+      /run/xtables.lock from xtables-lock (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7khrr (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  cni-cfg:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/cni/net.d
+    HostPathType:  
+  xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+  lib-modules:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lib/modules
+    HostPathType:  
+  kube-api-access-7khrr:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Guaranteed
+Node-Selectors:              <none>
+Tolerations:                 op=Exists
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/network-unavailable:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+Events:                      <none>
+
+
+Name:         kindnet-b427z
+Namespace:    kube-system
+Priority:     0
+Node:         kind-worker2/172.18.0.3
+Start Time:   Thu, 13 Apr 2023 19:07:47 -0500
+Labels:       app=kindnet
+              controller-revision-hash=77ddccf744
+              k8s-app=kindnet
+              pod-template-generation=1
+              tier=node
+Annotations:  <none>
+Status:       Running
+IP:           172.18.0.3
+IPs:
+  IP:           172.18.0.3
+Controlled By:  DaemonSet/kindnet
+Containers:
+  kindnet-cni:
+    Container ID:   containerd://6044d589130f3e597656e6e8c030131b7611865cb6893b011962f205df6f4692
+    Image:          docker.io/kindest/kindnetd:v20221004-44d545d1
+    Image ID:       sha256:d6e3e26021b60c625f0ef5b2dd3f9e22d2d398e05bccc4fdd7d59fbbb6a04d3f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:50 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:25 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:13 -0500
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      cpu:     100m
+      memory:  50Mi
+    Requests:
+      cpu:     100m
+      memory:  50Mi
+    Environment:
+      HOST_IP:                  (v1:status.hostIP)
+      POD_IP:                   (v1:status.podIP)
+      POD_SUBNET:              10.244.0.0/16
+      CONTROL_PLANE_ENDPOINT:  kind-control-plane:6443
+    Mounts:
+      /etc/cni/net.d from cni-cfg (rw)
+      /lib/modules from lib-modules (ro)
+      /run/xtables.lock from xtables-lock (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-fkc2k (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  cni-cfg:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/cni/net.d
+    HostPathType:  
+  xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+  lib-modules:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lib/modules
+    HostPathType:  
+  kube-api-access-fkc2k:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Guaranteed
+Node-Selectors:              <none>
+Tolerations:                 op=Exists
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/network-unavailable:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+Events:                      <none>
+
+
+Name:         kindnet-f9v6g
+Namespace:    kube-system
+Priority:     0
+Node:         kind-worker/172.18.0.2
+Start Time:   Thu, 13 Apr 2023 19:07:53 -0500
+Labels:       app=kindnet
+              controller-revision-hash=77ddccf744
+              k8s-app=kindnet
+              pod-template-generation=1
+              tier=node
+Annotations:  <none>
+Status:       Running
+IP:           172.18.0.2
+IPs:
+  IP:           172.18.0.2
+Controlled By:  DaemonSet/kindnet
+Containers:
+  kindnet-cni:
+    Container ID:   containerd://b4726c9deaada9de78680150eb69668efb2d964cf97fe9b7cf02d08117059ba6
+    Image:          docker.io/kindest/kindnetd:v20221004-44d545d1
+    Image ID:       sha256:d6e3e26021b60c625f0ef5b2dd3f9e22d2d398e05bccc4fdd7d59fbbb6a04d3f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:47 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:23 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:13 -0500
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      cpu:     100m
+      memory:  50Mi
+    Requests:
+      cpu:     100m
+      memory:  50Mi
+    Environment:
+      HOST_IP:                  (v1:status.hostIP)
+      POD_IP:                   (v1:status.podIP)
+      POD_SUBNET:              10.244.0.0/16
+      CONTROL_PLANE_ENDPOINT:  kind-control-plane:6443
+    Mounts:
+      /etc/cni/net.d from cni-cfg (rw)
+      /lib/modules from lib-modules (ro)
+      /run/xtables.lock from xtables-lock (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-ndclh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  cni-cfg:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/cni/net.d
+    HostPathType:  
+  xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+  lib-modules:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lib/modules
+    HostPathType:  
+  kube-api-access-ndclh:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Guaranteed
+Node-Selectors:              <none>
+Tolerations:                 op=Exists
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/network-unavailable:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+Events:                      <none>
+
+
+Name:         kindnet-mxmhl
+Namespace:    kube-system
+Priority:     0
+Node:         kind-worker3/172.18.0.4
+Start Time:   Thu, 13 Apr 2023 19:07:50 -0500
+Labels:       app=kindnet
+              controller-revision-hash=77ddccf744
+              k8s-app=kindnet
+              pod-template-generation=1
+              tier=node
+Annotations:  <none>
+Status:       Running
+IP:           172.18.0.4
+IPs:
+  IP:           172.18.0.4
+Controlled By:  DaemonSet/kindnet
+Containers:
+  kindnet-cni:
+    Container ID:   containerd://ec9b47aba6f0d651c6da6e8282ad0e4f699e83e716938f3c1f3f34bb4edc2aa2
+    Image:          docker.io/kindest/kindnetd:v20221004-44d545d1
+    Image ID:       sha256:d6e3e26021b60c625f0ef5b2dd3f9e22d2d398e05bccc4fdd7d59fbbb6a04d3f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:49 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:24 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:13 -0500
+    Ready:          True
+    Restart Count:  2
+    Limits:
+      cpu:     100m
+      memory:  50Mi
+    Requests:
+      cpu:     100m
+      memory:  50Mi
+    Environment:
+      HOST_IP:                  (v1:status.hostIP)
+      POD_IP:                   (v1:status.podIP)
+      POD_SUBNET:              10.244.0.0/16
+      CONTROL_PLANE_ENDPOINT:  kind-control-plane:6443
+    Mounts:
+      /etc/cni/net.d from cni-cfg (rw)
+      /lib/modules from lib-modules (ro)
+      /run/xtables.lock from xtables-lock (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-2d7bz (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  cni-cfg:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/cni/net.d
+    HostPathType:  
+  xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+  lib-modules:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lib/modules
+    HostPathType:  
+  kube-api-access-2d7bz:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Guaranteed
+Node-Selectors:              <none>
+Tolerations:                 op=Exists
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/network-unavailable:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+Events:                      <none>
+
+
+Name:                 kube-apiserver-kind-control-plane
+Namespace:            kube-system
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Node:                 kind-control-plane/172.18.0.5
+Start Time:           Sat, 15 Jul 2023 09:56:20 -0500
+Labels:               component=kube-apiserver
+                      tier=control-plane
+Annotations:          kubeadm.kubernetes.io/kube-apiserver.advertise-address.endpoint: 172.18.0.5:6443
+                      kubernetes.io/config.hash: a361989e53700a70af960dcc1a7931b1
+                      kubernetes.io/config.mirror: a361989e53700a70af960dcc1a7931b1
+                      kubernetes.io/config.seen: 2023-07-15T14:56:18.243812984Z
+                      kubernetes.io/config.source: file
+                      seccomp.security.alpha.kubernetes.io/pod: runtime/default
+Status:               Running
+IP:                   172.18.0.5
+IPs:
+  IP:           172.18.0.5
+Controlled By:  Node/kind-control-plane
+Containers:
+  kube-apiserver:
+    Container ID:  containerd://ec0c28bd11cf5cf711608aec06f1ff761f1bcbe839d53b06b1be3c9947ebba81
+    Image:         k8s.gcr.io/kube-apiserver:v1.24.7
+    Image ID:      docker.io/library/import-2022-10-26@sha256:28b84228b7ad7ce125a759a1a72b78c5f8ff2130596b4c8d4d3920795a8c1c02
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      kube-apiserver
+      --advertise-address=172.18.0.5
+      --allow-privileged=true
+      --authorization-mode=Node,RBAC
+      --client-ca-file=/etc/kubernetes/pki/ca.crt
+      --enable-admission-plugins=NodeRestriction
+      --enable-bootstrap-token-auth=true
+      --etcd-cafile=/etc/kubernetes/pki/etcd/ca.crt
+      --etcd-certfile=/etc/kubernetes/pki/apiserver-etcd-client.crt
+      --etcd-keyfile=/etc/kubernetes/pki/apiserver-etcd-client.key
+      --etcd-servers=https://127.0.0.1:2379
+      --kubelet-client-certificate=/etc/kubernetes/pki/apiserver-kubelet-client.crt
+      --kubelet-client-key=/etc/kubernetes/pki/apiserver-kubelet-client.key
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --proxy-client-cert-file=/etc/kubernetes/pki/front-proxy-client.crt
+      --proxy-client-key-file=/etc/kubernetes/pki/front-proxy-client.key
+      --requestheader-allowed-names=front-proxy-client
+      --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt
+      --requestheader-extra-headers-prefix=X-Remote-Extra-
+      --requestheader-group-headers=X-Remote-Group
+      --requestheader-username-headers=X-Remote-User
+      --runtime-config=
+      --secure-port=6443
+      --service-account-issuer=https://kubernetes.default.svc.cluster.local
+      --service-account-key-file=/etc/kubernetes/pki/sa.pub
+      --service-account-signing-key-file=/etc/kubernetes/pki/sa.key
+      --service-cluster-ip-range=10.96.0.0/16
+      --tls-cert-file=/etc/kubernetes/pki/apiserver.crt
+      --tls-private-key-file=/etc/kubernetes/pki/apiserver.key
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:26 -0500
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        250m
+    Liveness:     http-get https://172.18.0.5:6443/livez delay=10s timeout=15s period=10s #success=1 #failure=8
+    Readiness:    http-get https://172.18.0.5:6443/readyz delay=0s timeout=15s period=1s #success=1 #failure=3
+    Startup:      http-get https://172.18.0.5:6443/livez delay=10s timeout=15s period=10s #success=1 #failure=24
+    Environment:  <none>
+    Mounts:
+      /etc/ca-certificates from etc-ca-certificates (ro)
+      /etc/kubernetes/pki from k8s-certs (ro)
+      /etc/ssl/certs from ca-certs (ro)
+      /usr/local/share/ca-certificates from usr-local-share-ca-certificates (ro)
+      /usr/share/ca-certificates from usr-share-ca-certificates (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  ca-certs:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/ssl/certs
+    HostPathType:  DirectoryOrCreate
+  etc-ca-certificates:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/ca-certificates
+    HostPathType:  DirectoryOrCreate
+  k8s-certs:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/pki
+    HostPathType:  DirectoryOrCreate
+  usr-local-share-ca-certificates:
+    Type:          HostPath (bare host directory volume)
+    Path:          /usr/local/share/ca-certificates
+    HostPathType:  DirectoryOrCreate
+  usr-share-ca-certificates:
+    Type:          HostPath (bare host directory volume)
+    Path:          /usr/share/ca-certificates
+    HostPathType:  DirectoryOrCreate
+QoS Class:         Burstable
+Node-Selectors:    <none>
+Tolerations:       :NoExecute op=Exists
+Events:            <none>
+
+
+Name:                 kube-controller-manager-kind-control-plane
+Namespace:            kube-system
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Node:                 kind-control-plane/172.18.0.5
+Start Time:           Sat, 15 Jul 2023 09:56:20 -0500
+Labels:               component=kube-controller-manager
+                      tier=control-plane
+Annotations:          kubernetes.io/config.hash: 4faf275681440680a008f7e131ea87f4
+                      kubernetes.io/config.mirror: 4faf275681440680a008f7e131ea87f4
+                      kubernetes.io/config.seen: 2023-04-14T00:06:48.614674530Z
+                      kubernetes.io/config.source: file
+                      seccomp.security.alpha.kubernetes.io/pod: runtime/default
+Status:               Running
+IP:                   172.18.0.5
+IPs:
+  IP:           172.18.0.5
+Controlled By:  Node/kind-control-plane
+Containers:
+  kube-controller-manager:
+    Container ID:  containerd://b27827fe2a1eef28b226dcd401f766d22997a5aea4ed1e29113756fdb7a3ee6c
+    Image:         k8s.gcr.io/kube-controller-manager:v1.24.7
+    Image ID:      docker.io/library/import-2022-10-26@sha256:1fb7081748a633622f6da6bd314e4c83ffd3f83864943cfc9afe72f6371b54a4
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      kube-controller-manager
+      --allocate-node-cidrs=true
+      --authentication-kubeconfig=/etc/kubernetes/controller-manager.conf
+      --authorization-kubeconfig=/etc/kubernetes/controller-manager.conf
+      --bind-address=127.0.0.1
+      --client-ca-file=/etc/kubernetes/pki/ca.crt
+      --cluster-cidr=10.244.0.0/16
+      --cluster-name=kind
+      --cluster-signing-cert-file=/etc/kubernetes/pki/ca.crt
+      --cluster-signing-key-file=/etc/kubernetes/pki/ca.key
+      --controllers=*,bootstrapsigner,tokencleaner
+      --enable-hostpath-provisioner=true
+      --kubeconfig=/etc/kubernetes/controller-manager.conf
+      --leader-elect=true
+      --requestheader-client-ca-file=/etc/kubernetes/pki/front-proxy-ca.crt
+      --root-ca-file=/etc/kubernetes/pki/ca.crt
+      --service-account-private-key-file=/etc/kubernetes/pki/sa.key
+      --service-cluster-ip-range=10.96.0.0/16
+      --use-service-account-credentials=true
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:26 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:02 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:16 -0500
+    Ready:          True
+    Restart Count:  2
+    Requests:
+      cpu:        200m
+    Liveness:     http-get https://127.0.0.1:10257/healthz delay=10s timeout=15s period=10s #success=1 #failure=8
+    Startup:      http-get https://127.0.0.1:10257/healthz delay=10s timeout=15s period=10s #success=1 #failure=24
+    Environment:  <none>
+    Mounts:
+      /etc/ca-certificates from etc-ca-certificates (ro)
+      /etc/kubernetes/controller-manager.conf from kubeconfig (ro)
+      /etc/kubernetes/pki from k8s-certs (ro)
+      /etc/ssl/certs from ca-certs (ro)
+      /usr/libexec/kubernetes/kubelet-plugins/volume/exec from flexvolume-dir (rw)
+      /usr/local/share/ca-certificates from usr-local-share-ca-certificates (ro)
+      /usr/share/ca-certificates from usr-share-ca-certificates (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  ca-certs:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/ssl/certs
+    HostPathType:  DirectoryOrCreate
+  etc-ca-certificates:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/ca-certificates
+    HostPathType:  DirectoryOrCreate
+  flexvolume-dir:
+    Type:          HostPath (bare host directory volume)
+    Path:          /usr/libexec/kubernetes/kubelet-plugins/volume/exec
+    HostPathType:  DirectoryOrCreate
+  k8s-certs:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/pki
+    HostPathType:  DirectoryOrCreate
+  kubeconfig:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/controller-manager.conf
+    HostPathType:  FileOrCreate
+  usr-local-share-ca-certificates:
+    Type:          HostPath (bare host directory volume)
+    Path:          /usr/local/share/ca-certificates
+    HostPathType:  DirectoryOrCreate
+  usr-share-ca-certificates:
+    Type:          HostPath (bare host directory volume)
+    Path:          /usr/share/ca-certificates
+    HostPathType:  DirectoryOrCreate
+QoS Class:         Burstable
+Node-Selectors:    <none>
+Tolerations:       :NoExecute op=Exists
+Events:            <none>
+
+
+Name:                 kube-proxy-h9lds
+Namespace:            kube-system
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Node:                 kind-control-plane/172.18.0.5
+Start Time:           Thu, 13 Apr 2023 19:07:27 -0500
+Labels:               controller-revision-hash=547546f9bf
+                      k8s-app=kube-proxy
+                      pod-template-generation=1
+Annotations:          <none>
+Status:               Running
+IP:                   172.18.0.5
+IPs:
+  IP:           172.18.0.5
+Controlled By:  DaemonSet/kube-proxy
+Containers:
+  kube-proxy:
+    Container ID:  containerd://5aa0c834ac60353d0eb72b40a17bdd70e8c2dbf58efd1680d6e9ea1251922579
+    Image:         k8s.gcr.io/kube-proxy:v1.24.7
+    Image ID:      docker.io/library/import-2022-10-26@sha256:82fa4ddf64d5be44671118fb9b86c454a222ff7ea6e48863ed7e5daeeca3ea42
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /usr/local/bin/kube-proxy
+      --config=/var/lib/kube-proxy/config.conf
+      --hostname-override=$(NODE_NAME)
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:55 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:28 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:15 -0500
+    Ready:          True
+    Restart Count:  2
+    Environment:
+      NODE_NAME:   (v1:spec.nodeName)
+    Mounts:
+      /lib/modules from lib-modules (ro)
+      /run/xtables.lock from xtables-lock (rw)
+      /var/lib/kube-proxy from kube-proxy (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-7wdkx (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-proxy:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      kube-proxy
+    Optional:  false
+  xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+  lib-modules:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lib/modules
+    HostPathType:  
+  kube-api-access-7wdkx:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 op=Exists
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/network-unavailable:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+Events:                      <none>
+
+
+Name:                 kube-proxy-jgb94
+Namespace:            kube-system
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Node:                 kind-worker/172.18.0.2
+Start Time:           Thu, 13 Apr 2023 19:07:53 -0500
+Labels:               controller-revision-hash=547546f9bf
+                      k8s-app=kube-proxy
+                      pod-template-generation=1
+Annotations:          <none>
+Status:               Running
+IP:                   172.18.0.2
+IPs:
+  IP:           172.18.0.2
+Controlled By:  DaemonSet/kube-proxy
+Containers:
+  kube-proxy:
+    Container ID:  containerd://62eb3094f31b2c090253de168789288221cf72606c7f4ba9908c52cfbf477fc1
+    Image:         k8s.gcr.io/kube-proxy:v1.24.7
+    Image ID:      docker.io/library/import-2022-10-26@sha256:82fa4ddf64d5be44671118fb9b86c454a222ff7ea6e48863ed7e5daeeca3ea42
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /usr/local/bin/kube-proxy
+      --config=/var/lib/kube-proxy/config.conf
+      --hostname-override=$(NODE_NAME)
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:46 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:23 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:14 -0500
+    Ready:          True
+    Restart Count:  2
+    Environment:
+      NODE_NAME:   (v1:spec.nodeName)
+    Mounts:
+      /lib/modules from lib-modules (ro)
+      /run/xtables.lock from xtables-lock (rw)
+      /var/lib/kube-proxy from kube-proxy (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-qdkfl (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-proxy:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      kube-proxy
+    Optional:  false
+  xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+  lib-modules:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lib/modules
+    HostPathType:  
+  kube-api-access-qdkfl:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 op=Exists
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/network-unavailable:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+Events:                      <none>
+
+
+Name:                 kube-proxy-qj9bm
+Namespace:            kube-system
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Node:                 kind-worker2/172.18.0.3
+Start Time:           Thu, 13 Apr 2023 19:07:47 -0500
+Labels:               controller-revision-hash=547546f9bf
+                      k8s-app=kube-proxy
+                      pod-template-generation=1
+Annotations:          <none>
+Status:               Running
+IP:                   172.18.0.3
+IPs:
+  IP:           172.18.0.3
+Controlled By:  DaemonSet/kube-proxy
+Containers:
+  kube-proxy:
+    Container ID:  containerd://17bf6488a779850113dce7fc28968bdb398c36ac204fd8868b30679e89163388
+    Image:         k8s.gcr.io/kube-proxy:v1.24.7
+    Image ID:      docker.io/library/import-2022-10-26@sha256:82fa4ddf64d5be44671118fb9b86c454a222ff7ea6e48863ed7e5daeeca3ea42
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /usr/local/bin/kube-proxy
+      --config=/var/lib/kube-proxy/config.conf
+      --hostname-override=$(NODE_NAME)
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:49 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:23 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:14 -0500
+    Ready:          True
+    Restart Count:  2
+    Environment:
+      NODE_NAME:   (v1:spec.nodeName)
+    Mounts:
+      /lib/modules from lib-modules (ro)
+      /run/xtables.lock from xtables-lock (rw)
+      /var/lib/kube-proxy from kube-proxy (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-554wt (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-proxy:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      kube-proxy
+    Optional:  false
+  xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+  lib-modules:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lib/modules
+    HostPathType:  
+  kube-api-access-554wt:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 op=Exists
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/network-unavailable:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+Events:                      <none>
+
+
+Name:                 kube-proxy-zvz6f
+Namespace:            kube-system
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Node:                 kind-worker3/172.18.0.4
+Start Time:           Thu, 13 Apr 2023 19:07:50 -0500
+Labels:               controller-revision-hash=547546f9bf
+                      k8s-app=kube-proxy
+                      pod-template-generation=1
+Annotations:          <none>
+Status:               Running
+IP:                   172.18.0.4
+IPs:
+  IP:           172.18.0.4
+Controlled By:  DaemonSet/kube-proxy
+Containers:
+  kube-proxy:
+    Container ID:  containerd://041c9bf8c11670337ae7ecef4cae6277cbe6623488dc925c5412e6b4a494b7f0
+    Image:         k8s.gcr.io/kube-proxy:v1.24.7
+    Image ID:      docker.io/library/import-2022-10-26@sha256:82fa4ddf64d5be44671118fb9b86c454a222ff7ea6e48863ed7e5daeeca3ea42
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      /usr/local/bin/kube-proxy
+      --config=/var/lib/kube-proxy/config.conf
+      --hostname-override=$(NODE_NAME)
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:56:47 -0500
+    Last State:     Terminated
+      Reason:       Unknown
+      Exit Code:    255
+      Started:      Sat, 13 May 2023 18:24:22 -0500
+      Finished:     Sat, 15 Jul 2023 09:56:13 -0500
+    Ready:          True
+    Restart Count:  2
+    Environment:
+      NODE_NAME:   (v1:spec.nodeName)
+    Mounts:
+      /lib/modules from lib-modules (ro)
+      /run/xtables.lock from xtables-lock (rw)
+      /var/lib/kube-proxy from kube-proxy (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-psmb2 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kube-proxy:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      kube-proxy
+    Optional:  false
+  xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+  lib-modules:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lib/modules
+    HostPathType:  
+  kube-api-access-psmb2:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 op=Exists
+                             node.kubernetes.io/disk-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/memory-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/network-unavailable:NoSchedule op=Exists
+                             node.kubernetes.io/not-ready:NoExecute op=Exists
+                             node.kubernetes.io/pid-pressure:NoSchedule op=Exists
+                             node.kubernetes.io/unreachable:NoExecute op=Exists
+                             node.kubernetes.io/unschedulable:NoSchedule op=Exists
+Events:                      <none>
+
+
+Name:                 kube-scheduler-kind-control-plane
+Namespace:            kube-system
+Priority:             2000001000
+Priority Class Name:  system-node-critical
+Node:                 kind-control-plane/172.18.0.5
+Start Time:           Fri, 18 Aug 2023 11:27:58 -0500
+Labels:               component=kube-scheduler
+                      tier=control-plane
+Annotations:          kubernetes.io/config.hash: 5f141c109632ac53fbcd0e8725e74cc8
+                      kubernetes.io/config.mirror: 5f141c109632ac53fbcd0e8725e74cc8
+                      kubernetes.io/config.seen: 2023-08-18T16:27:58.222515534Z
+                      kubernetes.io/config.source: file
+                      seccomp.security.alpha.kubernetes.io/pod: runtime/default
+Status:               Running
+IP:                   172.18.0.5
+IPs:
+  IP:           172.18.0.5
+Controlled By:  Node/kind-control-plane
+Containers:
+  kube-scheduler:
+    Container ID:  containerd://dd2ec4cfcce900d52dc9ff85fdb0c962ba8db573c87bc2b07ac0f785a6a8e244
+    Image:         k8s.gcr.io/kube-scheduler:v1.24.7
+    Image ID:      docker.io/library/import-2022-10-26@sha256:fd99c23a5f64fec4b55db13d4d7b87f68ef17c39d85242fcbaa305cf386f6ecc
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      kube-scheduler
+      --authentication-kubeconfig=/etc/kubernetes/scheduler.conf
+      --authorization-kubeconfig=/etc/kubernetes/scheduler.conf
+      --bind-address=127.0.0.1
+      --kubeconfig=/etc/kubernetes/scheduler.conf
+      --leader-elect=true
+      --v=10
+    State:          Running
+      Started:      Fri, 18 Aug 2023 11:27:59 -0500
+    Ready:          True
+    Restart Count:  0
+    Requests:
+      cpu:        100m
+    Liveness:     http-get https://127.0.0.1:10259/healthz delay=10s timeout=15s period=10s #success=1 #failure=8
+    Startup:      http-get https://127.0.0.1:10259/healthz delay=10s timeout=15s period=10s #success=1 #failure=24
+    Environment:  <none>
+    Mounts:
+      /etc/kubernetes/scheduler.conf from kubeconfig (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  kubeconfig:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/kubernetes/scheduler.conf
+    HostPathType:  FileOrCreate
+QoS Class:         Burstable
+Node-Selectors:    <none>
+Tolerations:       :NoExecute op=Exists
+Events:
+  Type    Reason   Age                From     Message
+  ----    ------   ----               ----     -------
+  Normal  Pulled   59m (x3 over 34d)  kubelet  Container image "k8s.gcr.io/kube-scheduler:v1.24.7" already present on machine
+  Normal  Created  59m (x3 over 34d)  kubelet  Created container kube-scheduler
+  Normal  Started  59m (x3 over 34d)  kubelet  Started container kube-scheduler
+
+
+Name:                 metrics-server-85bbcbfc67-688w5
+Namespace:            kube-system
+Priority:             2000000000
+Priority Class Name:  system-cluster-critical
+Node:                 kind-worker2/172.18.0.3
+Start Time:           Sun, 30 Apr 2023 15:53:38 -0500
+Labels:               k8s-app=metrics-server
+                      pod-template-hash=85bbcbfc67
+Annotations:          <none>
+Status:               Running
+IP:                   10.244.1.2
+IPs:
+  IP:           10.244.1.2
+Controlled By:  ReplicaSet/metrics-server-85bbcbfc67
+Containers:
+  metrics-server:
+    Container ID:  containerd://7fcb88960cfefbe4bc1208f3fbbf4e514e764af457560e0ff81776ed212412db
+    Image:         registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Image ID:      registry.k8s.io/metrics-server/metrics-server@sha256:c60778fa1c44d0c5a0c4530ebe83f9243ee6fc02f4c3dc59226c201931350b10
+    Port:          4443/TCP
+    Host Port:     0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:57:37 -0500
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Sat, 15 Jul 2023 09:56:50 -0500
+      Finished:     Sat, 15 Jul 2023 09:57:36 -0500
+    Ready:          True
+    Restart Count:  3
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-dklbt (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  tmp-dir:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:     
+    SizeLimit:  <unset>
+  kube-api-access-dklbt:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>
+
+
+Name:         local-path-provisioner-6b84c5c67f-hl8jz
+Namespace:    local-path-storage
+Priority:     0
+Node:         kind-control-plane/172.18.0.5
+Start Time:   Thu, 13 Apr 2023 19:07:46 -0500
+Labels:       app=local-path-provisioner
+              pod-template-hash=6b84c5c67f
+Annotations:  <none>
+Status:       Running
+IP:           10.244.0.4
+IPs:
+  IP:           10.244.0.4
+Controlled By:  ReplicaSet/local-path-provisioner-6b84c5c67f
+Containers:
+  local-path-provisioner:
+    Container ID:  containerd://5c74e11b92b99e4280b3cc9de5f7a485c04168598049ea9d821365ea380edd93
+    Image:         docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Image ID:      sha256:4c1e997385b8fb4ad4d1d3c7e5af7ff3f882e94d07cf5b78de9e889bc60830e6
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    State:          Running
+      Started:      Sat, 15 Jul 2023 09:57:46 -0500
+    Last State:     Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Sat, 15 Jul 2023 09:56:56 -0500
+      Finished:     Sat, 15 Jul 2023 09:57:34 -0500
+    Ready:          True
+    Restart Count:  4
+    Environment:
+      POD_NAMESPACE:  local-path-storage (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-67p48 (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+  kube-api-access-67p48:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              kubernetes.io/os=linux
+Tolerations:                 node-role.kubernetes.io/control-plane:NoSchedule
+                             node-role.kubernetes.io/master:NoSchedule
+                             node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:                      <none>
+
+
+Name:              kubernetes
+Namespace:         default
+Labels:            component=apiserver
+                   provider=kubernetes
+Annotations:       <none>
+Selector:          <none>
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.96.0.1
+IPs:               10.96.0.1
+Port:              https  443/TCP
+TargetPort:        6443/TCP
+Endpoints:         172.18.0.5:6443
+Session Affinity:  None
+Events:            <none>
+
+
+Name:              php-apache
+Namespace:         default
+Labels:            run=php-apache
+Annotations:       <none>
+Selector:          run=php-apache
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.96.65.225
+IPs:               10.96.65.225
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         <none>
+Session Affinity:  None
+Events:            <none>
+
+
+Name:              kube-dns
+Namespace:         kube-system
+Labels:            k8s-app=kube-dns
+                   kubernetes.io/cluster-service=true
+                   kubernetes.io/name=CoreDNS
+Annotations:       prometheus.io/port: 9153
+                   prometheus.io/scrape: true
+Selector:          k8s-app=kube-dns
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.96.0.10
+IPs:               10.96.0.10
+Port:              dns  53/UDP
+TargetPort:        53/UDP
+Endpoints:         10.244.0.2:53,10.244.0.3:53
+Port:              dns-tcp  53/TCP
+TargetPort:        53/TCP
+Endpoints:         10.244.0.2:53,10.244.0.3:53
+Port:              metrics  9153/TCP
+TargetPort:        9153/TCP
+Endpoints:         10.244.0.2:9153,10.244.0.3:9153
+Session Affinity:  None
+Events:            <none>
+
+
+Name:              metrics-server
+Namespace:         kube-system
+Labels:            k8s-app=metrics-server
+Annotations:       <none>
+Selector:          k8s-app=metrics-server
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.96.14.2
+IPs:               10.96.14.2
+Port:              https  443/TCP
+TargetPort:        https/TCP
+Endpoints:         10.244.1.2:4443
+Session Affinity:  None
+Events:            <none>
+
+
+Name:           kindnet
+Selector:       app=kindnet
+Node-Selector:  <none>
+Labels:         app=kindnet
+                k8s-app=kindnet
+                tier=node
+Annotations:    deprecated.daemonset.template.generation: 1
+Desired Number of Nodes Scheduled: 4
+Current Number of Nodes Scheduled: 4
+Number of Nodes Scheduled with Up-to-date Pods: 4
+Number of Nodes Scheduled with Available Pods: 4
+Number of Nodes Misscheduled: 0
+Pods Status:  4 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:           app=kindnet
+                    k8s-app=kindnet
+                    tier=node
+  Service Account:  kindnet
+  Containers:
+   kindnet-cni:
+    Image:      docker.io/kindest/kindnetd:v20221004-44d545d1
+    Port:       <none>
+    Host Port:  <none>
+    Limits:
+      cpu:     100m
+      memory:  50Mi
+    Requests:
+      cpu:     100m
+      memory:  50Mi
+    Environment:
+      HOST_IP:                  (v1:status.hostIP)
+      POD_IP:                   (v1:status.podIP)
+      POD_SUBNET:              10.244.0.0/16
+      CONTROL_PLANE_ENDPOINT:  kind-control-plane:6443
+    Mounts:
+      /etc/cni/net.d from cni-cfg (rw)
+      /lib/modules from lib-modules (ro)
+      /run/xtables.lock from xtables-lock (rw)
+  Volumes:
+   cni-cfg:
+    Type:          HostPath (bare host directory volume)
+    Path:          /etc/cni/net.d
+    HostPathType:  
+   xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+   lib-modules:
+    Type:          HostPath (bare host directory volume)
+    Path:          /lib/modules
+    HostPathType:  
+Events:            <none>
+
+
+Name:           kube-proxy
+Selector:       k8s-app=kube-proxy
+Node-Selector:  kubernetes.io/os=linux
+Labels:         k8s-app=kube-proxy
+Annotations:    deprecated.daemonset.template.generation: 1
+Desired Number of Nodes Scheduled: 4
+Current Number of Nodes Scheduled: 4
+Number of Nodes Scheduled with Up-to-date Pods: 4
+Number of Nodes Scheduled with Available Pods: 4
+Number of Nodes Misscheduled: 0
+Pods Status:  4 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:           k8s-app=kube-proxy
+  Service Account:  kube-proxy
+  Containers:
+   kube-proxy:
+    Image:      k8s.gcr.io/kube-proxy:v1.24.7
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      /usr/local/bin/kube-proxy
+      --config=/var/lib/kube-proxy/config.conf
+      --hostname-override=$(NODE_NAME)
+    Environment:
+      NODE_NAME:   (v1:spec.nodeName)
+    Mounts:
+      /lib/modules from lib-modules (ro)
+      /run/xtables.lock from xtables-lock (rw)
+      /var/lib/kube-proxy from kube-proxy (rw)
+  Volumes:
+   kube-proxy:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      kube-proxy
+    Optional:  false
+   xtables-lock:
+    Type:          HostPath (bare host directory volume)
+    Path:          /run/xtables.lock
+    HostPathType:  FileOrCreate
+   lib-modules:
+    Type:               HostPath (bare host directory volume)
+    Path:               /lib/modules
+    HostPathType:       
+  Priority Class Name:  system-node-critical
+Events:                 <none>
+
+
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Fri, 18 Aug 2023 12:26:52 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 0 updated | 0 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  11s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+
+
+Name:           php-apache-7f879b889b
+Namespace:      default
+Selector:       pod-template-hash=7f879b889b,run=php-apache
+Labels:         pod-template-hash=7f879b889b
+                run=php-apache
+Annotations:    deployment.kubernetes.io/desired-replicas: 1
+                deployment.kubernetes.io/max-replicas: 2
+                deployment.kubernetes.io/revision: 1
+Controlled By:  Deployment/php-apache
+Replicas:       1 current / 1 desired
+Pods Status:    0 Running / 48 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:  pod-template-hash=7f879b889b
+           run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Events:
+  Type    Reason            Age                From                   Message
+  ----    ------            ----               ----                   -------
+  Normal  SuccessfulCreate  12s                replicaset-controller  Created pod: php-apache-7f879b889b-6sm2j
+  Normal  SuccessfulCreate  12s                replicaset-controller  Created pod: php-apache-7f879b889b-nzmm2
+  Normal  SuccessfulCreate  12s                replicaset-controller  Created pod: php-apache-7f879b889b-jxgml
+  Normal  SuccessfulCreate  12s                replicaset-controller  Created pod: php-apache-7f879b889b-7hcsw
+  Normal  SuccessfulCreate  11s                replicaset-controller  Created pod: php-apache-7f879b889b-r6jxw
+  Normal  SuccessfulCreate  11s                replicaset-controller  Created pod: php-apache-7f879b889b-95bsx
+  Normal  SuccessfulCreate  11s                replicaset-controller  Created pod: php-apache-7f879b889b-xtn5h
+  Normal  SuccessfulCreate  11s                replicaset-controller  Created pod: php-apache-7f879b889b-45jbd
+  Normal  SuccessfulCreate  11s                replicaset-controller  Created pod: php-apache-7f879b889b-f9v6g
+  Normal  SuccessfulCreate  8s (x16 over 10s)  replicaset-controller  (combined from similar events): Created pod: php-apache-7f879b889b-c4ww2
+
+
+Name:           coredns-6d4b75cb6d
+Namespace:      kube-system
+Selector:       k8s-app=kube-dns,pod-template-hash=6d4b75cb6d
+Labels:         k8s-app=kube-dns
+                pod-template-hash=6d4b75cb6d
+Annotations:    deployment.kubernetes.io/desired-replicas: 2
+                deployment.kubernetes.io/max-replicas: 3
+                deployment.kubernetes.io/revision: 1
+Controlled By:  Deployment/coredns
+Replicas:       2 current / 2 desired
+Pods Status:    2 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:           k8s-app=kube-dns
+                    pod-template-hash=6d4b75cb6d
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Events:                 <none>
+
+
+Name:           metrics-server-5744bdc4f4
+Namespace:      kube-system
+Selector:       k8s-app=metrics-server,pod-template-hash=5744bdc4f4
+Labels:         k8s-app=metrics-server
+                pod-template-hash=5744bdc4f4
+Annotations:    deployment.kubernetes.io/desired-replicas: 1
+                deployment.kubernetes.io/max-replicas: 2
+                deployment.kubernetes.io/revision: 2
+Controlled By:  Deployment/metrics-server
+Replicas:       0 current / 0 desired
+Pods Status:    0 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:           k8s-app=metrics-server
+                    pod-template-hash=5744bdc4f4
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=15s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Events:                 <none>
+
+
+Name:           metrics-server-6bf466fbf5
+Namespace:      kube-system
+Selector:       k8s-app=metrics-server,pod-template-hash=6bf466fbf5
+Labels:         k8s-app=metrics-server
+                pod-template-hash=6bf466fbf5
+Annotations:    deployment.kubernetes.io/desired-replicas: 1
+                deployment.kubernetes.io/max-replicas: 2
+                deployment.kubernetes.io/revision: 1
+Controlled By:  Deployment/metrics-server
+Replicas:       0 current / 0 desired
+Pods Status:    0 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:           k8s-app=metrics-server
+                    pod-template-hash=6bf466fbf5
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=15s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Events:                 <none>
+
+
+Name:           metrics-server-85bbcbfc67
+Namespace:      kube-system
+Selector:       k8s-app=metrics-server,pod-template-hash=85bbcbfc67
+Labels:         k8s-app=metrics-server
+                pod-template-hash=85bbcbfc67
+Annotations:    deployment.kubernetes.io/desired-replicas: 1
+                deployment.kubernetes.io/max-replicas: 2
+                deployment.kubernetes.io/revision: 5
+                deployment.kubernetes.io/revision-history: 3
+Controlled By:  Deployment/metrics-server
+Replicas:       1 current / 1 desired
+Pods Status:    1 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:           k8s-app=metrics-server
+                    pod-template-hash=85bbcbfc67
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Events:                 <none>
+
+
+Name:           metrics-server-b88c4fdc7
+Namespace:      kube-system
+Selector:       k8s-app=metrics-server,pod-template-hash=b88c4fdc7
+Labels:         k8s-app=metrics-server
+                pod-template-hash=b88c4fdc7
+Annotations:    deployment.kubernetes.io/desired-replicas: 1
+                deployment.kubernetes.io/max-replicas: 2
+                deployment.kubernetes.io/revision: 4
+Controlled By:  Deployment/metrics-server
+Replicas:       0 current / 0 desired
+Pods Status:    0 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:           k8s-app=metrics-server
+                    pod-template-hash=b88c4fdc7
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=5s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Events:                 <none>
+
+
+Name:           local-path-provisioner-6b84c5c67f
+Namespace:      local-path-storage
+Selector:       app=local-path-provisioner,pod-template-hash=6b84c5c67f
+Labels:         app=local-path-provisioner
+                pod-template-hash=6b84c5c67f
+Annotations:    deployment.kubernetes.io/desired-replicas: 1
+                deployment.kubernetes.io/max-replicas: 2
+                deployment.kubernetes.io/revision: 1
+Controlled By:  Deployment/local-path-provisioner
+Replicas:       1 current / 1 desired
+Pods Status:    1 Running / 0 Waiting / 0 Succeeded / 0 Failed
+Pod Template:
+  Labels:           app=local-path-provisioner
+                    pod-template-hash=6b84c5c67f
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Events:        <none>
