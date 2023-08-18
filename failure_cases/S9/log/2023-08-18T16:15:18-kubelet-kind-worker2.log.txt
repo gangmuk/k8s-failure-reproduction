@@ -1,0 +1,6 @@
+Aug 18 21:13:13 kind-worker2 kubelet[280]: I0818 21:13:13.899429     280 topology_manager.go:200] "Topology Admit Handler"
+Aug 18 21:13:13 kind-worker2 kubelet[280]: E0818 21:13:13.901440     280 cpu_manager.go:394] "RemoveStaleState: removing container" podUID="d9455f9c-1de0-4378-82df-d3033b1c2244" containerName="nginx"
+Aug 18 21:13:13 kind-worker2 kubelet[280]: E0818 21:13:13.901659     280 cpu_manager.go:394] "RemoveStaleState: removing container" podUID="515e8d20-f62d-41b6-8055-8999a36053cb" containerName="nginx"
+Aug 18 21:13:13 kind-worker2 kubelet[280]: I0818 21:13:13.901873     280 memory_manager.go:345] "RemoveStaleState removing state" podUID="515e8d20-f62d-41b6-8055-8999a36053cb" containerName="nginx"
+Aug 18 21:13:13 kind-worker2 kubelet[280]: I0818 21:13:13.902039     280 memory_manager.go:345] "RemoveStaleState removing state" podUID="d9455f9c-1de0-4378-82df-d3033b1c2244" containerName="nginx"
+Aug 18 21:13:14 kind-worker2 kubelet[280]: I0818 21:13:14.023457     280 reconciler.go:342] "operationExecutor.VerifyControllerAttachedVolume started for volume \"kube-api-access-nd8kr\" (UniqueName: \"kubernetes.io/projected/e38a3c8f-5910-4911-a109-cbfc006aa6c7-kube-api-access-nd8kr\") pod \"nginx-deployment-54869fcddb-dqzrz\" (UID: \"e38a3c8f-5910-4911-a109-cbfc006aa6c7\") " pod="default/nginx-deployment-54869fcddb-dqzrz"
