@@ -15,11 +15,13 @@ if __name__ == "__main__":
     getnode = log_dir + "/bin/log_getnode.sh"
     gethpa = log_dir + "/bin/log_gethpa.sh"
     getdeploy = log_dir + "/bin/log_getdeploy.sh"
+    getreplicaset = log_dir + "/bin/log_getreplicaset.sh"
 
     describeall = log_dir + "/bin/log_describe_all.sh"
     describenode = log_dir + "/bin/log_describe_node.sh"
     describepod = log_dir + "/bin/log_describe_pod.sh"
     describedeploy = log_dir + "/bin/log_describe_deploy.sh"
+    describehpa = log_dir + "/bin/log_describe_hpa.sh"
 
     toppod = log_dir + "/bin/log_top_pod.sh"
     topnode = log_dir + "/bin/log_top_node.sh"
@@ -38,7 +40,7 @@ if __name__ == "__main__":
     print_exec_log(clear_scheduler_log)
     time.sleep(1)
 
-    command_list = [record_start_time, getpod, getnode, getdeploy,  describeall, describepod, describenode, describedeploy, gethpa, toppod, topnode]
+    command_list = [record_start_time, getpod, getnode, getdeploy, getreplicaset,  describeall, describepod, describenode, describedeploy, describehpa, gethpa, toppod, topnode]
 
     process_list = list()
     for cmd in command_list:

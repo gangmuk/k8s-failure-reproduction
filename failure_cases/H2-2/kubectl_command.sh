@@ -11,9 +11,10 @@ update_time
 echo -n "python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py,start logging,${CDT},${UTC}," >> ${fn}
 echo "logging start"
 python3 /home/gangmuk2/project/k8s-failure-reproduction/logging/logging_start.py &
+
 update_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 5
+sleep 10
 
 update_time
 echo -n "kubectl apply -f deploy_php.yaml,apply deployment php-apache,${CDT},${UTC}," >> ${fn}
@@ -75,6 +76,7 @@ sleep 1
 update_time
 echo -n "kubectl delete hpa/php-apache,delete hpa php-apache,${CDT},${UTC}," >> ${fn}
 kubectl delete hpa/php-apache
+
 update_time
 echo "${CDT},${UTC}" >> ${fn}
 sleep 1
