@@ -1,0 +1,8 @@
+command,keyword,start_cdt,start_utc,end_cdt,end_utc
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_start
+.py,start logging,2023-08-21T19:24:35,2023-08-22T00:24:35,2023-08-21T19:24:35,2023-08-22T00:24:35
+kubectl taint nodes kind-worker key1=value1:NoExecute,taint node,2023-08-21T19:24:45,2023-08-22T00:24:45,2023-08-21T19:24:45,2023-08-22T00:24:45
+kubectl apply -f deploy.yaml,apply deploy_php-apache,2023-08-21T19:24:50,2023-08-22T00:24:50,2023-08-21T19:24:51,2023-08-22T00:24:51
+pkill -f "python3 logging_start.py",stop logging_start.py,2023-08-21T19:25:21,2023-08-22T00:25:21,2023-08-21T19:25:21,2023-08-22T00:25:21
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_end.py,end logging,2023-08-21T19:25:26,2023-08-22T00:25:26,kubectl delete deploy/php-apache,2023-08-21T19:25:36,2023-08-22T00:25:36,2023-08-21T19:25:36,2023-08-22T00:25:36
+kubectl taint nodes kind-worker key1=value1:NoExecute-,remove taint node,2023-08-21T19:25:39,2023-08-22T00:25:39,2023-08-21T19:25:39,2023-08-22T00:25:39

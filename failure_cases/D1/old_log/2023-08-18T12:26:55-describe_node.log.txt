@@ -1,0 +1,931 @@
+idx,0,LOG_TIME,2023-08-18T17:26:55,2023-08-18T12:26:55
+Name:               kind-control-plane
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-control-plane
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/control-plane=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:06 -0500
+Taints:             node-role.kubernetes.io/control-plane:NoSchedule
+                    node-role.kubernetes.io/master:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-control-plane
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:52 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:22:55 -0500   Thu, 13 Apr 2023 19:07:01 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:22:55 -0500   Thu, 13 Apr 2023 19:07:01 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:22:55 -0500   Thu, 13 Apr 2023 19:07:01 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:22:55 -0500   Thu, 20 Apr 2023 14:12:59 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.5
+  Hostname:    kind-control-plane
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 9394c5de2ae34c53b558824c0c879ccc
+  System UUID:                18743b57-d5e0-4e1c-914f-141605bd012c
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+ProviderID:                   kind://docker/kind/kind-control-plane
+Non-terminated Pods:          (9 in total)
+  Namespace                   Name                                          CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                          ------------  ----------  ---------------  -------------  ---
+  kube-system                 coredns-6d4b75cb6d-lxl4v                      100m (1%)     0 (0%)      70Mi (0%)        170Mi (2%)     126d
+  kube-system                 coredns-6d4b75cb6d-qd7c5                      100m (1%)     0 (0%)      70Mi (0%)        170Mi (2%)     126d
+  kube-system                 etcd-kind-control-plane                       100m (1%)     0 (0%)      100Mi (1%)       0 (0%)         34d
+  kube-system                 kindnet-5qsnq                                 100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-apiserver-kind-control-plane             250m (3%)     0 (0%)      0 (0%)           0 (0%)         34d
+  kube-system                 kube-controller-manager-kind-control-plane    200m (2%)     0 (0%)      0 (0%)           0 (0%)         126d
+  kube-system                 kube-proxy-h9lds                              0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+  kube-system                 kube-scheduler-kind-control-plane             100m (1%)     0 (0%)      0 (0%)           0 (0%)         58m
+  local-path-storage          local-path-provisioner-6b84c5c67f-hl8jz       0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                950m (11%)  100m (1%)
+  memory             290Mi (3%)  390Mi (4%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:              <none>
+
+
+Name:               kind-worker
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-worker
+                    kubernetes.io/os=linux
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:47 -0500
+Taints:             key1=value1:NoExecute
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-worker
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:52 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.2
+  Hostname:    kind-worker
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 ca0171ac95a34de68efd42373df702a4
+  System UUID:                f801e4bb-84b4-4f6e-8a5d-5647fbec9b9f
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.2.0/24
+PodCIDRs:                     10.244.2.0/24
+ProviderID:                   kind://docker/kind/kind-worker
+Non-terminated Pods:          (17 in total)
+  Namespace                   Name                           CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                           ------------  ----------  ---------------  -------------  ---
+  default                     php-apache-7f879b889b-6v2ll    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-c4ww2    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-g2zlb    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-h4xsm    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-hxnk4    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-m7q4w    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-mttq8    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-qfdlv    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-qp965    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-qznks    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-rgwmh    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-vfcvj    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-wb26s    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-x2762    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-zcx9c    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  kube-system                 kindnet-f9v6g                  100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-proxy-jgb94               0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                100m (1%)  100m (1%)
+  memory             50Mi (0%)  50Mi (0%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+Events:              <none>
+
+
+Name:               kind-worker2
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-worker2
+                    kubernetes.io/os=linux
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:46 -0500
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-worker2
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:54 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:07:46 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:07:46 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:07:46 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:08:28 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.3
+  Hostname:    kind-worker2
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 0ed339bfb8e84fa59142b37529a2b38e
+  System UUID:                b7dae249-f693-4e29-b386-60d73abe440a
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.1.0/24
+PodCIDRs:                     10.244.1.0/24
+ProviderID:                   kind://docker/kind/kind-worker2
+Non-terminated Pods:          (3 in total)
+  Namespace                   Name                               CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                               ------------  ----------  ---------------  -------------  ---
+  kube-system                 kindnet-b427z                      100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-proxy-qj9bm                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+  kube-system                 metrics-server-85bbcbfc67-688w5    100m (1%)     0 (0%)      200Mi (2%)       0 (0%)         109d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                200m (2%)   100m (1%)
+  memory             250Mi (3%)  50Mi (0%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:              <none>
+
+
+Name:               kind-worker3
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-worker3
+                    kubernetes.io/os=linux
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:47 -0500
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-worker3
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:50 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:07:47 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:07:47 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:07:47 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:08:08 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.4
+  Hostname:    kind-worker3
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 b4a99fd0fbf04a97a052dd25d047edde
+  System UUID:                723ad360-e481-4de1-bb44-6e75309b98b3
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.3.0/24
+PodCIDRs:                     10.244.3.0/24
+ProviderID:                   kind://docker/kind/kind-worker3
+Non-terminated Pods:          (2 in total)
+  Namespace                   Name                CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                ------------  ----------  ---------------  -------------  ---
+  kube-system                 kindnet-mxmhl       100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-proxy-zvz6f    0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                100m (1%)  100m (1%)
+  memory             50Mi (0%)  50Mi (0%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+Events:              <none>
+idx,1,LOG_TIME,2023-08-18T17:26:57,2023-08-18T12:26:57
+Name:               kind-control-plane
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-control-plane
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/control-plane=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:06 -0500
+Taints:             node-role.kubernetes.io/control-plane:NoSchedule
+                    node-role.kubernetes.io/master:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-control-plane
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:52 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:22:55 -0500   Thu, 13 Apr 2023 19:07:01 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:22:55 -0500   Thu, 13 Apr 2023 19:07:01 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:22:55 -0500   Thu, 13 Apr 2023 19:07:01 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:22:55 -0500   Thu, 20 Apr 2023 14:12:59 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.5
+  Hostname:    kind-control-plane
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 9394c5de2ae34c53b558824c0c879ccc
+  System UUID:                18743b57-d5e0-4e1c-914f-141605bd012c
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+ProviderID:                   kind://docker/kind/kind-control-plane
+Non-terminated Pods:          (9 in total)
+  Namespace                   Name                                          CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                          ------------  ----------  ---------------  -------------  ---
+  kube-system                 coredns-6d4b75cb6d-lxl4v                      100m (1%)     0 (0%)      70Mi (0%)        170Mi (2%)     126d
+  kube-system                 coredns-6d4b75cb6d-qd7c5                      100m (1%)     0 (0%)      70Mi (0%)        170Mi (2%)     126d
+  kube-system                 etcd-kind-control-plane                       100m (1%)     0 (0%)      100Mi (1%)       0 (0%)         34d
+  kube-system                 kindnet-5qsnq                                 100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-apiserver-kind-control-plane             250m (3%)     0 (0%)      0 (0%)           0 (0%)         34d
+  kube-system                 kube-controller-manager-kind-control-plane    200m (2%)     0 (0%)      0 (0%)           0 (0%)         126d
+  kube-system                 kube-proxy-h9lds                              0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+  kube-system                 kube-scheduler-kind-control-plane             100m (1%)     0 (0%)      0 (0%)           0 (0%)         59m
+  local-path-storage          local-path-provisioner-6b84c5c67f-hl8jz       0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                950m (11%)  100m (1%)
+  memory             290Mi (3%)  390Mi (4%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:              <none>
+
+
+Name:               kind-worker
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-worker
+                    kubernetes.io/os=linux
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:47 -0500
+Taints:             key1=value1:NoExecute
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-worker
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:52 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.2
+  Hostname:    kind-worker
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 ca0171ac95a34de68efd42373df702a4
+  System UUID:                f801e4bb-84b4-4f6e-8a5d-5647fbec9b9f
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.2.0/24
+PodCIDRs:                     10.244.2.0/24
+ProviderID:                   kind://docker/kind/kind-worker
+Non-terminated Pods:          (26 in total)
+  Namespace                   Name                           CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                           ------------  ----------  ---------------  -------------  ---
+  default                     php-apache-7f879b889b-4529f    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-4crrd    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-6v2ll    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-9t2vl    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-bbqqb    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-c4ww2    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-fkptr    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-h4xsm    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4s
+  default                     php-apache-7f879b889b-h89dt    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-hxnk4    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5s
+  default                     php-apache-7f879b889b-m7q4w    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5s
+  default                     php-apache-7f879b889b-mrzgg    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-mttq8    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5s
+  default                     php-apache-7f879b889b-n265f    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-qfdlv    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5s
+  default                     php-apache-7f879b889b-qp965    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5s
+  default                     php-apache-7f879b889b-qznks    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4s
+  default                     php-apache-7f879b889b-rgwmh    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-tpbg9    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-vfcvj    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4s
+  default                     php-apache-7f879b889b-wb26s    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5s
+  default                     php-apache-7f879b889b-wxsqk    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-x2762    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4s
+  default                     php-apache-7f879b889b-zcx9c    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  kube-system                 kindnet-f9v6g                  100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-proxy-jgb94               0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                100m (1%)  100m (1%)
+  memory             50Mi (0%)  50Mi (0%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+Events:              <none>
+
+
+Name:               kind-worker2
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-worker2
+                    kubernetes.io/os=linux
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:46 -0500
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-worker2
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:54 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:07:46 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:07:46 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:07:46 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:08:28 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.3
+  Hostname:    kind-worker2
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 0ed339bfb8e84fa59142b37529a2b38e
+  System UUID:                b7dae249-f693-4e29-b386-60d73abe440a
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.1.0/24
+PodCIDRs:                     10.244.1.0/24
+ProviderID:                   kind://docker/kind/kind-worker2
+Non-terminated Pods:          (3 in total)
+  Namespace                   Name                               CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                               ------------  ----------  ---------------  -------------  ---
+  kube-system                 kindnet-b427z                      100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-proxy-qj9bm                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+  kube-system                 metrics-server-85bbcbfc67-688w5    100m (1%)     0 (0%)      200Mi (2%)       0 (0%)         109d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                200m (2%)   100m (1%)
+  memory             250Mi (3%)  50Mi (0%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:              <none>
+
+
+Name:               kind-worker3
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-worker3
+                    kubernetes.io/os=linux
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:47 -0500
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-worker3
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:50 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:07:47 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:07:47 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:07:47 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:08:08 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.4
+  Hostname:    kind-worker3
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 b4a99fd0fbf04a97a052dd25d047edde
+  System UUID:                723ad360-e481-4de1-bb44-6e75309b98b3
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.3.0/24
+PodCIDRs:                     10.244.3.0/24
+ProviderID:                   kind://docker/kind/kind-worker3
+Non-terminated Pods:          (2 in total)
+  Namespace                   Name                CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                ------------  ----------  ---------------  -------------  ---
+  kube-system                 kindnet-mxmhl       100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-proxy-zvz6f    0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                100m (1%)  100m (1%)
+  memory             50Mi (0%)  50Mi (0%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+Events:              <none>
+idx,2,LOG_TIME,2023-08-18T17:27:00,2023-08-18T12:27:00
+Name:               kind-control-plane
+Roles:              control-plane
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-control-plane
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/control-plane=
+                    node.kubernetes.io/exclude-from-external-load-balancers=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:06 -0500
+Taints:             node-role.kubernetes.io/control-plane:NoSchedule
+                    node-role.kubernetes.io/master:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-control-plane
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:52 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:22:55 -0500   Thu, 13 Apr 2023 19:07:01 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:22:55 -0500   Thu, 13 Apr 2023 19:07:01 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:22:55 -0500   Thu, 13 Apr 2023 19:07:01 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:22:55 -0500   Thu, 20 Apr 2023 14:12:59 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.5
+  Hostname:    kind-control-plane
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 9394c5de2ae34c53b558824c0c879ccc
+  System UUID:                18743b57-d5e0-4e1c-914f-141605bd012c
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.0.0/24
+PodCIDRs:                     10.244.0.0/24
+ProviderID:                   kind://docker/kind/kind-control-plane
+Non-terminated Pods:          (9 in total)
+  Namespace                   Name                                          CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                                          ------------  ----------  ---------------  -------------  ---
+  kube-system                 coredns-6d4b75cb6d-lxl4v                      100m (1%)     0 (0%)      70Mi (0%)        170Mi (2%)     126d
+  kube-system                 coredns-6d4b75cb6d-qd7c5                      100m (1%)     0 (0%)      70Mi (0%)        170Mi (2%)     126d
+  kube-system                 etcd-kind-control-plane                       100m (1%)     0 (0%)      100Mi (1%)       0 (0%)         34d
+  kube-system                 kindnet-5qsnq                                 100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-apiserver-kind-control-plane             250m (3%)     0 (0%)      0 (0%)           0 (0%)         34d
+  kube-system                 kube-controller-manager-kind-control-plane    200m (2%)     0 (0%)      0 (0%)           0 (0%)         126d
+  kube-system                 kube-proxy-h9lds                              0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+  kube-system                 kube-scheduler-kind-control-plane             100m (1%)     0 (0%)      0 (0%)           0 (0%)         59m
+  local-path-storage          local-path-provisioner-6b84c5c67f-hl8jz       0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                950m (11%)  100m (1%)
+  memory             290Mi (3%)  390Mi (4%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:              <none>
+
+
+Name:               kind-worker
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-worker
+                    kubernetes.io/os=linux
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:47 -0500
+Taints:             key1=value1:NoExecute
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-worker
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:52 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:22:27 -0500   Sun, 07 May 2023 11:43:03 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.2
+  Hostname:    kind-worker
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 ca0171ac95a34de68efd42373df702a4
+  System UUID:                f801e4bb-84b4-4f6e-8a5d-5647fbec9b9f
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.2.0/24
+PodCIDRs:                     10.244.2.0/24
+ProviderID:                   kind://docker/kind/kind-worker
+Non-terminated Pods:          (36 in total)
+  Namespace                   Name                           CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                           ------------  ----------  ---------------  -------------  ---
+  default                     php-apache-7f879b889b-4529f    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4s
+  default                     php-apache-7f879b889b-4crrd    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-4kcc5    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-5s4fd    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-69pl2    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-6v2ll    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5s
+  default                     php-apache-7f879b889b-6vxlr    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-9gbg6    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-9t2vl    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4s
+  default                     php-apache-7f879b889b-bbqqb    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4s
+  default                     php-apache-7f879b889b-c4ww2    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5s
+  default                     php-apache-7f879b889b-fkptr    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-h4xsm    0 (0%)        0 (0%)      0 (0%)           0 (0%)         6s
+  default                     php-apache-7f879b889b-h89dt    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-hxnk4    0 (0%)        0 (0%)      0 (0%)           0 (0%)         7s
+  default                     php-apache-7f879b889b-knntx    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-m7q4w    0 (0%)        0 (0%)      0 (0%)           0 (0%)         7s
+  default                     php-apache-7f879b889b-mb5gj    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-mfkzd    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-mrzgg    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4s
+  default                     php-apache-7f879b889b-mttq8    0 (0%)        0 (0%)      0 (0%)           0 (0%)         7s
+  default                     php-apache-7f879b889b-n265f    0 (0%)        0 (0%)      0 (0%)           0 (0%)         3s
+  default                     php-apache-7f879b889b-pg452    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-qp965    0 (0%)        0 (0%)      0 (0%)           0 (0%)         7s
+  default                     php-apache-7f879b889b-qsq2c    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-qznks    0 (0%)        0 (0%)      0 (0%)           0 (0%)         6s
+  default                     php-apache-7f879b889b-qzzg5    0 (0%)        0 (0%)      0 (0%)           0 (0%)         1s
+  default                     php-apache-7f879b889b-tpbg9    0 (0%)        0 (0%)      0 (0%)           0 (0%)         4s
+  default                     php-apache-7f879b889b-tt5nx    0 (0%)        0 (0%)      0 (0%)           0 (0%)         2s
+  default                     php-apache-7f879b889b-vfcvj    0 (0%)        0 (0%)      0 (0%)           0 (0%)         6s
+  default                     php-apache-7f879b889b-wb26s    0 (0%)        0 (0%)      0 (0%)           0 (0%)         7s
+  default                     php-apache-7f879b889b-wxsqk    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5s
+  default                     php-apache-7f879b889b-x2762    0 (0%)        0 (0%)      0 (0%)           0 (0%)         6s
+  default                     php-apache-7f879b889b-zcx9c    0 (0%)        0 (0%)      0 (0%)           0 (0%)         5s
+  kube-system                 kindnet-f9v6g                  100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-proxy-jgb94               0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                100m (1%)  100m (1%)
+  memory             50Mi (0%)  50Mi (0%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+Events:              <none>
+
+
+Name:               kind-worker2
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-worker2
+                    kubernetes.io/os=linux
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:46 -0500
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-worker2
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:26:54 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:07:46 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:07:46 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:07:46 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:22:27 -0500   Thu, 13 Apr 2023 19:08:28 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.3
+  Hostname:    kind-worker2
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 0ed339bfb8e84fa59142b37529a2b38e
+  System UUID:                b7dae249-f693-4e29-b386-60d73abe440a
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.1.0/24
+PodCIDRs:                     10.244.1.0/24
+ProviderID:                   kind://docker/kind/kind-worker2
+Non-terminated Pods:          (3 in total)
+  Namespace                   Name                               CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                               ------------  ----------  ---------------  -------------  ---
+  kube-system                 kindnet-b427z                      100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-proxy-qj9bm                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+  kube-system                 metrics-server-85bbcbfc67-688w5    100m (1%)     0 (0%)      200Mi (2%)       0 (0%)         109d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                200m (2%)   100m (1%)
+  memory             250Mi (3%)  50Mi (0%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:              <none>
+
+
+Name:               kind-worker3
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=kind-worker3
+                    kubernetes.io/os=linux
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: unix:///run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Thu, 13 Apr 2023 19:07:47 -0500
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  kind-worker3
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 18 Aug 2023 12:27:00 -0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:07:47 -0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:07:47 -0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:07:47 -0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 18 Aug 2023 12:23:26 -0500   Thu, 13 Apr 2023 19:08:08 -0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  172.18.0.4
+  Hostname:    kind-worker3
+Capacity:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  51341792Ki
+  hugepages-2Mi:      0
+  memory:             8166760Ki
+  pods:               110
+System Info:
+  Machine ID:                 b4a99fd0fbf04a97a052dd25d047edde
+  System UUID:                723ad360-e481-4de1-bb44-6e75309b98b3
+  Boot ID:                    58968db1-8105-448a-bbd3-c5f8f0df0de1
+  Kernel Version:             4.15.0-156-generic
+  OS Image:                   Ubuntu 22.04.1 LTS
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.9
+  Kubelet Version:            v1.24.7
+  Kube-Proxy Version:         v1.24.7
+PodCIDR:                      10.244.3.0/24
+PodCIDRs:                     10.244.3.0/24
+ProviderID:                   kind://docker/kind/kind-worker3
+Non-terminated Pods:          (2 in total)
+  Namespace                   Name                CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                ------------  ----------  ---------------  -------------  ---
+  kube-system                 kindnet-mxmhl       100m (1%)     100m (1%)   50Mi (0%)        50Mi (0%)      126d
+  kube-system                 kube-proxy-zvz6f    0 (0%)        0 (0%)      0 (0%)           0 (0%)         126d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests   Limits
+  --------           --------   ------
+  cpu                100m (1%)  100m (1%)
+  memory             50Mi (0%)  50Mi (0%)
+  ephemeral-storage  0 (0%)     0 (0%)
+  hugepages-2Mi      0 (0%)     0 (0%)
+Events:              <none>

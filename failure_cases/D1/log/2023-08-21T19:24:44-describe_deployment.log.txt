@@ -1,0 +1,4991 @@
+idx,0,LOG_TIME,2023-08-22T00:24:44,2023-08-21T19:24:44
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,1,LOG_TIME,2023-08-22T00:24:45,2023-08-21T19:24:45
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,2,LOG_TIME,2023-08-22T00:24:46,2023-08-21T19:24:46
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,3,LOG_TIME,2023-08-22T00:24:47,2023-08-21T19:24:47
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,4,LOG_TIME,2023-08-22T00:24:48,2023-08-21T19:24:48
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,5,LOG_TIME,2023-08-22T00:24:49,2023-08-21T19:24:49
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,6,LOG_TIME,2023-08-22T00:24:50,2023-08-21T19:24:50
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 0 updated | 0 total | 0 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetCreated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  0s    deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,7,LOG_TIME,2023-08-22T00:24:52,2023-08-21T19:24:52
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 0 updated | 0 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  1s    deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,8,LOG_TIME,2023-08-22T00:24:53,2023-08-21T19:24:53
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  3s    deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,9,LOG_TIME,2023-08-22T00:24:54,2023-08-21T19:24:54
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  4s    deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,10,LOG_TIME,2023-08-22T00:24:56,2023-08-21T19:24:56
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 0 updated | 0 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  5s    deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,11,LOG_TIME,2023-08-22T00:24:57,2023-08-21T19:24:57
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  6s    deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,12,LOG_TIME,2023-08-22T00:24:58,2023-08-21T19:24:58
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  7s    deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,13,LOG_TIME,2023-08-22T00:24:59,2023-08-21T19:24:59
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 0 updated | 0 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  8s    deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,14,LOG_TIME,2023-08-22T00:25:00,2023-08-21T19:25:00
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 0 updated | 0 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  10s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,15,LOG_TIME,2023-08-22T00:25:02,2023-08-21T19:25:02
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  11s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,16,LOG_TIME,2023-08-22T00:25:03,2023-08-21T19:25:03
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 0 updated | 0 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  12s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,17,LOG_TIME,2023-08-22T00:25:04,2023-08-21T19:25:04
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  14s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,18,LOG_TIME,2023-08-22T00:25:05,2023-08-21T19:25:05
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  15s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,19,LOG_TIME,2023-08-22T00:25:07,2023-08-21T19:25:07
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  16s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,20,LOG_TIME,2023-08-22T00:25:08,2023-08-21T19:25:08
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  18s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,21,LOG_TIME,2023-08-22T00:25:09,2023-08-21T19:25:09
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  19s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,22,LOG_TIME,2023-08-22T00:25:11,2023-08-21T19:25:11
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 0 updated | 0 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  20s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,23,LOG_TIME,2023-08-22T00:25:12,2023-08-21T19:25:12
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  21s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,24,LOG_TIME,2023-08-22T00:25:13,2023-08-21T19:25:13
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  22s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,25,LOG_TIME,2023-08-22T00:25:14,2023-08-21T19:25:14
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 0 updated | 0 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  24s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,26,LOG_TIME,2023-08-22T00:25:16,2023-08-21T19:25:16
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  25s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,27,LOG_TIME,2023-08-22T00:25:17,2023-08-21T19:25:17
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  27s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,28,LOG_TIME,2023-08-22T00:25:19,2023-08-21T19:25:19
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  28s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
+idx,29,LOG_TIME,2023-08-22T00:25:20,2023-08-21T19:25:20
+Name:                   php-apache
+Namespace:              default
+CreationTimestamp:      Mon, 21 Aug 2023 19:24:50 -0500
+Labels:                 run=php-apache
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=php-apache
+Replicas:               1 desired | 1 updated | 1 total | 0 available | 1 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=php-apache
+  Containers:
+   php-apache:
+    Image:        registry.k8s.io/hpa-example
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      False   MinimumReplicasUnavailable
+  Progressing    True    ReplicaSetUpdated
+OldReplicaSets:  <none>
+NewReplicaSet:   php-apache-7f879b889b (0/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  30s   deployment-controller  Scaled up replica set php-apache-7f879b889b to 1
+
+
+Name:                   coredns
+Namespace:              kube-system
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:13 -0500
+Labels:                 k8s-app=kube-dns
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               k8s-app=kube-dns
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  1 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=kube-dns
+  Service Account:  coredns
+  Containers:
+   coredns:
+    Image:       k8s.gcr.io/coredns/coredns:v1.8.6
+    Ports:       53/UDP, 53/TCP, 9153/TCP
+    Host Ports:  0/UDP, 0/TCP, 0/TCP
+    Args:
+      -conf
+      /etc/coredns/Corefile
+    Limits:
+      memory:  170Mi
+    Requests:
+      cpu:        100m
+      memory:     70Mi
+    Liveness:     http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5
+    Readiness:    http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /etc/coredns from config-volume (ro)
+  Volumes:
+   config-volume:
+    Type:               ConfigMap (a volume populated by a ConfigMap)
+    Name:               coredns
+    Optional:           false
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   coredns-6d4b75cb6d (2/2 replicas created)
+Events:          <none>
+
+
+Name:                   metrics-server
+Namespace:              kube-system
+CreationTimestamp:      Wed, 19 Apr 2023 19:03:11 -0500
+Labels:                 k8s-app=metrics-server
+Annotations:            deployment.kubernetes.io/revision: 5
+Selector:               k8s-app=metrics-server
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  0 max unavailable, 25% max surge
+Pod Template:
+  Labels:           k8s-app=metrics-server
+  Service Account:  metrics-server
+  Containers:
+   metrics-server:
+    Image:      registry.k8s.io/metrics-server/metrics-server:v0.6.3
+    Port:       4443/TCP
+    Host Port:  0/TCP
+    Args:
+      --cert-dir=/tmp
+      --secure-port=4443
+      --kubelet-insecure-tls
+      --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      --kubelet-use-node-status-port
+      --metric-resolution=10s
+    Requests:
+      cpu:        100m
+      memory:     200Mi
+    Liveness:     http-get https://:https/livez delay=0s timeout=1s period=10s #success=1 #failure=3
+    Readiness:    http-get https://:https/readyz delay=20s timeout=1s period=10s #success=1 #failure=3
+    Environment:  <none>
+    Mounts:
+      /tmp from tmp-dir (rw)
+  Volumes:
+   tmp-dir:
+    Type:               EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:             
+    SizeLimit:          <unset>
+  Priority Class Name:  system-cluster-critical
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   metrics-server-85bbcbfc67 (1/1 replicas created)
+Events:          <none>
+
+
+Name:                   local-path-provisioner
+Namespace:              local-path-storage
+CreationTimestamp:      Thu, 13 Apr 2023 19:07:22 -0500
+Labels:                 <none>
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               app=local-path-provisioner
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:           app=local-path-provisioner
+  Service Account:  local-path-provisioner-service-account
+  Containers:
+   local-path-provisioner:
+    Image:      docker.io/kindest/local-path-provisioner:v0.0.22-kind.0
+    Port:       <none>
+    Host Port:  <none>
+    Command:
+      local-path-provisioner
+      --debug
+      start
+      --helper-image
+      docker.io/kindest/local-path-helper:v20220607-9a4d8d2a
+      --config
+      /etc/config/config.json
+    Environment:
+      POD_NAMESPACE:   (v1:metadata.namespace)
+    Mounts:
+      /etc/config/ from config-volume (rw)
+  Volumes:
+   config-volume:
+    Type:      ConfigMap (a volume populated by a ConfigMap)
+    Name:      local-path-config
+    Optional:  false
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Progressing    True    NewReplicaSetAvailable
+  Available      True    MinimumReplicasAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   local-path-provisioner-6b84c5c67f (1/1 replicas created)
+Events:          <none>
