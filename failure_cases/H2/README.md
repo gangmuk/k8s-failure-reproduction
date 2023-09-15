@@ -7,6 +7,9 @@
 ### Scenario 2
 1(nginx_1.yaml) -> 3(HPA min) -> 6(nginx_2.yaml) --scale down window(5min)--> 3(HPA min)
 
+### Scenario 3
+3(nginx_1.yaml, spec.replicas) -> 3(HPA min 3, max 5) -> 1(nginx_2.yaml, empty spec.replicas) --> 3(by HPA min)
+
 ## Steps
 1. Apply nginx_1.yaml which does not specify `replica` field.
 2. Run autoscaler for nginx-deployment.

@@ -1,0 +1,10 @@
+command,keyword,start_cdt,start_utc,end_cdt,end_utc
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_start.py,start logging,2023-09-15T15:49:12,2023-09-15T20:49:12,2023-09-15T15:49:12,2023-09-15T20:49:12
+kubectl apply -f nginx_1.yaml,apply deployment nginx-1,2023-09-15T15:49:22,2023-09-15T20:49:22,2023-09-15T15:49:23,2023-09-15T20:49:23
+kubectl autoscale deployment nginx-deployment --cpu-percent=50 --min=3 --max=5,deploy autoscaler,2023-09-15T15:49:33,2023-09-15T20:49:33,2023-09-15T15:49:33,2023-09-15T20:49:33
+kubectl apply -f nginx_2.yaml,apply deployment nginx-2,2023-09-15T15:49:53,2023-09-15T20:49:53,2023-09-15T15:49:54,2023-09-15T20:49:54
+pkill -f python3 logging_start.py,stop logging_start.py,2023-09-15T15:50:54,2023-09-15T20:50:54,2023-09-15T15:50:54,2023-09-15T20:50:54
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_end.py,end logging,2023-09-15T15:50:59,2023-09-15T20:50:59,2023-09-15T15:51:09,2023-09-15T20:51:09
+kubectl delete hpa/nginx-deployment, delete hpa,2023-09-15T15:51:14,2023-09-15T20:51:14,2023-09-15T15:51:14,2023-09-15T20:51:14
+kubectl delete deploy/nginx-deployment,delete nginx deployment,2023-09-15T15:51:19,2023-09-15T20:51:19,2023-09-15T15:51:19,2023-09-15T20:51:19
+2023-09-15T15:51:24,2023-09-15T20:51:24

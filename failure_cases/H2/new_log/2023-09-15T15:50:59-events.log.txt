@@ -1,0 +1,4997 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:01:46Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853377",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:01:46Z",
+            "message": "Created pod: h1-app-77f798d99c-f9sdm",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:01:46Z",
+                "name": "h1-app-77f798d99c.17852afe4ba6eff8",
+                "namespace": "default",
+                "resourceVersion": "17853384",
+                "uid": "1753de68-2f11-436e-bf8e-8ba3871172ae"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:01:46.612776Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-f9sdm",
+                "namespace": "default",
+                "resourceVersion": "17853383",
+                "uid": "2c54361e-58af-4a45-aac1-4c56d3c507db"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/h1-app-77f798d99c-f9sdm to kind-worker3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:01:46Z",
+                "name": "h1-app-77f798d99c-f9sdm.17852afe551bcfe1",
+                "namespace": "default",
+                "resourceVersion": "17853387",
+                "uid": "51da7dfb-c7e4-4c35-a02b-0b562644c311"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:01:46Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853376",
+                "uid": "261cfca1-504c-4a3c-ac38-1ff3f1cee7b1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:01:46Z",
+            "message": "Scaled up replica set h1-app-77f798d99c to 1",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:01:46Z",
+                "name": "h1-app.17852afe39222b1f",
+                "namespace": "default",
+                "resourceVersion": "17853378",
+                "uid": "8778c389-bb51-423b-bc43-75030bd63625"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:01:48Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-f9sdm",
+                "namespace": "default",
+                "resourceVersion": "17853386",
+                "uid": "2c54361e-58af-4a45-aac1-4c56d3c507db"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:01:48Z",
+            "message": "Container image \"gangmuk/h1-app:latest\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:01:48Z",
+                "name": "h1-app-77f798d99c-f9sdm.17852afec9db4ee6",
+                "namespace": "default",
+                "resourceVersion": "17853393",
+                "uid": "18bf7880-7406-4bfc-bcbc-621d46863b35"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:01:48Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-f9sdm",
+                "namespace": "default",
+                "resourceVersion": "17853386",
+                "uid": "2c54361e-58af-4a45-aac1-4c56d3c507db"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:01:48Z",
+            "message": "Created container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:01:49Z",
+                "name": "h1-app-77f798d99c-f9sdm.17852afee309d2fb",
+                "namespace": "default",
+                "resourceVersion": "17853395",
+                "uid": "2924c37e-1873-4525-93a9-10d03385e93e"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:01:50Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-f9sdm",
+                "namespace": "default",
+                "resourceVersion": "17853386",
+                "uid": "2c54361e-58af-4a45-aac1-4c56d3c507db"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:01:50Z",
+            "message": "Started container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:01:50Z",
+                "name": "h1-app-77f798d99c-f9sdm.17852aff40f369a9",
+                "namespace": "default",
+                "resourceVersion": "17853398",
+                "uid": "f142cbf0-b09b-4344-a4d4-6df50b5da6b3"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:06Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853402",
+                "uid": "433d2115-1a4a-48dd-b82c-7cf35fb7bc95"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:06Z",
+            "message": "invalid metrics (1 invalid out of 1), first error is: failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:06Z",
+                "name": "h1-app.17852b0310769638",
+                "namespace": "default",
+                "resourceVersion": "17853430",
+                "uid": "9468e9fc-ebc5-4b79-a2a0-69f0b2babd4b"
+            },
+            "reason": "FailedComputeMetricsReplicas",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:06Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853402",
+                "uid": "433d2115-1a4a-48dd-b82c-7cf35fb7bc95"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:06Z",
+            "message": "failed to get cpu utilization: unable to get metrics for resource cpu: no metrics returned from resource metrics API",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:06Z",
+                "name": "h1-app.17852b0307c87a16",
+                "namespace": "default",
+                "resourceVersion": "17853428",
+                "uid": "c368d325-130d-4823-afd3-409e5d5f82c4"
+            },
+            "reason": "FailedGetResourceMetric",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:21Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853452",
+                "uid": "261cfca1-504c-4a3c-ac38-1ff3f1cee7b1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:21Z",
+            "message": "Scaled up replica set h1-app-77f798d99c to 3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:21Z",
+                "name": "h1-app.17852b0691ebae95",
+                "namespace": "default",
+                "resourceVersion": "17853456",
+                "uid": "fb836713-37ff-42cf-bc13-521d7e36eac6"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:21Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853429",
+                "uid": "433d2115-1a4a-48dd-b82c-7cf35fb7bc95"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:21Z",
+            "message": "New size: 3; reason: cpu resource utilization (percentage of request) above target",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:21Z",
+                "name": "h1-app.17852b06900934ca",
+                "namespace": "default",
+                "resourceVersion": "17853453",
+                "uid": "91fb6f96-7c23-4a9f-8824-7879839c021c"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:22Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853455",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:22Z",
+            "message": "Created pod: h1-app-77f798d99c-rfgmj",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:22Z",
+                "name": "h1-app-77f798d99c.17852b06994fbc3b",
+                "namespace": "default",
+                "resourceVersion": "17853460",
+                "uid": "3005950e-17b1-4c08-b49a-ab80ee16a0b9"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:02:22.187046Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-p6w9d",
+                "namespace": "default",
+                "resourceVersion": "17853461",
+                "uid": "9cbef3ec-8991-411a-9763-fd1cb0c733ca"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/h1-app-77f798d99c-p6w9d to kind-worker2",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:22Z",
+                "name": "h1-app-77f798d99c-p6w9d.17852b069d7fdd9b",
+                "namespace": "default",
+                "resourceVersion": "17853468",
+                "uid": "31068210-cfdf-427d-95f8-5cd1f9513730"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:22Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853455",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:22Z",
+            "message": "Created pod: h1-app-77f798d99c-p6w9d",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:22Z",
+                "name": "h1-app-77f798d99c.17852b069b700322",
+                "namespace": "default",
+                "resourceVersion": "17853463",
+                "uid": "6c8669ed-0920-4c63-ac60-69b2e719b382"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:02:22.154693Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-rfgmj",
+                "namespace": "default",
+                "resourceVersion": "17853459",
+                "uid": "e7c3ed20-ac93-4347-957d-31096b8e2e1a"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/h1-app-77f798d99c-rfgmj to kind-worker",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:22Z",
+                "name": "h1-app-77f798d99c-rfgmj.17852b069b9570a0",
+                "namespace": "default",
+                "resourceVersion": "17853466",
+                "uid": "c2827f70-50b2-4c11-a0eb-20fe01b30c6f"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-rfgmj",
+                "namespace": "default",
+                "resourceVersion": "17853462",
+                "uid": "e7c3ed20-ac93-4347-957d-31096b8e2e1a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:23Z",
+            "message": "Container image \"gangmuk/h1-app:latest\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:23Z",
+                "name": "h1-app-77f798d99c-rfgmj.17852b07076cd9f6",
+                "namespace": "default",
+                "resourceVersion": "17853476",
+                "uid": "7187cf54-ee5a-4b22-9192-9504eba88bf8"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-rfgmj",
+                "namespace": "default",
+                "resourceVersion": "17853462",
+                "uid": "e7c3ed20-ac93-4347-957d-31096b8e2e1a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:24Z",
+            "message": "Created container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:24Z",
+                "name": "h1-app-77f798d99c-rfgmj.17852b0724c9891b",
+                "namespace": "default",
+                "resourceVersion": "17853479",
+                "uid": "1a43eefd-299f-4fce-a5f4-861764b32683"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-p6w9d",
+                "namespace": "default",
+                "resourceVersion": "17853464",
+                "uid": "9cbef3ec-8991-411a-9763-fd1cb0c733ca"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:24Z",
+            "message": "Created container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:24Z",
+                "name": "h1-app-77f798d99c-p6w9d.17852b073c943336",
+                "namespace": "default",
+                "resourceVersion": "17853481",
+                "uid": "0d489250-007b-4b2b-a478-adea225e282a"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:24Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-p6w9d",
+                "namespace": "default",
+                "resourceVersion": "17853464",
+                "uid": "9cbef3ec-8991-411a-9763-fd1cb0c733ca"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:24Z",
+            "message": "Container image \"gangmuk/h1-app:latest\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:24Z",
+                "name": "h1-app-77f798d99c-p6w9d.17852b07199d3ca4",
+                "namespace": "default",
+                "resourceVersion": "17853477",
+                "uid": "49cda0af-0b8b-4062-abe7-81ffc64e11c7"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:26Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-rfgmj",
+                "namespace": "default",
+                "resourceVersion": "17853462",
+                "uid": "e7c3ed20-ac93-4347-957d-31096b8e2e1a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:26Z",
+            "message": "Started container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:26Z",
+                "name": "h1-app-77f798d99c-rfgmj.17852b0786eac423",
+                "namespace": "default",
+                "resourceVersion": "17853483",
+                "uid": "a0e4bfd5-3a71-4410-9119-d8864d195e01"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:02:26Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-p6w9d",
+                "namespace": "default",
+                "resourceVersion": "17853464",
+                "uid": "9cbef3ec-8991-411a-9763-fd1cb0c733ca"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:02:26Z",
+            "message": "Started container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:02:26Z",
+                "name": "h1-app-77f798d99c-p6w9d.17852b07a78377cb",
+                "namespace": "default",
+                "resourceVersion": "17853485",
+                "uid": "d4c2b579-4735-458b-ac7a-3e18e3b73204"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853556",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:07Z",
+            "message": "Created pod: h1-app-77f798d99c-5hcvq",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:07Z",
+                "name": "h1-app-77f798d99c.17852b1128dc5901",
+                "namespace": "default",
+                "resourceVersion": "17853573",
+                "uid": "32a26261-286a-4490-b79b-9c3fbd1ce041"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853554",
+                "uid": "261cfca1-504c-4a3c-ac38-1ff3f1cee7b1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:07Z",
+            "message": "Scaled up replica set h1-app-77f798d99c to 6",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:07Z",
+                "name": "h1-app.17852b11183d32ed",
+                "namespace": "default",
+                "resourceVersion": "17853558",
+                "uid": "883fe1f8-5da9-4193-b5da-1d5744b1a546"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:07Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853509",
+                "uid": "433d2115-1a4a-48dd-b82c-7cf35fb7bc95"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:07Z",
+            "message": "New size: 6; reason: cpu resource utilization (percentage of request) above target",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:07Z",
+                "name": "h1-app.17852b11161bd9cf",
+                "namespace": "default",
+                "resourceVersion": "17853557",
+                "uid": "3b223d94-14f9-4d6c-b074-32eb56e5df06"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853556",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:07Z",
+            "message": "Created pod: h1-app-77f798d99c-j446l",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:07Z",
+                "name": "h1-app-77f798d99c.17852b1128d8935e",
+                "namespace": "default",
+                "resourceVersion": "17853568",
+                "uid": "7459f45a-5bc4-4acb-9e17-a921e0534d56"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:03:07.523869Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-5hcvq",
+                "namespace": "default",
+                "resourceVersion": "17853564",
+                "uid": "76feffb7-06b3-4ecf-a8c1-819fc88ee67f"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/h1-app-77f798d99c-5hcvq to kind-worker",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:07Z",
+                "name": "h1-app-77f798d99c-5hcvq.17852b112bc8d40c",
+                "namespace": "default",
+                "resourceVersion": "17853575",
+                "uid": "4d93cc37-0ed9-4389-beef-072c3fb3d2ba"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:07Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853556",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:07Z",
+            "message": "Created pod: h1-app-77f798d99c-p4p72",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:07Z",
+                "name": "h1-app-77f798d99c.17852b112159edf3",
+                "namespace": "default",
+                "resourceVersion": "17853563",
+                "uid": "e44f32a1-5ca0-4956-a96f-50f2c08df12f"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:03:07.474462Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-p4p72",
+                "namespace": "default",
+                "resourceVersion": "17853561",
+                "uid": "6b4a74ac-b1b7-461d-a135-993d03ea896d"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/h1-app-77f798d99c-p4p72 to kind-worker3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:07Z",
+                "name": "h1-app-77f798d99c-p4p72.17852b1128d7a5bc",
+                "namespace": "default",
+                "resourceVersion": "17853572",
+                "uid": "46138b45-c65a-4383-abce-17279f30cbf3"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:03:07.522815Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-j446l",
+                "namespace": "default",
+                "resourceVersion": "17853565",
+                "uid": "f7887769-1bad-4429-808c-c5078e313599"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/h1-app-77f798d99c-j446l to kind-worker2",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:07Z",
+                "name": "h1-app-77f798d99c-j446l.17852b112bb8cca1",
+                "namespace": "default",
+                "resourceVersion": "17853574",
+                "uid": "2bed1488-6512-4008-b420-9fa0fdf50a57"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-5hcvq",
+                "namespace": "default",
+                "resourceVersion": "17853570",
+                "uid": "76feffb7-06b3-4ecf-a8c1-819fc88ee67f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:09Z",
+            "message": "Container image \"gangmuk/h1-app:latest\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:09Z",
+                "name": "h1-app-77f798d99c-5hcvq.17852b11ae993fab",
+                "namespace": "default",
+                "resourceVersion": "17853585",
+                "uid": "c7736a60-ee46-4d80-89b1-3eb1277f1a96"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-p4p72",
+                "namespace": "default",
+                "resourceVersion": "17853566",
+                "uid": "6b4a74ac-b1b7-461d-a135-993d03ea896d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:09Z",
+            "message": "Container image \"gangmuk/h1-app:latest\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:09Z",
+                "name": "h1-app-77f798d99c-p4p72.17852b11b890f39d",
+                "namespace": "default",
+                "resourceVersion": "17853587",
+                "uid": "27666281-2ca1-45e6-bc38-4952287a3ac7"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:09Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-j446l",
+                "namespace": "default",
+                "resourceVersion": "17853571",
+                "uid": "f7887769-1bad-4429-808c-c5078e313599"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:09Z",
+            "message": "Container image \"gangmuk/h1-app:latest\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:09Z",
+                "name": "h1-app-77f798d99c-j446l.17852b119d74cd65",
+                "namespace": "default",
+                "resourceVersion": "17853582",
+                "uid": "db5be72e-92c9-465e-864b-3190016ec83a"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-5hcvq",
+                "namespace": "default",
+                "resourceVersion": "17853570",
+                "uid": "76feffb7-06b3-4ecf-a8c1-819fc88ee67f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:10Z",
+            "message": "Created container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:10Z",
+                "name": "h1-app-77f798d99c-5hcvq.17852b11e0326266",
+                "namespace": "default",
+                "resourceVersion": "17853589",
+                "uid": "fc4b54af-fd06-47d7-9108-b350959d65b8"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-j446l",
+                "namespace": "default",
+                "resourceVersion": "17853571",
+                "uid": "f7887769-1bad-4429-808c-c5078e313599"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:10Z",
+            "message": "Created container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:10Z",
+                "name": "h1-app-77f798d99c-j446l.17852b11d02fccf7",
+                "namespace": "default",
+                "resourceVersion": "17853588",
+                "uid": "eed9de66-64ca-475c-b993-26b608a45c98"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:10Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-p4p72",
+                "namespace": "default",
+                "resourceVersion": "17853566",
+                "uid": "6b4a74ac-b1b7-461d-a135-993d03ea896d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:10Z",
+            "message": "Created container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:10Z",
+                "name": "h1-app-77f798d99c-p4p72.17852b11ea26dfd6",
+                "namespace": "default",
+                "resourceVersion": "17853590",
+                "uid": "db37c4da-f39b-4992-a3a3-3d31cd07493f"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:11Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-5hcvq",
+                "namespace": "default",
+                "resourceVersion": "17853570",
+                "uid": "76feffb7-06b3-4ecf-a8c1-819fc88ee67f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:11Z",
+            "message": "Started container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:11Z",
+                "name": "h1-app-77f798d99c-5hcvq.17852b122c658462",
+                "namespace": "default",
+                "resourceVersion": "17853594",
+                "uid": "2664d44d-5ad2-46ce-b4dd-a83a079f8a31"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:11Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-j446l",
+                "namespace": "default",
+                "resourceVersion": "17853571",
+                "uid": "f7887769-1bad-4429-808c-c5078e313599"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:11Z",
+            "message": "Started container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:11Z",
+                "name": "h1-app-77f798d99c-j446l.17852b121fd4b601",
+                "namespace": "default",
+                "resourceVersion": "17853592",
+                "uid": "392dff2a-85bd-43b0-9cf3-350bb37c5841"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:03:12Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-p4p72",
+                "namespace": "default",
+                "resourceVersion": "17853566",
+                "uid": "6b4a74ac-b1b7-461d-a135-993d03ea896d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:03:12Z",
+            "message": "Started container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:03:12Z",
+                "name": "h1-app-77f798d99c-p4p72.17852b123c560519",
+                "namespace": "default",
+                "resourceVersion": "17853598",
+                "uid": "4f61ddb9-af6c-4f79-aa34-b8a251d53d31"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:22Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853853",
+                "uid": "433d2115-1a4a-48dd-b82c-7cf35fb7bc95"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:22Z",
+            "message": "New size: 3; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:22Z",
+                "name": "h1-app.17852b3eaee1c2be",
+                "namespace": "default",
+                "resourceVersion": "17853902",
+                "uid": "f0f05761-0336-413a-ae49-72db3c77a1fa"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:23Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853901",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:23Z",
+            "message": "Deleted pod: h1-app-77f798d99c-f9sdm",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:23Z",
+                "name": "h1-app-77f798d99c.17852b3ec9fe933e",
+                "namespace": "default",
+                "resourceVersion": "17853910",
+                "uid": "136ed08b-190d-4950-9921-e4504a4b76ce"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:23Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853901",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:23Z",
+            "message": "Deleted pod: h1-app-77f798d99c-p4p72",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:23Z",
+                "name": "h1-app-77f798d99c.17852b3eca08ee0d",
+                "namespace": "default",
+                "resourceVersion": "17853915",
+                "uid": "2d0db2c4-4485-48cb-94d7-ddcef90bbb00"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:23Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853901",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:23Z",
+            "message": "Deleted pod: h1-app-77f798d99c-5hcvq",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:23Z",
+                "name": "h1-app-77f798d99c.17852b3ec9fe1588",
+                "namespace": "default",
+                "resourceVersion": "17853909",
+                "uid": "978dd366-2b9f-4c71-8173-f41c8a25aa0e"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-f9sdm",
+                "namespace": "default",
+                "resourceVersion": "17853386",
+                "uid": "2c54361e-58af-4a45-aac1-4c56d3c507db"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:23Z",
+            "message": "Stopping container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:23Z",
+                "name": "h1-app-77f798d99c-f9sdm.17852b3eca37d159",
+                "namespace": "default",
+                "resourceVersion": "17853913",
+                "uid": "26dab9b3-9cab-4b66-95e5-99002bde5e2f"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-5hcvq",
+                "namespace": "default",
+                "resourceVersion": "17853570",
+                "uid": "76feffb7-06b3-4ecf-a8c1-819fc88ee67f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:55Z",
+            "message": "Stopping container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:23Z",
+                "name": "h1-app-77f798d99c-5hcvq.17852b3eca69f3dd",
+                "namespace": "default",
+                "resourceVersion": "17853988",
+                "uid": "d907e315-fe19-4cfd-adab-0be26d8284af"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:23Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-p4p72",
+                "namespace": "default",
+                "resourceVersion": "17853566",
+                "uid": "6b4a74ac-b1b7-461d-a135-993d03ea896d"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:23Z",
+            "message": "Stopping container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:23Z",
+                "name": "h1-app-77f798d99c-p4p72.17852b3ecadcecd8",
+                "namespace": "default",
+                "resourceVersion": "17853914",
+                "uid": "a2e9bb8c-310f-444e-b5a8-3e5fdd03969f"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:23Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853899",
+                "uid": "261cfca1-504c-4a3c-ac38-1ff3f1cee7b1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:23Z",
+            "message": "Scaled down replica set h1-app-77f798d99c to 3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:23Z",
+                "name": "h1-app.17852b3ebaa56f00",
+                "namespace": "default",
+                "resourceVersion": "17853904",
+                "uid": "48ed6451-021a-478a-9097-cf611205bdf7"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:38Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853939",
+                "uid": "261cfca1-504c-4a3c-ac38-1ff3f1cee7b1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:38Z",
+            "message": "Scaled down replica set h1-app-77f798d99c to 1",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:38Z",
+                "name": "h1-app.17852b424142ab43",
+                "namespace": "default",
+                "resourceVersion": "17853943",
+                "uid": "ef956f8f-e90f-45eb-9a63-d4f11f0276f6"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:38Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853941",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:38Z",
+            "message": "Deleted pod: h1-app-77f798d99c-j446l",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:38Z",
+                "name": "h1-app-77f798d99c.17852b424bfc2200",
+                "namespace": "default",
+                "resourceVersion": "17853948",
+                "uid": "85d4c8ba-7cb9-48e9-a560-1ebf0f9b005f"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:38Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "h1-app-77f798d99c",
+                "namespace": "default",
+                "resourceVersion": "17853941",
+                "uid": "993e52cb-23a8-47cf-8858-7b5c76a93fae"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:38Z",
+            "message": "Deleted pod: h1-app-77f798d99c-p6w9d",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:38Z",
+                "name": "h1-app-77f798d99c.17852b424a73addc",
+                "namespace": "default",
+                "resourceVersion": "17853947",
+                "uid": "b8a4c413-6520-4377-b4e5-676025914104"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:38Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-p6w9d",
+                "namespace": "default",
+                "resourceVersion": "17853464",
+                "uid": "9cbef3ec-8991-411a-9763-fd1cb0c733ca"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:38Z",
+            "message": "Stopping container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:38Z",
+                "name": "h1-app-77f798d99c-p6w9d.17852b424a5eecfa",
+                "namespace": "default",
+                "resourceVersion": "17853949",
+                "uid": "d29b18b3-4d5d-4619-81c5-30a9c747ebb8"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:38Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "h1-app",
+                "namespace": "default",
+                "resourceVersion": "17853900",
+                "uid": "433d2115-1a4a-48dd-b82c-7cf35fb7bc95"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:06:38Z",
+            "message": "New size: 1; reason: All metrics below target",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:38Z",
+                "name": "h1-app.17852b423ce824d3",
+                "namespace": "default",
+                "resourceVersion": "17853940",
+                "uid": "d0cbe308-e648-413a-81ed-5585bc2a17b3"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:06:38Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-j446l",
+                "namespace": "default",
+                "resourceVersion": "17853571",
+                "uid": "f7887769-1bad-4429-808c-c5078e313599"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:07:10Z",
+            "message": "Stopping container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:06:38Z",
+                "name": "h1-app-77f798d99c-j446l.17852b424bdb9ab7",
+                "namespace": "default",
+                "resourceVersion": "17854016",
+                "uid": "e713419e-2b35-4488-a7f0-2ee16a72ed7c"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:10:32Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{h1-app}",
+                "kind": "Pod",
+                "name": "h1-app-77f798d99c-rfgmj",
+                "namespace": "default",
+                "resourceVersion": "17853462",
+                "uid": "e7c3ed20-ac93-4347-957d-31096b8e2e1a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:10:32Z",
+            "message": "Stopping container h1-app",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:10:32Z",
+                "name": "h1-app-77f798d99c-rfgmj.17852b78bad55244",
+                "namespace": "default",
+                "resourceVersion": "17854325",
+                "uid": "447a8c3b-273c-439a-85f0-2bdf781d983e"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:11Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17856002",
+                "uid": "678c6935-4925-4478-b044-227a4c134b23"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:40Z",
+            "message": "Scaled up replica set nginx-deployment-66f58bff7c to 3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:11Z",
+                "name": "nginx-deployment.17852c7d66107301",
+                "namespace": "default",
+                "resourceVersion": "17856113",
+                "uid": "2e2ffef5-f6b2-4da9-be46-c96daca797e7"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:11Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17856003",
+                "uid": "947c220a-a1bb-413d-a056-e3f84f9d2fb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:11Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-sfkm6",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:11Z",
+                "name": "nginx-deployment-66f58bff7c.17852c7d6d41854c",
+                "namespace": "default",
+                "resourceVersion": "17856011",
+                "uid": "d97ae682-5c1c-40f1-9e23-8b17920d358e"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:11Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17856003",
+                "uid": "947c220a-a1bb-413d-a056-e3f84f9d2fb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:11Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-mxl47",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:11Z",
+                "name": "nginx-deployment-66f58bff7c.17852c7d6cbab8ee",
+                "namespace": "default",
+                "resourceVersion": "17856007",
+                "uid": "90e412c8-e21f-4fd8-b4b5-7a3ba35c1cd3"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:12Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17856003",
+                "uid": "947c220a-a1bb-413d-a056-e3f84f9d2fb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:12Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-r82rq",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:12Z",
+                "name": "nginx-deployment-66f58bff7c.17852c7d6fd1d85c",
+                "namespace": "default",
+                "resourceVersion": "17856014",
+                "uid": "01709b86-5593-49e7-b0b0-328e46fd14b9"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:29:12.042420Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-mxl47",
+                "namespace": "default",
+                "resourceVersion": "17856006",
+                "uid": "531bdb65-bb47-4038-be8a-077c1f9849a4"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-mxl47 to kind-worker3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:12Z",
+                "name": "nginx-deployment-66f58bff7c-mxl47.17852c7d705b594d",
+                "namespace": "default",
+                "resourceVersion": "17856018",
+                "uid": "e82ae52c-f77b-45bc-b3fb-a4188b4a8c5f"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:29:12.039826Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-sfkm6",
+                "namespace": "default",
+                "resourceVersion": "17856008",
+                "uid": "6be8ab4c-aade-4663-888e-540caff23eac"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-sfkm6 to kind-worker",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:12Z",
+                "name": "nginx-deployment-66f58bff7c-sfkm6.17852c7d7034662c",
+                "namespace": "default",
+                "resourceVersion": "17856017",
+                "uid": "3bb7dcea-c12f-452c-9e82-bad5d69e9600"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:29:12.076846Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-r82rq",
+                "namespace": "default",
+                "resourceVersion": "17856009",
+                "uid": "7a30e877-47b9-4ba4-8cdb-e5825fe047c3"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-r82rq to kind-worker2",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:12Z",
+                "name": "nginx-deployment-66f58bff7c-r82rq.17852c7d7268b672",
+                "namespace": "default",
+                "resourceVersion": "17856020",
+                "uid": "3c3b7768-00ae-47fe-9193-45889e01cfb2"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-r82rq",
+                "namespace": "default",
+                "resourceVersion": "17856016",
+                "uid": "7a30e877-47b9-4ba4-8cdb-e5825fe047c3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:13Z",
+            "message": "MountVolume.SetUp failed for volume \"kube-api-access-4xsb8\" : failed to sync configmap cache: timed out waiting for the condition",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:13Z",
+                "name": "nginx-deployment-66f58bff7c-r82rq.17852c7dc4c69daf",
+                "namespace": "default",
+                "resourceVersion": "17856031",
+                "uid": "66aa9bc6-dbb4-49ee-9f88-1bb9061e83b3"
+            },
+            "reason": "FailedMount",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:13Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-mxl47",
+                "namespace": "default",
+                "resourceVersion": "17856012",
+                "uid": "531bdb65-bb47-4038-be8a-077c1f9849a4"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:13Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:13Z",
+                "name": "nginx-deployment-66f58bff7c-mxl47.17852c7dd77ef817",
+                "namespace": "default",
+                "resourceVersion": "17856032",
+                "uid": "3f7b6967-c43e-4c76-96c5-4ea57a66d5f3"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:14Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-sfkm6",
+                "namespace": "default",
+                "resourceVersion": "17856013",
+                "uid": "6be8ab4c-aade-4663-888e-540caff23eac"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:14Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:14Z",
+                "name": "nginx-deployment-66f58bff7c-sfkm6.17852c7de7c97319",
+                "namespace": "default",
+                "resourceVersion": "17856033",
+                "uid": "f2a55e38-c454-4139-a0d3-59a39be66e88"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:14Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-mxl47",
+                "namespace": "default",
+                "resourceVersion": "17856012",
+                "uid": "531bdb65-bb47-4038-be8a-077c1f9849a4"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:14Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:14Z",
+                "name": "nginx-deployment-66f58bff7c-mxl47.17852c7dfe08e571",
+                "namespace": "default",
+                "resourceVersion": "17856034",
+                "uid": "f0498249-d873-42b4-ac32-969af8c3084c"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:14Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-mxl47",
+                "namespace": "default",
+                "resourceVersion": "17856012",
+                "uid": "531bdb65-bb47-4038-be8a-077c1f9849a4"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:14Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:14Z",
+                "name": "nginx-deployment-66f58bff7c-mxl47.17852c7e1e264b93",
+                "namespace": "default",
+                "resourceVersion": "17856035",
+                "uid": "effc6db0-62db-4f1b-8248-9252d1703835"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:15Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-sfkm6",
+                "namespace": "default",
+                "resourceVersion": "17856013",
+                "uid": "6be8ab4c-aade-4663-888e-540caff23eac"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:15Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:15Z",
+                "name": "nginx-deployment-66f58bff7c-sfkm6.17852c7e372ce00a",
+                "namespace": "default",
+                "resourceVersion": "17856042",
+                "uid": "f0af3fc4-b16e-44d6-933d-1b7082acaf02"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:15Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-r82rq",
+                "namespace": "default",
+                "resourceVersion": "17856016",
+                "uid": "7a30e877-47b9-4ba4-8cdb-e5825fe047c3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:15Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:15Z",
+                "name": "nginx-deployment-66f58bff7c-r82rq.17852c7e421ea19b",
+                "namespace": "default",
+                "resourceVersion": "17856043",
+                "uid": "c3707715-ab79-4481-ad6b-829f6be91c12"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:15Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-r82rq",
+                "namespace": "default",
+                "resourceVersion": "17856016",
+                "uid": "7a30e877-47b9-4ba4-8cdb-e5825fe047c3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:15Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:15Z",
+                "name": "nginx-deployment-66f58bff7c-r82rq.17852c7e55f7dfcc",
+                "namespace": "default",
+                "resourceVersion": "17856044",
+                "uid": "7049c51c-5bc8-476d-9b62-20fdceab6b43"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:14Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-sfkm6",
+                "namespace": "default",
+                "resourceVersion": "17856013",
+                "uid": "6be8ab4c-aade-4663-888e-540caff23eac"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:14Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:15Z",
+                "name": "nginx-deployment-66f58bff7c-sfkm6.17852c7e208a5844",
+                "namespace": "default",
+                "resourceVersion": "17856036",
+                "uid": "d81bffa1-e926-4358-8eb1-b3a57c9918cf"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:16Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-r82rq",
+                "namespace": "default",
+                "resourceVersion": "17856016",
+                "uid": "7a30e877-47b9-4ba4-8cdb-e5825fe047c3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:16Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:16Z",
+                "name": "nginx-deployment-66f58bff7c-r82rq.17852c7e6fed23a2",
+                "namespace": "default",
+                "resourceVersion": "17856048",
+                "uid": "6ff7bafd-4726-45c2-9c24-8e6f0b74d4a8"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:35Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17856082",
+                "uid": "947c220a-a1bb-413d-a056-e3f84f9d2fb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:35Z",
+            "message": "Deleted pod: nginx-deployment-66f58bff7c-mxl47",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:35Z",
+                "name": "nginx-deployment-66f58bff7c.17852c82e4e23a4f",
+                "namespace": "default",
+                "resourceVersion": "17856088",
+                "uid": "5192dffc-4c6f-4c0f-a365-9520871943ed"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:35Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-sfkm6",
+                "namespace": "default",
+                "resourceVersion": "17856013",
+                "uid": "6be8ab4c-aade-4663-888e-540caff23eac"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:35Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:35Z",
+                "name": "nginx-deployment-66f58bff7c-sfkm6.17852c82e400c329",
+                "namespace": "default",
+                "resourceVersion": "17856090",
+                "uid": "6632e868-d087-4f35-80e3-297cab706d7f"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:35Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17856082",
+                "uid": "947c220a-a1bb-413d-a056-e3f84f9d2fb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:35Z",
+            "message": "Deleted pod: nginx-deployment-66f58bff7c-sfkm6",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:35Z",
+                "name": "nginx-deployment-66f58bff7c.17852c82e41b9776",
+                "namespace": "default",
+                "resourceVersion": "17856087",
+                "uid": "a7c42345-85cc-4752-8179-e11917d53fb8"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:35Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-mxl47",
+                "namespace": "default",
+                "resourceVersion": "17856012",
+                "uid": "531bdb65-bb47-4038-be8a-077c1f9849a4"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:35Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:35Z",
+                "name": "nginx-deployment-66f58bff7c-mxl47.17852c82e4f64a5b",
+                "namespace": "default",
+                "resourceVersion": "17856091",
+                "uid": "25aaa722-f1e9-4e9a-b0ea-3f2b286a6330"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:35Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17856081",
+                "uid": "678c6935-4925-4478-b044-227a4c134b23"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:35Z",
+            "message": "Scaled down replica set nginx-deployment-66f58bff7c to 1",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:35Z",
+                "name": "nginx-deployment.17852c82dbcf11e9",
+                "namespace": "default",
+                "resourceVersion": "17856083",
+                "uid": "54e7e925-9696-4e95-908b-0bc5baa82009"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:40Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17856110",
+                "uid": "947c220a-a1bb-413d-a056-e3f84f9d2fb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:40Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-q5qjm",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:40Z",
+                "name": "nginx-deployment-66f58bff7c.17852c84199e5968",
+                "namespace": "default",
+                "resourceVersion": "17856114",
+                "uid": "995e0052-af20-4d01-a045-458282f5c1dc"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:40Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17856110",
+                "uid": "947c220a-a1bb-413d-a056-e3f84f9d2fb1"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:40Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-hcwmk",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:40Z",
+                "name": "nginx-deployment-66f58bff7c.17852c8425c58b7b",
+                "namespace": "default",
+                "resourceVersion": "17856120",
+                "uid": "78457062-63bd-4077-8529-df3ac3a32bf6"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:29:40.864240Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-q5qjm",
+                "namespace": "default",
+                "resourceVersion": "17856111",
+                "uid": "19417d45-a5b5-43db-9b3a-df71a690aa88"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-q5qjm to kind-worker3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:40Z",
+                "name": "nginx-deployment-66f58bff7c-q5qjm.17852c8426458485",
+                "namespace": "default",
+                "resourceVersion": "17856118",
+                "uid": "0ca1e337-2e24-4dfd-ba2d-ae5240932796"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:40Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17856067",
+                "uid": "ce8bfb4a-3d6b-4c87-b822-5a25a34afa1e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:40Z",
+            "message": "New size: 3; reason: Current number of replicas below Spec.MinReplicas",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:40Z",
+                "name": "nginx-deployment.17852c840e4c7d87",
+                "namespace": "default",
+                "resourceVersion": "17856108",
+                "uid": "41e0f3a5-7f8c-499b-a53b-52ba859cea65"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:29:40.893399Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-hcwmk",
+                "namespace": "default",
+                "resourceVersion": "17856115",
+                "uid": "46b4e8a7-ea66-4539-9cc4-4b4cad7d34a9"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-hcwmk to kind-worker",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:40Z",
+                "name": "nginx-deployment-66f58bff7c-hcwmk.17852c8428025c8f",
+                "namespace": "default",
+                "resourceVersion": "17856124",
+                "uid": "a6d6d1f4-58c5-474e-a9fe-3114c1604860"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:42Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-hcwmk",
+                "namespace": "default",
+                "resourceVersion": "17856121",
+                "uid": "46b4e8a7-ea66-4539-9cc4-4b4cad7d34a9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:42Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:42Z",
+                "name": "nginx-deployment-66f58bff7c-hcwmk.17852c8483d91d71",
+                "namespace": "default",
+                "resourceVersion": "17856130",
+                "uid": "8392843c-f48a-439c-8f48-04138deef0f4"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:42Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-q5qjm",
+                "namespace": "default",
+                "resourceVersion": "17856117",
+                "uid": "19417d45-a5b5-43db-9b3a-df71a690aa88"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:42Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:42Z",
+                "name": "nginx-deployment-66f58bff7c-q5qjm.17852c84904f69cc",
+                "namespace": "default",
+                "resourceVersion": "17856131",
+                "uid": "9c2e5e6f-0a67-4a75-a154-4864cbd92547"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:42Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-q5qjm",
+                "namespace": "default",
+                "resourceVersion": "17856117",
+                "uid": "19417d45-a5b5-43db-9b3a-df71a690aa88"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:42Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:42Z",
+                "name": "nginx-deployment-66f58bff7c-q5qjm.17852c847460eda8",
+                "namespace": "default",
+                "resourceVersion": "17856129",
+                "uid": "acd54c43-c969-4568-b97c-58eac5e1c86e"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:43Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-q5qjm",
+                "namespace": "default",
+                "resourceVersion": "17856117",
+                "uid": "19417d45-a5b5-43db-9b3a-df71a690aa88"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:43Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:43Z",
+                "name": "nginx-deployment-66f58bff7c-q5qjm.17852c84a97d977c",
+                "namespace": "default",
+                "resourceVersion": "17856134",
+                "uid": "1876e395-a517-4d3d-a1cc-c731a7671bee"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:43Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-hcwmk",
+                "namespace": "default",
+                "resourceVersion": "17856121",
+                "uid": "46b4e8a7-ea66-4539-9cc4-4b4cad7d34a9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:43Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:43Z",
+                "name": "nginx-deployment-66f58bff7c-hcwmk.17852c84c82c400a",
+                "namespace": "default",
+                "resourceVersion": "17856140",
+                "uid": "a4be1147-ae35-4584-99c0-586f5f4b2ef9"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:29:43Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-hcwmk",
+                "namespace": "default",
+                "resourceVersion": "17856121",
+                "uid": "46b4e8a7-ea66-4539-9cc4-4b4cad7d34a9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:29:43Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:29:43Z",
+                "name": "nginx-deployment-66f58bff7c-hcwmk.17852c84a633d4cd",
+                "namespace": "default",
+                "resourceVersion": "17856133",
+                "uid": "d160565f-3bbb-4ebd-98d0-31e0067a3578"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:32:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-q5qjm",
+                "namespace": "default",
+                "resourceVersion": "17856117",
+                "uid": "19417d45-a5b5-43db-9b3a-df71a690aa88"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:32:31Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:32:31Z",
+                "name": "nginx-deployment-66f58bff7c-q5qjm.17852cabd08bc14a",
+                "namespace": "default",
+                "resourceVersion": "17856404",
+                "uid": "81de8cf1-c4ee-457b-982f-33c6798029d8"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:32:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-hcwmk",
+                "namespace": "default",
+                "resourceVersion": "17856121",
+                "uid": "46b4e8a7-ea66-4539-9cc4-4b4cad7d34a9"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:32:31Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:32:31Z",
+                "name": "nginx-deployment-66f58bff7c-hcwmk.17852cabca84d15d",
+                "namespace": "default",
+                "resourceVersion": "17856403",
+                "uid": "02999b60-b462-4e58-8525-57d0f47229d7"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:32:31Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-r82rq",
+                "namespace": "default",
+                "resourceVersion": "17856016",
+                "uid": "7a30e877-47b9-4ba4-8cdb-e5825fe047c3"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:32:31Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:32:31Z",
+                "name": "nginx-deployment-66f58bff7c-r82rq.17852cabd086ec99",
+                "namespace": "default",
+                "resourceVersion": "17856405",
+                "uid": "4efe7a1d-00c5-4332-83de-78ac7f71f1de"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:44Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17857781",
+                "uid": "81f1d512-8a0b-4cd7-89dc-1fb514c03250"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:44Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-2nwj7",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:44Z",
+                "name": "nginx-deployment-66f58bff7c.17852d80751d47a8",
+                "namespace": "default",
+                "resourceVersion": "17857796",
+                "uid": "bf5eb03e-3600-442b-91ee-248c00eee214"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:44Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17857781",
+                "uid": "81f1d512-8a0b-4cd7-89dc-1fb514c03250"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:44Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-clsnw",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:44Z",
+                "name": "nginx-deployment-66f58bff7c.17852d8072bc8dc2",
+                "namespace": "default",
+                "resourceVersion": "17857786",
+                "uid": "9437cb77-56e8-4cc4-b66b-32293a236c94"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:47:44.579758Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-2nwj7",
+                "namespace": "default",
+                "resourceVersion": "17857787",
+                "uid": "d6280c88-0391-4c8a-adc1-73724e465c6b"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-2nwj7 to kind-worker2",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:44Z",
+                "name": "nginx-deployment-66f58bff7c-2nwj7.17852d8078bfebcd",
+                "namespace": "default",
+                "resourceVersion": "17857797",
+                "uid": "b291fcb0-c480-4177-bac0-60126554cb26"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:44Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17857781",
+                "uid": "81f1d512-8a0b-4cd7-89dc-1fb514c03250"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:44Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-n8ncw",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:44Z",
+                "name": "nginx-deployment-66f58bff7c.17852d80735529d9",
+                "namespace": "default",
+                "resourceVersion": "17857793",
+                "uid": "d8eca244-5e01-45c1-aa64-98b801aee0df"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:47:44.540154Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-clsnw",
+                "namespace": "default",
+                "resourceVersion": "17857784",
+                "uid": "226bd2f3-b106-4e34-b1b9-46479e16c61f"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-clsnw to kind-worker",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:44Z",
+                "name": "nginx-deployment-66f58bff7c-clsnw.17852d807664d4b8",
+                "namespace": "default",
+                "resourceVersion": "17857795",
+                "uid": "ea860a7a-45ce-4c79-9e7b-5a62889d3845"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:47:44.517687Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-n8ncw",
+                "namespace": "default",
+                "resourceVersion": "17857785",
+                "uid": "9950f637-3ce8-428f-a136-02b68a154d8f"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-n8ncw to kind-worker3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:44Z",
+                "name": "nginx-deployment-66f58bff7c-n8ncw.17852d80750e2211",
+                "namespace": "default",
+                "resourceVersion": "17857794",
+                "uid": "99d3a42b-0776-4ded-b826-6a9622c954ac"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:44Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17857780",
+                "uid": "6d37d8c5-fcdd-4b18-83a0-5bef44f204b6"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:04Z",
+            "message": "Scaled up replica set nginx-deployment-66f58bff7c to 3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:44Z",
+                "name": "nginx-deployment.17852d806a3853b7",
+                "namespace": "default",
+                "resourceVersion": "17857879",
+                "uid": "11f8b78c-948d-4134-8e01-d9fb299fe9cb"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-2nwj7",
+                "namespace": "default",
+                "resourceVersion": "17857792",
+                "uid": "d6280c88-0391-4c8a-adc1-73724e465c6b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:46Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:46Z",
+                "name": "nginx-deployment-66f58bff7c-2nwj7.17852d80edc41dca",
+                "namespace": "default",
+                "resourceVersion": "17857808",
+                "uid": "fa27e32a-a9f7-46c4-a6c8-6db289e932b2"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-clsnw",
+                "namespace": "default",
+                "resourceVersion": "17857789",
+                "uid": "226bd2f3-b106-4e34-b1b9-46479e16c61f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:46Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:46Z",
+                "name": "nginx-deployment-66f58bff7c-clsnw.17852d80e00c3cd8",
+                "namespace": "default",
+                "resourceVersion": "17857807",
+                "uid": "0437663e-8417-442b-bf88-7939fb05ade4"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-clsnw",
+                "namespace": "default",
+                "resourceVersion": "17857789",
+                "uid": "226bd2f3-b106-4e34-b1b9-46479e16c61f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:46Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:46Z",
+                "name": "nginx-deployment-66f58bff7c-clsnw.17852d80fcf0fc74",
+                "namespace": "default",
+                "resourceVersion": "17857809",
+                "uid": "153e3782-8b0a-40fd-888f-e419ad169691"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:46Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-n8ncw",
+                "namespace": "default",
+                "resourceVersion": "17857790",
+                "uid": "9950f637-3ce8-428f-a136-02b68a154d8f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:46Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:46Z",
+                "name": "nginx-deployment-66f58bff7c-n8ncw.17852d81045bd72c",
+                "namespace": "default",
+                "resourceVersion": "17857810",
+                "uid": "c7b9bfc7-5182-41db-a537-0afcd5a0d262"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-2nwj7",
+                "namespace": "default",
+                "resourceVersion": "17857792",
+                "uid": "d6280c88-0391-4c8a-adc1-73724e465c6b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:47Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:47Z",
+                "name": "nginx-deployment-66f58bff7c-2nwj7.17852d8115a4ed17",
+                "namespace": "default",
+                "resourceVersion": "17857811",
+                "uid": "f841d59d-2047-4160-86c3-21343daaac57"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-n8ncw",
+                "namespace": "default",
+                "resourceVersion": "17857790",
+                "uid": "9950f637-3ce8-428f-a136-02b68a154d8f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:47Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:47Z",
+                "name": "nginx-deployment-66f58bff7c-n8ncw.17852d81263c6825",
+                "namespace": "default",
+                "resourceVersion": "17857813",
+                "uid": "2b579e02-7a83-42c8-80d8-a0afba58ebca"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-2nwj7",
+                "namespace": "default",
+                "resourceVersion": "17857792",
+                "uid": "d6280c88-0391-4c8a-adc1-73724e465c6b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:47Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:47Z",
+                "name": "nginx-deployment-66f58bff7c-2nwj7.17852d8134d43441",
+                "namespace": "default",
+                "resourceVersion": "17857814",
+                "uid": "7fb645ae-bc5e-4c06-be40-f67ce5deb6db"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-clsnw",
+                "namespace": "default",
+                "resourceVersion": "17857789",
+                "uid": "226bd2f3-b106-4e34-b1b9-46479e16c61f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:47Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:47Z",
+                "name": "nginx-deployment-66f58bff7c-clsnw.17852d811c40db88",
+                "namespace": "default",
+                "resourceVersion": "17857812",
+                "uid": "5b4eced0-73f4-4bf4-8779-0b5ccc05c792"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:47Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-n8ncw",
+                "namespace": "default",
+                "resourceVersion": "17857790",
+                "uid": "9950f637-3ce8-428f-a136-02b68a154d8f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:47Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:47Z",
+                "name": "nginx-deployment-66f58bff7c-n8ncw.17852d8141defa2f",
+                "namespace": "default",
+                "resourceVersion": "17857820",
+                "uid": "ee028b40-7e2d-425c-9196-193e31ade775"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:55Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-clsnw",
+                "namespace": "default",
+                "resourceVersion": "17857789",
+                "uid": "226bd2f3-b106-4e34-b1b9-46479e16c61f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:55Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:55Z",
+                "name": "nginx-deployment-66f58bff7c-clsnw.17852d82edcfe2c7",
+                "namespace": "default",
+                "resourceVersion": "17857845",
+                "uid": "092819f0-9ca3-438d-8eac-b155d08ba7b6"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:55Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17857837",
+                "uid": "6d37d8c5-fcdd-4b18-83a0-5bef44f204b6"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:55Z",
+            "message": "Scaled down replica set nginx-deployment-66f58bff7c to 1",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:55Z",
+                "name": "nginx-deployment.17852d82eabc2f80",
+                "namespace": "default",
+                "resourceVersion": "17857840",
+                "uid": "32d47202-8b8d-4036-8003-0e5e33ad5755"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:55Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-n8ncw",
+                "namespace": "default",
+                "resourceVersion": "17857790",
+                "uid": "9950f637-3ce8-428f-a136-02b68a154d8f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:55Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:55Z",
+                "name": "nginx-deployment-66f58bff7c-n8ncw.17852d82ed9488a0",
+                "namespace": "default",
+                "resourceVersion": "17857846",
+                "uid": "6e696f28-7368-4758-bfe1-bbf8eefc506e"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:55Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17857838",
+                "uid": "81f1d512-8a0b-4cd7-89dc-1fb514c03250"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:55Z",
+            "message": "Deleted pod: nginx-deployment-66f58bff7c-clsnw",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:55Z",
+                "name": "nginx-deployment-66f58bff7c.17852d82ed80186e",
+                "namespace": "default",
+                "resourceVersion": "17857844",
+                "uid": "7a152cdb-0bc7-4a49-808d-2dd370e77b3f"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:47:55Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17857838",
+                "uid": "81f1d512-8a0b-4cd7-89dc-1fb514c03250"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:47:55Z",
+            "message": "Deleted pod: nginx-deployment-66f58bff7c-n8ncw",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:47:55Z",
+                "name": "nginx-deployment-66f58bff7c.17852d82ed85ba2b",
+                "namespace": "default",
+                "resourceVersion": "17857847",
+                "uid": "054d570c-5e27-47b5-a1d7-bdf517820cd1"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:04Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17857828",
+                "uid": "bebc7b14-f2c0-44dd-9153-a508fe0fb901"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:04Z",
+            "message": "New size: 3; reason: Current number of replicas below Spec.MinReplicas",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:04Z",
+                "name": "nginx-deployment.17852d851eab5387",
+                "namespace": "default",
+                "resourceVersion": "17857870",
+                "uid": "c398e30b-11be-47e2-98d4-7d98fc220ab4"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:48:04.721418Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-68mqg",
+                "namespace": "default",
+                "resourceVersion": "17857874",
+                "uid": "1f17d4d8-73a4-4223-86d9-eb69123bba6b"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-68mqg to kind-worker",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:04Z",
+                "name": "nginx-deployment-66f58bff7c-68mqg.17852d852949aa80",
+                "namespace": "default",
+                "resourceVersion": "17857880",
+                "uid": "e457e9cd-d4bc-4093-97dd-00ab50a4e0d2"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:04Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17857872",
+                "uid": "81f1d512-8a0b-4cd7-89dc-1fb514c03250"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:04Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-68mqg",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:04Z",
+                "name": "nginx-deployment-66f58bff7c.17852d85271829fa",
+                "namespace": "default",
+                "resourceVersion": "17857876",
+                "uid": "341e6563-fa77-474c-b62f-2fe275549485"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:04Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17857872",
+                "uid": "81f1d512-8a0b-4cd7-89dc-1fb514c03250"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:04Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-lhxbk",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:04Z",
+                "name": "nginx-deployment-66f58bff7c.17852d8529960b82",
+                "namespace": "default",
+                "resourceVersion": "17857881",
+                "uid": "6b8e20d0-dccc-48fa-a971-0cd99900648c"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:48:04.884652Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-lhxbk",
+                "namespace": "default",
+                "resourceVersion": "17857875",
+                "uid": "f73dab4a-7b50-4d78-87ff-9600f1129748"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-lhxbk to kind-worker3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:04Z",
+                "name": "nginx-deployment-66f58bff7c-lhxbk.17852d8533041bf6",
+                "namespace": "default",
+                "resourceVersion": "17857890",
+                "uid": "e747ec98-61f6-4140-8f3c-26e69c4f364b"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:06Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-68mqg",
+                "namespace": "default",
+                "resourceVersion": "17857878",
+                "uid": "1f17d4d8-73a4-4223-86d9-eb69123bba6b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:06Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:06Z",
+                "name": "nginx-deployment-66f58bff7c-68mqg.17852d85792484ed",
+                "namespace": "default",
+                "resourceVersion": "17857891",
+                "uid": "22490238-04b8-4de0-b81a-462774b10bb4"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:06Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-lhxbk",
+                "namespace": "default",
+                "resourceVersion": "17857883",
+                "uid": "f73dab4a-7b50-4d78-87ff-9600f1129748"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:06Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:06Z",
+                "name": "nginx-deployment-66f58bff7c-lhxbk.17852d85868f38ba",
+                "namespace": "default",
+                "resourceVersion": "17857892",
+                "uid": "7a1f5180-a3cc-4dba-9557-247729bf692e"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:06Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-lhxbk",
+                "namespace": "default",
+                "resourceVersion": "17857883",
+                "uid": "f73dab4a-7b50-4d78-87ff-9600f1129748"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:06Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:06Z",
+                "name": "nginx-deployment-66f58bff7c-lhxbk.17852d85a76150d5",
+                "namespace": "default",
+                "resourceVersion": "17857895",
+                "uid": "59916835-b409-4eea-b4a9-3c6fdb7d7d36"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:06Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-68mqg",
+                "namespace": "default",
+                "resourceVersion": "17857878",
+                "uid": "1f17d4d8-73a4-4223-86d9-eb69123bba6b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:06Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:06Z",
+                "name": "nginx-deployment-66f58bff7c-68mqg.17852d85a50f929e",
+                "namespace": "default",
+                "resourceVersion": "17857894",
+                "uid": "7f7cb6c0-edf0-4322-9494-5a80671592ed"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-68mqg",
+                "namespace": "default",
+                "resourceVersion": "17857878",
+                "uid": "1f17d4d8-73a4-4223-86d9-eb69123bba6b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:07Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:07Z",
+                "name": "nginx-deployment-66f58bff7c-68mqg.17852d85bdbde79c",
+                "namespace": "default",
+                "resourceVersion": "17857899",
+                "uid": "210dcd40-f7b6-42ba-9c57-3a1c137eefaf"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:07Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-lhxbk",
+                "namespace": "default",
+                "resourceVersion": "17857883",
+                "uid": "f73dab4a-7b50-4d78-87ff-9600f1129748"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:07Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:07Z",
+                "name": "nginx-deployment-66f58bff7c-lhxbk.17852d85c3de4384",
+                "namespace": "default",
+                "resourceVersion": "17857900",
+                "uid": "c9156d7b-8dda-4077-89e0-a867f75d8a3b"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-2nwj7",
+                "namespace": "default",
+                "resourceVersion": "17857792",
+                "uid": "d6280c88-0391-4c8a-adc1-73724e465c6b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:25Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:25Z",
+                "name": "nginx-deployment-66f58bff7c-2nwj7.17852d8a0b141a62",
+                "namespace": "default",
+                "resourceVersion": "17857943",
+                "uid": "ba31e4df-33f7-4d3e-86ae-04ee358818ea"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-68mqg",
+                "namespace": "default",
+                "resourceVersion": "17857878",
+                "uid": "1f17d4d8-73a4-4223-86d9-eb69123bba6b"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:27Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:25Z",
+                "name": "nginx-deployment-66f58bff7c-68mqg.17852d8a08a29139",
+                "namespace": "default",
+                "resourceVersion": "17857957",
+                "uid": "8adfb958-2575-4479-b33c-2297c3f48e60"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:48:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-lhxbk",
+                "namespace": "default",
+                "resourceVersion": "17857883",
+                "uid": "f73dab4a-7b50-4d78-87ff-9600f1129748"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:48:25Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:48:25Z",
+                "name": "nginx-deployment-66f58bff7c-lhxbk.17852d8a0b272e97",
+                "namespace": "default",
+                "resourceVersion": "17857942",
+                "uid": "8b828c00-18f9-476b-a46e-83e6408966fd"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:49:23.608917Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-6tcgp",
+                "namespace": "default",
+                "resourceVersion": "17858047",
+                "uid": "95e29002-3d14-4ba0-b997-7efa1d4ecf2c"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-6tcgp to kind-worker2",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:23Z",
+                "name": "nginx-deployment-66f58bff7c-6tcgp.17852d97875901bf",
+                "namespace": "default",
+                "resourceVersion": "17858058",
+                "uid": "9a3f8c1a-2267-423a-b040-5cab59b50fb0"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:23Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17858040",
+                "uid": "5207b27a-8c76-40bc-a301-f58dfabf1973"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:23Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-4c8qn",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:23Z",
+                "name": "nginx-deployment-66f58bff7c.17852d977d3f999c",
+                "namespace": "default",
+                "resourceVersion": "17858046",
+                "uid": "c2788428-1d5e-484c-bec2-90d1d44b03d8"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:23Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17858039",
+                "uid": "ca52a70e-25a4-4437-80ac-bd8baa20dc2a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:50:03Z",
+            "message": "Scaled up replica set nginx-deployment-66f58bff7c to 3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:23Z",
+                "name": "nginx-deployment.17852d977290cc7f",
+                "namespace": "default",
+                "resourceVersion": "17858169",
+                "uid": "2b785e6f-ff81-410f-8d85-f6743a7b4c15"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:23Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17858040",
+                "uid": "5207b27a-8c76-40bc-a301-f58dfabf1973"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:23Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-7kkk5",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:23Z",
+                "name": "nginx-deployment-66f58bff7c.17852d977e158648",
+                "namespace": "default",
+                "resourceVersion": "17858052",
+                "uid": "7dddaa9a-0139-4d16-8f92-ed608f6afff9"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:23Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17858040",
+                "uid": "5207b27a-8c76-40bc-a301-f58dfabf1973"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:23Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-6tcgp",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:23Z",
+                "name": "nginx-deployment-66f58bff7c.17852d977fe03418",
+                "namespace": "default",
+                "resourceVersion": "17858056",
+                "uid": "49dfb054-e0f8-4a4a-b614-5e6c52996437"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:49:23.489052Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-7kkk5",
+                "namespace": "default",
+                "resourceVersion": "17858045",
+                "uid": "f602fc75-3d22-475f-8c0a-de933744ab4e"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-7kkk5 to kind-worker3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:23Z",
+                "name": "nginx-deployment-66f58bff7c-7kkk5.17852d978034bc79",
+                "namespace": "default",
+                "resourceVersion": "17858054",
+                "uid": "e6b118be-7401-426d-bfa8-b025bfa782af"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:49:23.485873Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-4c8qn",
+                "namespace": "default",
+                "resourceVersion": "17858044",
+                "uid": "3978f9fb-cefa-486f-b8f3-324c1a8a6c0f"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-4c8qn to kind-worker",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:23Z",
+                "name": "nginx-deployment-66f58bff7c-4c8qn.17852d978003810f",
+                "namespace": "default",
+                "resourceVersion": "17858055",
+                "uid": "01b96f1b-ede5-4c24-9934-95a1a0bda3d9"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-4c8qn",
+                "namespace": "default",
+                "resourceVersion": "17858049",
+                "uid": "3978f9fb-cefa-486f-b8f3-324c1a8a6c0f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:25Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:25Z",
+                "name": "nginx-deployment-66f58bff7c-4c8qn.17852d980f7a7714",
+                "namespace": "default",
+                "resourceVersion": "17858070",
+                "uid": "d2d41e4b-9398-4be2-a107-ff4f8e740d78"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-4c8qn",
+                "namespace": "default",
+                "resourceVersion": "17858049",
+                "uid": "3978f9fb-cefa-486f-b8f3-324c1a8a6c0f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:25Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:25Z",
+                "name": "nginx-deployment-66f58bff7c-4c8qn.17852d97f18ac0f0",
+                "namespace": "default",
+                "resourceVersion": "17858067",
+                "uid": "d03e2d15-b16d-4131-b13a-e65fcfe20104"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-6tcgp",
+                "namespace": "default",
+                "resourceVersion": "17858053",
+                "uid": "95e29002-3d14-4ba0-b997-7efa1d4ecf2c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:25Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:25Z",
+                "name": "nginx-deployment-66f58bff7c-6tcgp.17852d9806fc4b37",
+                "namespace": "default",
+                "resourceVersion": "17858069",
+                "uid": "e7e498a1-41a9-406a-9f9e-f641911b4932"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-7kkk5",
+                "namespace": "default",
+                "resourceVersion": "17858050",
+                "uid": "f602fc75-3d22-475f-8c0a-de933744ab4e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:25Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:25Z",
+                "name": "nginx-deployment-66f58bff7c-7kkk5.17852d97e67a2793",
+                "namespace": "default",
+                "resourceVersion": "17858066",
+                "uid": "d5cdfc02-4364-43de-a6b7-8fe05cf0d194"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:25Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-7kkk5",
+                "namespace": "default",
+                "resourceVersion": "17858050",
+                "uid": "f602fc75-3d22-475f-8c0a-de933744ab4e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:25Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:25Z",
+                "name": "nginx-deployment-66f58bff7c-7kkk5.17852d980633f96e",
+                "namespace": "default",
+                "resourceVersion": "17858068",
+                "uid": "bad61cf9-3801-4eab-965f-3761ce6e1835"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:26Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-6tcgp",
+                "namespace": "default",
+                "resourceVersion": "17858053",
+                "uid": "95e29002-3d14-4ba0-b997-7efa1d4ecf2c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:26Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:26Z",
+                "name": "nginx-deployment-66f58bff7c-6tcgp.17852d98460578e3",
+                "namespace": "default",
+                "resourceVersion": "17858076",
+                "uid": "ee9cc408-cc90-4e5e-8f66-9bbb96d69a27"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:26Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-6tcgp",
+                "namespace": "default",
+                "resourceVersion": "17858053",
+                "uid": "95e29002-3d14-4ba0-b997-7efa1d4ecf2c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:26Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:26Z",
+                "name": "nginx-deployment-66f58bff7c-6tcgp.17852d982a7d5af1",
+                "namespace": "default",
+                "resourceVersion": "17858074",
+                "uid": "b41f1770-c407-48ca-b386-17cf4438db12"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:26Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-4c8qn",
+                "namespace": "default",
+                "resourceVersion": "17858049",
+                "uid": "3978f9fb-cefa-486f-b8f3-324c1a8a6c0f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:26Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:26Z",
+                "name": "nginx-deployment-66f58bff7c-4c8qn.17852d98319545a2",
+                "namespace": "default",
+                "resourceVersion": "17858075",
+                "uid": "b38db0c1-b0b3-4a9a-9d86-eecbeded82be"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:26Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-7kkk5",
+                "namespace": "default",
+                "resourceVersion": "17858050",
+                "uid": "f602fc75-3d22-475f-8c0a-de933744ab4e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:26Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:26Z",
+                "name": "nginx-deployment-66f58bff7c-7kkk5.17852d9826f496a9",
+                "namespace": "default",
+                "resourceVersion": "17858073",
+                "uid": "47520f33-a01e-4059-aacb-53127f0fd9b6"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:48Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17858094",
+                "uid": "689a663e-b314-40d8-bd31-bc10fde21a2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:48Z",
+            "message": "invalid metrics (1 invalid out of 1), first error is: failed to get cpu utilization: did not receive metrics for any ready pods",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:48Z",
+                "name": "nginx-deployment.17852d9d56737c53",
+                "namespace": "default",
+                "resourceVersion": "17858118",
+                "uid": "0eca1157-8811-4e06-9526-acfcb3b6e38e"
+            },
+            "reason": "FailedComputeMetricsReplicas",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:48Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17858094",
+                "uid": "689a663e-b314-40d8-bd31-bc10fde21a2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:48Z",
+            "message": "failed to get cpu utilization: did not receive metrics for any ready pods",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:48Z",
+                "name": "nginx-deployment.17852d9d51dd9a8d",
+                "namespace": "default",
+                "resourceVersion": "17858116",
+                "uid": "f6febed7-63f2-44b2-b9e4-7e345e564c09"
+            },
+            "reason": "FailedGetResourceMetric",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Warning"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 2,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:54Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-6tcgp",
+                "namespace": "default",
+                "resourceVersion": "17858053",
+                "uid": "95e29002-3d14-4ba0-b997-7efa1d4ecf2c"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:56Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:54Z",
+                "name": "nginx-deployment-66f58bff7c-6tcgp.17852d9ebecea79d",
+                "namespace": "default",
+                "resourceVersion": "17858149",
+                "uid": "ea43f5b6-9cb2-4784-802c-34c1de1ed8b5"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:54Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-7kkk5",
+                "namespace": "default",
+                "resourceVersion": "17858050",
+                "uid": "f602fc75-3d22-475f-8c0a-de933744ab4e"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:54Z",
+            "message": "Stopping container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:54Z",
+                "name": "nginx-deployment-66f58bff7c-7kkk5.17852d9ebec8ce84",
+                "namespace": "default",
+                "resourceVersion": "17858138",
+                "uid": "42109c8d-83fc-446f-88f0-48711369ee81"
+            },
+            "reason": "Killing",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:54Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17858129",
+                "uid": "5207b27a-8c76-40bc-a301-f58dfabf1973"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:54Z",
+            "message": "Deleted pod: nginx-deployment-66f58bff7c-7kkk5",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:54Z",
+                "name": "nginx-deployment-66f58bff7c.17852d9ebef39dde",
+                "namespace": "default",
+                "resourceVersion": "17858140",
+                "uid": "67bbaf0c-fe59-4590-86a0-01e9dbba4a54"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:54Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "Deployment",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17858128",
+                "uid": "ca52a70e-25a4-4437-80ac-bd8baa20dc2a"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:54Z",
+            "message": "Scaled down replica set nginx-deployment-66f58bff7c to 1",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:54Z",
+                "name": "nginx-deployment.17852d9ea6234575",
+                "namespace": "default",
+                "resourceVersion": "17858130",
+                "uid": "7953778a-b00e-46d0-bb4b-c178b1ff167a"
+            },
+            "reason": "ScalingReplicaSet",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "deployment-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:49:54Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17858129",
+                "uid": "5207b27a-8c76-40bc-a301-f58dfabf1973"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:49:54Z",
+            "message": "Deleted pod: nginx-deployment-66f58bff7c-6tcgp",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:49:54Z",
+                "name": "nginx-deployment-66f58bff7c.17852d9ebef099ad",
+                "namespace": "default",
+                "resourceVersion": "17858137",
+                "uid": "63861edb-b9b2-46a7-916e-2eb9e7b5b032"
+            },
+            "reason": "SuccessfulDelete",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:50:03.909864Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-nbvst",
+                "namespace": "default",
+                "resourceVersion": "17858170",
+                "uid": "bf0ad039-0154-4821-ac30-f54e4366ba44"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-nbvst to kind-worker3",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:03Z",
+                "name": "nginx-deployment-66f58bff7c-nbvst.17852da0e978a79a",
+                "namespace": "default",
+                "resourceVersion": "17858175",
+                "uid": "ec994608-9877-4d4b-ac43-117a71915e6c"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "action": "Binding",
+            "apiVersion": "v1",
+            "eventTime": "2023-09-15T20:50:03.946465Z",
+            "firstTimestamp": null,
+            "involvedObject": {
+                "apiVersion": "v1",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-z5c25",
+                "namespace": "default",
+                "resourceVersion": "17858172",
+                "uid": "0afbee76-1597-414a-95d7-9a1161cd7130"
+            },
+            "kind": "Event",
+            "lastTimestamp": null,
+            "message": "Successfully assigned default/nginx-deployment-66f58bff7c-z5c25 to kind-worker2",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:03Z",
+                "name": "nginx-deployment-66f58bff7c-z5c25.17852da0eba72143",
+                "namespace": "default",
+                "resourceVersion": "17858178",
+                "uid": "765acd13-f86f-4d22-8aaf-ec89290c809c"
+            },
+            "reason": "Scheduled",
+            "reportingComponent": "default-scheduler",
+            "reportingInstance": "default-scheduler-kind-control-plane",
+            "source": {},
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:50:03Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17858166",
+                "uid": "5207b27a-8c76-40bc-a301-f58dfabf1973"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:50:03Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-z5c25",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:03Z",
+                "name": "nginx-deployment-66f58bff7c.17852da0e94165db",
+                "namespace": "default",
+                "resourceVersion": "17858174",
+                "uid": "1db5e523-3ca3-4e48-9e50-9544b68bc064"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:50:03Z",
+            "involvedObject": {
+                "apiVersion": "apps/v1",
+                "kind": "ReplicaSet",
+                "name": "nginx-deployment-66f58bff7c",
+                "namespace": "default",
+                "resourceVersion": "17858166",
+                "uid": "5207b27a-8c76-40bc-a301-f58dfabf1973"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:50:03Z",
+            "message": "Created pod: nginx-deployment-66f58bff7c-nbvst",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:03Z",
+                "name": "nginx-deployment-66f58bff7c.17852da0e664bd6d",
+                "namespace": "default",
+                "resourceVersion": "17858171",
+                "uid": "cfeb1a0a-7234-4541-be4b-217d0ad39a7f"
+            },
+            "reason": "SuccessfulCreate",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "replicaset-controller"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:50:03Z",
+            "involvedObject": {
+                "apiVersion": "autoscaling/v2",
+                "kind": "HorizontalPodAutoscaler",
+                "name": "nginx-deployment",
+                "namespace": "default",
+                "resourceVersion": "17858117",
+                "uid": "689a663e-b314-40d8-bd31-bc10fde21a2f"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:50:03Z",
+            "message": "New size: 3; reason: Current number of replicas below Spec.MinReplicas",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:03Z",
+                "name": "nginx-deployment.17852da0d5f755ab",
+                "namespace": "default",
+                "resourceVersion": "17858164",
+                "uid": "b8128fcc-aa01-49f0-9b60-3f074453612c"
+            },
+            "reason": "SuccessfulRescale",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "horizontal-pod-autoscaler"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:50:05Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-nbvst",
+                "namespace": "default",
+                "resourceVersion": "17858173",
+                "uid": "bf0ad039-0154-4821-ac30-f54e4366ba44"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:50:05Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:05Z",
+                "name": "nginx-deployment-66f58bff7c-nbvst.17852da1444eb6bb",
+                "namespace": "default",
+                "resourceVersion": "17858185",
+                "uid": "cad619eb-0e02-4a16-a45f-f4e605064fbd"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:50:05Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-z5c25",
+                "namespace": "default",
+                "resourceVersion": "17858177",
+                "uid": "0afbee76-1597-414a-95d7-9a1161cd7130"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:50:05Z",
+            "message": "Container image \"nginx:1.14.2\" already present on machine",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:05Z",
+                "name": "nginx-deployment-66f58bff7c-z5c25.17852da14f293bab",
+                "namespace": "default",
+                "resourceVersion": "17858186",
+                "uid": "4aa0f1bd-aae5-41f5-bf73-3ac993b06bdb"
+            },
+            "reason": "Pulled",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:50:06Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-nbvst",
+                "namespace": "default",
+                "resourceVersion": "17858173",
+                "uid": "bf0ad039-0154-4821-ac30-f54e4366ba44"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:50:06Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:06Z",
+                "name": "nginx-deployment-66f58bff7c-nbvst.17852da184bb61ce",
+                "namespace": "default",
+                "resourceVersion": "17858190",
+                "uid": "d19326c2-0e94-40ca-9876-2ed145e7eb66"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:50:06Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-nbvst",
+                "namespace": "default",
+                "resourceVersion": "17858173",
+                "uid": "bf0ad039-0154-4821-ac30-f54e4366ba44"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:50:06Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:06Z",
+                "name": "nginx-deployment-66f58bff7c-nbvst.17852da16abd0839",
+                "namespace": "default",
+                "resourceVersion": "17858188",
+                "uid": "283dfc5e-582c-4365-94a7-fd0a1adb405a"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker3"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:50:06Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-z5c25",
+                "namespace": "default",
+                "resourceVersion": "17858177",
+                "uid": "0afbee76-1597-414a-95d7-9a1161cd7130"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:50:06Z",
+            "message": "Created container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:06Z",
+                "name": "nginx-deployment-66f58bff7c-z5c25.17852da171bb0d72",
+                "namespace": "default",
+                "resourceVersion": "17858189",
+                "uid": "e83d4823-ba60-4b7d-b866-33cba105c5c1"
+            },
+            "reason": "Created",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        },
+        {
+            "apiVersion": "v1",
+            "count": 1,
+            "eventTime": null,
+            "firstTimestamp": "2023-09-15T20:50:06Z",
+            "involvedObject": {
+                "apiVersion": "v1",
+                "fieldPath": "spec.containers{nginx}",
+                "kind": "Pod",
+                "name": "nginx-deployment-66f58bff7c-z5c25",
+                "namespace": "default",
+                "resourceVersion": "17858177",
+                "uid": "0afbee76-1597-414a-95d7-9a1161cd7130"
+            },
+            "kind": "Event",
+            "lastTimestamp": "2023-09-15T20:50:06Z",
+            "message": "Started container nginx",
+            "metadata": {
+                "creationTimestamp": "2023-09-15T20:50:06Z",
+                "name": "nginx-deployment-66f58bff7c-z5c25.17852da18ea6a83e",
+                "namespace": "default",
+                "resourceVersion": "17858191",
+                "uid": "3c7a6433-64cb-4692-a426-87ba98e7f583"
+            },
+            "reason": "Started",
+            "reportingComponent": "",
+            "reportingInstance": "",
+            "source": {
+                "component": "kubelet",
+                "host": "kind-worker2"
+            },
+            "type": "Normal"
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}
