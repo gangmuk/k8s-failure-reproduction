@@ -24,6 +24,6 @@ spec:
                 - NET_ADMIN
         resources:
           limits:
-            cpu: 200m
+            cpu: 100m
           requests:
             cpu: 100m

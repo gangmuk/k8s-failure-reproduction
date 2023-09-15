@@ -4,7 +4,7 @@ metadata:
   name: h1-app
   namespace: default
 spec:
-  maxReplicas: 10
+  maxReplicas: 6
   metrics:
   - resource:
       name: cpu
