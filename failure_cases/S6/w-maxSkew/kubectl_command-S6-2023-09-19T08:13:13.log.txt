@@ -1,0 +1,11 @@
+command,start_cdt,start_utc,end_cdt,end_utc
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_start.py,start logging
+,2023-09-19T03:13:13,2023-09-19T08:13:13,2023-09-19T03:13:13,2023-09-19T08:13:13
+kubectl apply -f deploy.yaml,apply deployment php-apache,2023-09-19T03:13:23,2023-09-19T08:13:23,2023-09-19T03:13:24,2023-09-19T08:13:24
+kubectl drain kind-worker --ignore-daemonsets --delete-emptydir-data,drain kind-worker node,2023-09-19T03:13:34,2023-09-19T08:13:34,2023-09-19T03:14:07,2023-09-19T08:14:07
+kubectl uncordon kind-worker,uncordon kind-worker,2023-09-19T03:14:22,2023-09-19T08:14:22,2023-09-19T03:14:22,2023-09-19T08:14:22
+kubectl drain kind-worker3 --ignore-daemonsets --delete-emptydir-data,drain kind-worker3,2023-09-19T03:14:37,2023-09-19T08:14:37,2023-09-19T03:14:41,2023-09-19T08:14:41
+kubectl uncordon kind-worker3,uncordon kind-worker3,2023-09-19T03:14:56,2023-09-19T08:14:56,2023-09-19T03:14:56,2023-09-19T08:14:56
+pkill -f "python3 logging_start.py",stop logging_start.py,2023-09-19T03:15:11,2023-09-19T08:15:11,2023-09-19T03:15:11,2023-09-19T08:15:11
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_end.py,end logging,2023-09-19T03:15:16,2023-09-19T08:15:16,2023-09-19T03:15:26,2023-09-19T08:15:26
+kubectl delete deploy/php-apache,delete php-apache deployment,2023-09-19T03:15:31,2023-09-19T08:15:31,2023-09-19T03:15:31,2023-09-19T08:15:31

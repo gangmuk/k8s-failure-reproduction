@@ -1,6 +1,0 @@
-command,start_cdt,start_utc,end_cdt,end_utc
-kubectl apply -f deploy.yaml,2023-05-11T13:44:42,2023-05-11T18:44:42,2023-05-11T13:44:42,2023-05-11T18:44:42
-kubectl drain kind-worker --ignore-daemonsets --delete-emptydir-data,2023-05-11T13:44:52,2023-05-11T18:44:52,2023-05-11T13:44:56,2023-05-11T18:44:56
-kubectl uncordon kind-worker,2023-05-11T13:45:01,2023-05-11T18:45:01,2023-05-11T13:45:01,2023-05-11T18:45:01
-kubectl drain kind-worker3 --ignore-daemonsets --delete-emptydir-data,2023-05-11T13:45:06,2023-05-11T18:45:06,2023-05-11T13:45:10,2023-05-11T18:45:10
-kubectl uncordon kind-worker3,2023-05-11T13:45:15,2023-05-11T18:45:15,2023-05-11T13:45:15,2023-05-11T18:45:15
