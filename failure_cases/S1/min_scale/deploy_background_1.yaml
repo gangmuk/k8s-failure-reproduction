@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: background-1
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: background-1
+  template:
+    metadata:
+      labels:
+        run: background-1
+    spec:
+      nodeName: kind-worker2
+      containers:
+      - image: nginx:1.14.2
+        imagePullPolicy: IfNotPresent
+        name: nginx
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources:
+          requests:
+            cpu: 5000m
+#          limits:
+#            cpu: 1000m

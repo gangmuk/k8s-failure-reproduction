@@ -1,0 +1,8 @@
+command,keyword,start_cdt,start_utc,end_cdt,end_utc
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_start.py,start logging,2023-09-19T23:28:13,2023-09-20T04:28:13,2023-09-19T23:28:13,2023-09-20T04:28:13
+kubectl apply -f deploy_h1-app.yaml,apply deployment h1-app,2023-09-19T23:28:23,2023-09-20T04:28:23,2023-09-19T23:28:24,2023-09-20T04:28:24
+kubectl apply -f autoscaler.yaml,deploy autoscaler,2023-09-19T23:28:29,2023-09-20T04:28:29,2023-09-19T23:28:29,2023-09-20T04:28:29
+pkill -f "python3 logging_start.py",stop logging_start.py,2023-09-19T23:36:49,2023-09-20T04:36:49,2023-09-19T23:36:49,2023-09-20T04:36:49
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_end.py,end logging,2023-09-19T23:36:55,2023-09-20T04:36:55,2023-09-19T23:37:05,2023-09-20T04:37:05
+kubectl delete deploy/h1-app,delete h1-app deployment,2023-09-19T23:37:10,2023-09-20T04:37:10,2023-09-19T23:37:10,2023-09-20T04:37:10
+kubectl delete hpa/h1-app,delete hpa,2023-09-19T23:37:11,2023-09-20T04:37:11,2023-09-19T23:37:11,2023-09-20T04:37:11
