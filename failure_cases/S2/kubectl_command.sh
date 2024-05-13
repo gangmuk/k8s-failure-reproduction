@@ -1,5 +1,7 @@
 #!/bin/bash
 
+start_time=$(date +%s)
+
 source /home/gangmuk2/projects/k8s-failure-reproduction/logging/bin/time_function.sh
 
 update_time
@@ -93,3 +95,10 @@ echo -n "kubectl label --overwrite nodes kind-worker*,remove node label,${CDT},$
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
+
+
+end_time=$(date +%s)
+duration=$((end_time - start_time))
+
+echo -n "total_runtime,${duration}" >> ${fn}
+echo -n "total_runtime,${duration}"

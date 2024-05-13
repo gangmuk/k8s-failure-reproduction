@@ -1,0 +1,12 @@
+command,keyword,start_cdt,start_utc,end_cdt,end_utc
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_start.py,start logging,2024-01-13T21:02:36,2024-01-14T03:02:36,2024-01-13T21:02:36,2024-01-14T03:02:36
+kubectl label nodes kind-worker*,label node,2024-01-13T21:02:46,2024-01-14T03:02:46,2024-01-13T21:02:47,2024-01-14T03:02:47
+kustomize build 'github.com/kubernetes-sigs/descheduler/kubernetes/deployment?ref=v0.26.0' | kubectl apply -f -,install descheduler deployment,2024-01-13T21:02:49,2024-01-14T03:02:49,2024-01-13T21:02:53,2024-01-14T03:02:53
+kubectl apply -f descheduler-configmap.yaml,update descheduler configmap,2024-01-13T21:03:03,2024-01-14T03:03:03,2024-01-13T21:03:04,2024-01-14T03:03:04
+kubectl apply -f descheduler-deployment.yaml,update descheduler deployment config,2024-01-13T21:03:14,2024-01-14T03:03:14,kubectl apply -f deploy.yaml,apply nginx deployment,2024-01-13T21:03:14,2024-01-14T03:03:14,2024-01-13T21:03:15,2024-01-14T03:03:15
+pkill -f python3 logging_start.py,stop logging_start.py,2024-01-13T21:05:15,2024-01-14T03:05:15,2024-01-13T21:05:15,2024-01-14T03:05:15
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_end.py,end logging,2024-01-13T21:05:20,2024-01-14T03:05:20,2024-01-13T21:05:30,2024-01-14T03:05:30
+kubectl delete deploy/nginx-deployment,delete nginx deployment,2024-01-13T21:05:35,2024-01-14T03:05:35,2024-01-13T21:05:35,2024-01-14T03:05:35
+kubectl delete deploy/descheduler -n kube-system,delete descheduler deployment,2024-01-13T21:05:55,2024-01-14T03:05:55,2024-01-13T21:05:55,2024-01-14T03:05:55
+kubectl label --overwrite nodes kind-worker*,remove node label,2024-01-13T21:06:05,2024-01-14T03:06:05,2024-01-13T21:06:06,2024-01-14T03:06:06
+total_runtime,210

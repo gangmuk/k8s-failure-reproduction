@@ -1,0 +1,9 @@
+command,keyword,start_cdt,start_utc,end_cdt,end_utc
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_start.py,start logging,2024-01-13T16:59:34,2024-01-13T22:59:34,2024-01-13T16:59:34,2024-01-13T22:59:34
+kustomize build 'github.com/kubernetes-sigs/descheduler/kubernetes/deployment?ref=v0.26.0' | kubectl apply -f -,install descheduler deployment,2024-01-13T16:59:44,2024-01-13T22:59:44,2024-01-13T16:59:49,2024-01-13T22:59:49
+kubectl apply -f descheduler-configmap.yaml,update descheduler configmap,2024-01-13T16:59:54,2024-01-13T22:59:54,kubectl apply -f descheduler-deployment.yaml,update descheduler deployment config,2024-01-13T17:00:00,2024-01-13T23:00:00,kubectl apply -f deploy_background_1.yaml,apply background_1 deployment,2024-01-13T17:00:05,2024-01-13T23:00:05,kubectl apply -f deploy_background_2.yaml,apply background_2 deployment,2024-01-13T17:00:11,2024-01-13T23:00:11,kubectl apply -f deploy_foreground.yaml,apply foreground deployment,2024-01-13T17:00:16,2024-01-13T23:00:16,2024-01-13T17:00:22,2024-01-13T23:00:22
+pkill -f python3 logging_start.py,stop logging_start.py,2024-01-13T17:01:22,2024-01-13T23:01:22,2024-01-13T17:01:22,2024-01-13T23:01:22
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_end.py,end logging,2024-01-13T17:01:27,2024-01-13T23:01:27,2024-01-13T17:01:37,2024-01-13T23:01:37
+kubectl delete deploy/background-1,delete background-1 deployment,2024-01-13T17:01:42,2024-01-13T23:01:42,kubectl delete deploy/background-2,delete background-2 deployment,2024-01-13T17:01:42,2024-01-13T23:01:42,kubectl delete deploy/nginx-deployment,delete nginx deployment,2024-01-13T17:01:42,2024-01-13T23:01:42,2024-01-13T17:01:43,2024-01-13T23:01:43
+kubectl delete deploy/descheduler -n kube-system,delete descheduler deployment,2024-01-13T17:02:03,2024-01-13T23:02:03,2024-01-13T17:02:03,2024-01-13T23:02:03
+total_runtime,149

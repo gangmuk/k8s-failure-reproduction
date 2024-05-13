@@ -1,5 +1,7 @@
 #!/bin/bash
 
+start_time=$(date +%s)
+
 source /home/gangmuk2/projects/k8s-failure-reproduction/logging/bin/time_function.sh
 
 update_time
@@ -31,7 +33,7 @@ kubectl apply -f deploy.yaml
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
-sleep 10
+sleep 30
 
 update_time
 echo -n "pkill -f \"python3 logging_start.py\",stop logging_start.py,${CDT},${UTC}," >> ${fn}
@@ -60,3 +62,9 @@ kubectl taint nodes kind-worker key1=value1:NoExecute-
 
 update_time
 echo "${CDT},${UTC}" >> ${fn}
+
+end_time=$(date +%s)
+duration=$((end_time - start_time))
+
+echo -n "total_runtime,${duration}" >> ${fn}
+echo -n "total_runtime,${duration}"

@@ -9,7 +9,7 @@ items:
     resourceVersion: "550922"
     uid: 2e869357-5191-44aa-a85b-fd98d1314e45
   spec:
-    maxReplicas: 12
+    maxReplicas: 5
     metrics:
     - resource:
         name: cpu

@@ -1,0 +1,10 @@
+command,keyword,start_cdt,start_utc,end_cdt,end_utc
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_start.py,start logging,2024-01-13T15:46:17,2024-01-13T21:46:17,2024-01-13T15:46:17,2024-01-13T21:46:17
+kubectl apply -f deploy_h1-app-with_replica.yaml,apply deployment h1-app,2024-01-13T15:46:22,2024-01-13T21:46:22,2024-01-13T15:46:22,2024-01-13T21:46:22
+kubectl autoscale deployment h1-app --cpu-percent=50 --min=3 --max=5,deploy autoscaler,2024-01-13T15:46:32,2024-01-13T21:46:32,2024-01-13T15:46:32,2024-01-13T21:46:32
+kubectl apply -f deploy_h1-app-wo_replica.yaml,apply deployment h1-app,2024-01-13T15:47:32,2024-01-13T21:47:32,2024-01-13T15:47:33,2024-01-13T21:47:33
+pkill -f "python3 logging_start.py",stop logging_start.py,2024-01-13T15:48:33,2024-01-13T21:48:33,2024-01-13T15:48:33,2024-01-13T21:48:33
+python3 /home/gangmuk2/projects/k8s-failure-reproduction/logging/logging_end.py,end logging,2024-01-13T15:48:38,2024-01-13T21:48:38,2024-01-13T15:48:48,2024-01-13T21:48:48
+kubectl delete deploy/h1-app,delete deployment h1-app,2024-01-13T15:48:53,2024-01-13T21:48:53,2024-01-13T15:48:53,2024-01-13T21:48:53
+kubectl delete hpa/h1-app,delete hpa h1-app,2024-01-13T15:48:54,2024-01-13T21:48:54,2024-01-13T15:48:54,2024-01-13T21:48:54
+total_runtime,159
