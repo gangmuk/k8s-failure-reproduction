@@ -1,19 +1,7 @@
 # k8s-failure-reproduction
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11238581.svg)](https://doi.org/10.5281/zenodo.11238581)
 
-<!-- ## TODO for ATC artifact evaluation
-1. How to get a Kind cluster work on a Machine
-2. To get the logs for model accuracy — Table 5
-    - Write down the log paths for each case
-3. we reproduced the failure cases that matched the issue description
-    - Instruct on how to start the clusters, etc. 
-    - Instruct on how to know it is a failure 
-      - Which kubectl to use and what they will see
-    - Instruct on where is the configs for each case 
-4. Table 2, we got a smaller violation scales
-    - Instruct about how to start a different number of nodes/pods – so they can use it to verify if the failure happens at Table 2
-      - Drain or start a new cluster
---- -->
 
 ## Directory tree
 TBD
@@ -97,28 +85,3 @@ When you want to create a new cluster with 1/2/3 nodes in it. You can use follow
 ```one_node_cluster.yaml```, ```three_node_cluster.yaml```,  ```two_node_cluster.yaml```
 
 More information please refer to the official tutorial: https://kind.sigs.k8s.io/docs/user/quick-start/
-
-
-
-<!-- ### H1(C1)
-
-### H2(C2)
-
-### S3(C3)
-<img alt="Screenshot 2023-04-23 at 4 09 43 PM" src="https://user-images.githubusercontent.com/20127356/233866458-2104f554-f980-4b85-a677-5bb3d096e59d.png" width="500">
-
-### S1(C5)
-
-### S6(C6)
-
-### D1(C7)
-
-### S2(C8)
-
-## Additional interesting cases
-
-### H3
-I explored this case and somewhat reproduced but didn't fully complete.
-<img src="https://user-images.githubusercontent.com/20127356/231905732-4559f655-529b-4d45-9b2a-9f3431d162c5.png" width="500">
-
-unanswered question: "Reachability vs Healthiness" -->
